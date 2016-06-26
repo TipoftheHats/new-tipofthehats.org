@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=370, initial-scale=1">
+	<title>Tip of the Hats</title>
+	<meta name="description" content="Tip of the Hats is an annual charity livestream event benefiting One Step Camp,
+									  hosted by the Team Fortress 2 community." />
+
+	<!-- Web components polyfill -->
+	<script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+
+	<!-- All elements combined into one import for easy vulcanization -->
+	<link rel="import" href="elements/all-elements.html">
+
+	<style>
+		body {
+			margin: 0;
+			transition: opacity 300ms ease-in-out;
+		}
+
+		body[unresolved] {
+			opacity: 0;
+		}
+	</style>
+
+	<meta name="twitter:card" value="summary">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Support Class" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.supportclass.net/" />
+	<meta property="og:image" content="http://supportclass.net/img/social.jpg" />
+	<meta property="og:description" content="We design and engineer broadcast graphics for our clients that elevate
+											their presentation to its highest potential - with or without
+											professional-grade hardware." />
+</head>
+<body unresolved>
+	<toth-site></toth-site>
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-64915380-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>

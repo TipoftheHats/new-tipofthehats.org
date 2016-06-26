@@ -1,0 +1,7 @@
+node_modules
+bower_components
+/auth.htpasswd
+
+# Overrides global .gitignore
+!/.idea
+/.idea/workspace.xml

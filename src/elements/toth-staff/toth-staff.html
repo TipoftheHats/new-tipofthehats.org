@@ -4,8 +4,8 @@
 	<template>
 		<style>
 			:host {
-			@apply(--layout-vertical);
-			@apply(--layout-center);
+				@apply(--layout-vertical);
+				@apply(--layout-center);
 				--picture-size: 175px;
 				--half-picture-size: 101px;
 				width: 100%;
@@ -32,8 +32,8 @@
 			}
 
 			#wrapper {
-			@apply(--layout-vertical);
-			@apply(--layout-center);
+				@apply(--layout-vertical);
+				@apply(--layout-center);
 				flex-grow: 1;
 				padding: 0 22px;
 			}
@@ -46,8 +46,8 @@
 			}
 
 			#role {
-			@apply(--layout-vertical);
-			@apply(--layout-center-center);
+				@apply(--layout-vertical);
+				@apply(--layout-center-center);
 				height: 31px;
 				color: #000;
 				font-size: 16px;
@@ -57,7 +57,7 @@
 			}
 
 			.handle {
-			@apply(--layout-flex);
+				@apply(--layout-flex);
 				height: 24px;
 				min-width: 120px;
 				background-color: white;
@@ -74,13 +74,13 @@
 			}
 
 			#bio ::content a {
-				color: #434343!important;
+				color: #434343 !important;
 				text-decoration: underline;
 			}
 
 			#icons {
-			@apply(--layout-horizontal);
-			@apply(--layout-center-center);
+				@apply(--layout-horizontal);
+				@apply(--layout-center-center);
 				flex-grow: 1;
 				padding-top: 11px;
 				padding-bottom: 19px;
@@ -144,20 +144,5 @@
 		</div>
 	</template>
 
-	<script>
-		Polymer({
-			is: 'toth-staff',
-
-			properties: {
-				name: String,
-				role: String,
-				handle: String,
-				picture: String,
-				email: String,
-				twitter: String,
-				youtube: String,
-				website: String
-			}
-		});
-	</script>
+	<script src="toth-staff.js"></script>
 </dom-module>

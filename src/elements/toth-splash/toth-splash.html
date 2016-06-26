@@ -1,0 +1,64 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="toth-splash">
+	<template>
+		<style>
+			:host {
+			@apply(--layout-vertical);
+				width: 100%;
+				height:590px;
+				overflow:hidden;
+				position:relative;
+			}
+
+			video {
+				position: absolute;
+				min-width: 100%;
+				min-height: 100%;
+				width: auto;
+				height: auto;
+				overflow: hidden;
+				z-index: -1;
+			}
+
+			#overlay {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background: rgba(0,0,0,0.6);
+				background: -moz-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(68,72,85,0.6) 51%, rgba(0,0,0,0.6) 100%);
+				background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.6)), color-stop(51%, rgba(68,72,85,0.6)), color-stop(100%, rgba(0,0,0,0.6)));
+				background: -webkit-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(68,72,85,0.6) 51%, rgba(0,0,0,0.6) 100%);
+				background: -o-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(68,72,85,0.6) 51%, rgba(0,0,0,0.6) 100%);
+				background: -ms-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(68,72,85,0.6) 51%, rgba(0,0,0,0.6) 100%);
+				background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(68,72,85,0.6) 51%, rgba(0,0,0,0.6) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+				mix-blend-mode: multiply;
+			}
+
+			#overlay-dots {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background: url('../../img/video_dots.png') repeat;
+				mix-blend-mode: multiply;
+			}
+		</style>
+
+		<video id="homepage__video" autoplay loop>
+			<source src="../../img/header.mp4" type="video/mp4">
+			<source src="../../img/header.webm" type="video/webm">
+			<img src="../../img/header.png"/>
+		</video>
+		<div id="overlay"></div>
+		<div id="overlay-dots"></div>
+
+
+	</template>
+
+	<script>
+		Polymer({
+			is: 'toth-splash'
+		});
+	</script>
+</dom-module>

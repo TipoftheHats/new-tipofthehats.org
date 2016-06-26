@@ -1,8 +1,24 @@
+<link rel="import" href="../../style/main-style.html">
 <link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../toth-header/toth-header.html">
+<link rel="import" href="../toth-splash/toth-splash.html">
 
 <dom-module id="toth-site">
 	<template>
-		<style></style>
+		<style include="main-style"></style>
+
+	<toth-header></toth-header>
+	<toth-splash></toth-splash>
+	<section id="intro">
+		<h1>Say, what *is* Tip of the Hats?</h1>
+		<p>Tip of the Hats is a charity event hosted and supported by members of the TF2 community. Since 2013, it has
+			raised over $450,000 for Children's Oncology Services, Inc., which offers camps and other educational and
+			excursion programs throughout the year that allow children with cancer to just be kids. With your help,
+			COSI can offer attendance to kids at little to no cost to their families.</p>
+	</section>
+	<section id="stream"></section>
+	<section id="cta"></section>
+	<toth-footer></toth-footer>
 	</template>
 
 	<script src="toth-site.js"></script>

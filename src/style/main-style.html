@@ -1,0 +1,39 @@
+<dom-module id="main-style">
+	<template>
+		<style>
+			:root {
+				--toth-orange: #f47425;
+			--toth-font-proxima-nova: {
+				 font-family: "proxima-nova", sans-serif;
+			 };
+			--toth-no-select: {
+				 -webkit-user-select: none;
+				 -moz-user-select: none;
+				 -ms-user-select: none;
+				 user-select: none;
+				 cursor: default;
+			 }
+			}
+
+			p {
+				font-weight: 600;
+			}
+
+			section {
+			@apply(--layout-vertical);
+			@apply(--layout-center-center);
+			}
+
+			h1 {
+				text-align: center;
+				background-color: var(--toth-orange);
+				padding: 5px 60px;
+				color: white;
+				font-size: 36px;
+				font-weight: 600;
+				margin: 29px 0;
+				white-space: nowrap;
+			}
+		</style>
+	</template>
+</dom-module>

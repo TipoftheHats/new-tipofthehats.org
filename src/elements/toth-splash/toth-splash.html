@@ -44,7 +44,7 @@
 				@apply(--layout-center-center);
 				@apply(--layout-horizontal);
 				z-index: 2;
-				height: 100%;
+
 			}
 
 			h1 {
@@ -75,7 +75,7 @@
 				font-size: 36px;
 				font-weight: 800;
 				background-color: var(--toth-orange);
-				padding: 5px;
+				padding: 5px 20px;
 				width: auto;
 				margin-bottom: 0;
 			}
@@ -83,6 +83,13 @@
 			.splash-twitch {
 				font-size: 36px;
 				font-weight: 700;
+			}
+
+			#splash-footer {
+				@apply(--layout-center-center);
+				@apply(--layout-vertical);
+				z-index: 2;
+				height: 100%;
 			}
 		</style>
 
@@ -103,7 +110,14 @@
 				<h2>September 16-18</h2>
 				<span class="splash-twitch">Live at twitch.tv/tipofthehats</span>
 			</div>
+			<div id="splash-footer">
+				<div class="splash-sponsors">With generous support provided by our event sponsors:</div>
+				<div class="splash-sponsors-logos">
+					<img src="img/scraptf.svg" height="50">
+				</div>
+			</div>
 		</div>
+
 
 	</template>
 

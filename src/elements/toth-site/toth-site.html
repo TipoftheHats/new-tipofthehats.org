@@ -1,12 +1,44 @@
+<link rel="import" href="../../bower_components/app-layout/app-header-layout/app-header-layout.html">
+<link rel="import" href="../../bower_components/app-layout/app-header/app-header.html">
+<link rel="import" href="../../bower_components/app-layout/app-toolbar/app-toolbar.html">
+<link rel="import" href="../../bower_components/app-route/app-location.html">
+<link rel="import" href="../../bower_components/app-route/app-route.html">
+<link rel="import" href="../../bower_components/iron-pages/iron-pages.html">
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
 <link rel="import" href="../../style/main-style.html">
-<link rel="import" href="../../bower_components/polymer/polymer.html">
-<link rel="import" href="../toth-header/toth-header.html">
-<link rel="import" href="../toth-splash/toth-splash.html">
 <link rel="import" href="../toth-footer/toth-footer.html">
+<link rel="import" href="../toth-splash/toth-splash.html">
 
 <dom-module id="toth-site">
 	<template>
 		<style include="main-style">
+			app-header {
+				background-color: #f47425;
+			}
+
+			app-toolbar {
+				max-width: 960px;
+				color: #fff;
+				height: 55px;
+				font-weight: 800;
+				font-size: 24px;
+				margin: 0 auto;
+			}
+
+			app-toolbar a {
+				text-decoration: none;
+				color: inherit;
+			}
+
+			#header-donate {
+				background: white;
+				height: 36px;
+				font-size: 18px;
+				color: black;
+				font-weight: 600;
+				text-transform: none;
+				width: 255px;
+			}
 
 			#intro {
 				font-size: 22px;
@@ -38,35 +70,59 @@
 			}
 		</style>
 
-		<toth-header></toth-header>
-		<toth-totaltrack></toth-totaltrack>
-		<toth-splash></toth-splash>
+		<app-location route="{{route}}"></app-location>
+		<app-route route="{{route}}" pattern="/:page" data="{{pageData}}" tail="{{pageTail}}"></app-route>
 
-		<section id="intro">
-			<h1>Say, what *is* Tip of the Hats?</h1>
-			<div id="campkids">
-				<img src="../../img/campkids.png">
-			</div>
-			<div id="campabout">
-				<p>
-					Tip of the Hats is a charity event hosted and supported by members of the TF2 community. Since 2013, it
-					has raised over $450,000 for Children's Oncology Services, Inc., which offers camps and other
-					educational and excursion programs throughout the year that allow children with cancer to just be kids.
-					With your help, COSI can offer attendance to kids at little to no cost to their families.
-				</p>
-			</div>
-		</section>
+		<app-header-layout>
+			<app-header condenses>
+				<app-toolbar>
+					<a title href="/" style="pointer-events: all;">TIP OF THE HATS 2016</a>
 
-		<section id="stream">
-			<h1>Stream Highlights</h1>
-		</section>
+					<a href="/donate">
+						<paper-button id="header-donate" raised>Donate to Tip of the Hats</paper-button>
+					</a>
+				</app-toolbar>
+			</app-header>
 
-		<section id="cta">
-			<h1>TUNE IN AND SUPPORT TOTH</h1>
-			<span class="cta-info">Stream starts September 16th @ 11 AM CST</span>
-		</section>
+			<toth-totaltrack></toth-totaltrack>
 
-		<toth-footer></toth-footer>
+			<iron-pages selected="{{pageData.page}}" attr-for-selected="data-page">
+				<div data-page="">
+					<toth-splash></toth-splash>
+
+					<section id="intro">
+						<h1>Say, what *is* Tip of the Hats?</h1>
+						<div id="campkids">
+							<img src="../../img/campkids.png">
+						</div>
+						<div id="campabout">
+							<p>
+								Tip of the Hats is a charity event hosted and supported by members of the TF2 community. Since 2013,
+								it has raised over $450,000 for Children's Oncology Services, Inc., which offers camps and other
+								educational and excursion programs throughout the year that allow children with cancer to just be
+								kids.
+								With your help, COSI can offer attendance to kids at little to no cost to their families.
+							</p>
+						</div>
+					</section>
+
+					<section id="stream">
+						<h1>Stream Highlights</h1>
+					</section>
+
+					<section id="cta">
+						<h1>TUNE IN AND SUPPORT TOTH</h1>
+						<span class="cta-info">Stream starts September 16th @ 11 AM CST</span>
+					</section>
+				</div>
+
+				<div data-page="about">About</div>
+
+				<div data-page="donate">Donate</div>
+			</iron-pages>
+
+			<toth-footer></toth-footer>
+		</app-header-layout>
 	</template>
 
 	<script src="toth-site.js"></script>

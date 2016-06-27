@@ -3,6 +3,7 @@
 let lex = require('letsencrypt-express');
 const path = require('path');
 const express = require('express');
+const fallback = require('express-history-api-fallback');
 const favicon = require('serve-favicon');
 const convict = require('convict');
 const HOMEDIR = require('os').homedir();
@@ -30,14 +31,18 @@ console.log(`Starting up ${conf.hostname}...`);
 app.use(require('compression')()); // enable gzip
 app.use(favicon(path.join(__dirname, 'src/favicon.ico')));
 
+let root;
 if (conf.env === 'production') {
 	console.log('Starting in production mode (serving files from "dist")');
-	app.use(express.static('dist'));
+	root = path.join(__dirname, 'dist');
 } else {
 	console.log('Starting in development mode (serving files from "src" & using test certs from Let\'s Encrypt)');
-	app.use(express.static('src'));
+	root = path.join(__dirname, 'src');
 	lex = lex.testing();
 }
+
+app.use(express.static(root));
+app.use(fallback('index.html', {root}));
 
 lex.create({
 	configDir: path.join(`${HOMEDIR}`, '/letsencrypt/etc'),

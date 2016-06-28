@@ -41,15 +41,20 @@
 			}
 
 			#splash-content {
+				@apply(--layout-vertical);
 				@apply(--layout-center-center);
-				@apply(--layout-horizontal);
 				z-index: 2;
+				height: 100%;
+				padding-top: 10px;
+			}
 
+			#splash-content-main {
+				@apply(--layout-horizontal);
 			}
 
 			h1 {
 				font-size: 48px;
-				font-weith: 700;
+				font-weight: 700;
 				margin: 0;
 			}
 
@@ -64,6 +69,7 @@
 				flex-direction: column;
 				align-items: flex-start;
 				text-shadow: 3px 3px 2px rgba(0,0,0,0.3);
+				margin-top: 30px;
 			}
 
 			.splash-byline {
@@ -78,6 +84,7 @@
 				padding: 5px 20px;
 				width: auto;
 				margin-bottom: 0;
+				margin-top: 10px;
 			}
 
 			.splash-twitch {
@@ -86,10 +93,27 @@
 			}
 
 			#splash-footer {
-				@apply(--layout-center-center);
 				@apply(--layout-vertical);
+				@apply(--layout-center-center);
+				width: 100%;
 				z-index: 2;
-				height: 100%;
+				font-size: 18px;
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+
+			.splash-sponsors {
+				padding: 35px 0;
+			}
+
+			.splash-sponsors-logos img {
+				-webkit-filter: drop-shadow(3px 3px 2px rgba(0,0,0,0.3));
+				filter: drop-shadow(3px 3px 2px rgba(0,0,0,0.3));
+				padding-right: 80px;
+			}
+
+			.splash-sponsors-logos img:last-of-type {
+				padding-right: 0;
 			}
 		</style>
 
@@ -101,19 +125,22 @@
 		<div id="overlay"></div>
 		<div id="overlay-dots"></div>
 		<div id="splash-content">
-			<div id="splash-logo">
-				<img src="../../img/toth_logo.svg" height="300">
-			</div>
-			<div id="splash-text">
-				<h1>Tip of the Hats 2016</h1>
-				<span class="splash-byline">A charity marathon benefitting One Step Programs<br>for kids with cancer</span>
-				<h2>September 16-18</h2>
-				<span class="splash-twitch">Live at twitch.tv/tipofthehats</span>
+			<div id="splash-content-main">
+				<div id="splash-logo">
+					<img src="../../img/toth_logo.svg" height="300">
+				</div>
+				<div id="splash-text">
+					<h1>Tip of the Hats 2016</h1>
+					<span class="splash-byline">A charity marathon benefitting One Step Programs<br>for kids with cancer</span>
+					<h2>September 16-18</h2>
+					<span class="splash-twitch">Live at twitch.tv/tipofthehats</span>
+				</div>
 			</div>
 			<div id="splash-footer">
 				<div class="splash-sponsors">With generous support provided by our event sponsors:</div>
 				<div class="splash-sponsors-logos">
 					<img src="img/scraptf.svg" height="50">
+					<img src="img/backpacktf.png">
 				</div>
 			</div>
 		</div>

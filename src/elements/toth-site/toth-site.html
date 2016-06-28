@@ -42,6 +42,13 @@
 
 			#intro {
 				font-size: 22px;
+				@apply(--layout-center-center);
+				@apply(--layout-vertical);
+			}
+
+			#intro-content {
+				display: flex;
+				@apply(--layout-horizontal);
 			}
 
 			#stream {
@@ -64,9 +71,24 @@
 				margin-bottom: 29px;
 			}
 
+			#campkids {
+				padding-right: 30px;
+			}
+
 			#campkids img {
 				box-shadow: 4px 4px 4px #ccc;
 				border: 1px solid #000;
+			}
+
+			#campabout {
+				width: 550px;
+				line-height: 1.5;
+				font-weight: 600;
+			}
+
+			#intro-footer {
+				color: var(--toth-orange);
+				font-size: 26px;
 			}
 		</style>
 
@@ -92,17 +114,22 @@
 
 					<section id="intro">
 						<h1>Say, what *is* Tip of the Hats?</h1>
-						<div id="campkids">
-							<img src="../../img/campkids.png">
+						<div id="intro-content">
+							<div id="campkids">
+								<img src="../../img/campkids.png">
+							</div>
+							<div id="campabout">
+								<p>
+									Tip of the Hats is a charity event hosted and supported by members of the TF2 community. Since 2013,
+									it has raised over $450,000 for Children's Oncology Services, Inc., which offers camps and other
+									educational and excursion programs throughout the year that allow children with cancer to just be
+									kids.
+									With your help, COSI can offer attendance to kids at little to no cost to their families.
+								</p>
+							</div>
 						</div>
-						<div id="campabout">
-							<p>
-								Tip of the Hats is a charity event hosted and supported by members of the TF2 community. Since 2013,
-								it has raised over $450,000 for Children's Oncology Services, Inc., which offers camps and other
-								educational and excursion programs throughout the year that allow children with cancer to just be
-								kids.
-								With your help, COSI can offer attendance to kids at little to no cost to their families.
-							</p>
+						<div id="intro-footer">
+							<p>"Chemotherapy may have cured my cancer, but camp definitely cured my spirit." - Stephanie</p>
 						</div>
 					</section>
 

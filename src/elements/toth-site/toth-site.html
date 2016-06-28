@@ -5,9 +5,13 @@
 <link rel="import" href="../../bower_components/app-route/app-route.html">
 <link rel="import" href="../../bower_components/iron-pages/iron-pages.html">
 <link rel="import" href="../../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../../bower_components/iron-accordions/iron-accordions.html">
 <link rel="import" href="../../style/main-style.html">
 <link rel="import" href="../toth-footer/toth-footer.html">
 <link rel="import" href="../toth-splash/toth-splash.html">
+<link rel="import" href="../toth-event/toth-event.html">
+<link rel="import" href="../toth-talent/toth-talent.html">
+
 
 <dom-module id="toth-site">
 	<template>
@@ -86,9 +90,36 @@
 				font-weight: 600;
 			}
 
+			#campabout p {
+				margin-top: 15px;
+			}
+
 			#intro-footer {
 				color: var(--toth-orange);
 				font-size: 26px;
+			}
+
+			#stream-main {
+				@apply(--layout-horizontal);
+				max-width: 1170px;
+			}
+
+			#stream-events {
+				min-width: 445px;
+				width: 445px;
+				max-width: 445px;
+				margin: 0 20px 0 0;
+			}
+
+			#stream-people {
+				display: flex;
+				flex-flow: row wrap;
+				align-content: flex-start;
+			}
+
+			toth-talent {
+				margin-right: 25px;
+				margin-bottom: 40px;
 			}
 		</style>
 
@@ -135,6 +166,61 @@
 
 					<section id="stream">
 						<h1>Stream Highlights</h1>
+						<div id="stream-main">
+							<div id="stream-events">
+
+								<iron-accordions>
+									<iron-accordion>
+										<h2 header>This is the Header</h2>
+										<p>This is a paragraph</p>
+										<p>And more paragraph here</p>
+									</iron-accordion>
+									<iron-accordion>
+										<h2 header>Compound Header</h2>
+										<p>I don't like writing a documentation</p>
+										<p>YEAH!!!</p>
+									</iron-accordion>
+								<iron-accordions>
+								<toth-event label="6v6 NA vs EU competiTION" info="Lorem Ipsum is simply dummy text of
+								the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+								dummy text ever since the 1500s, when an unknown printer took a galley of type and
+								scrambled it to make a type specimen book."></toth-event>
+								<toth-event label="SURFING EXHIBITIONS" info="Lorem Ipsum is simply dummy text of
+								the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+								dummy text ever since the 1500s, when an unknown printer took a galley of type and
+								scrambled it to make a type specimen book."></toth-event>
+								<toth-event label="ROCKETJUMP RACES" info="Lorem Ipsum is simply dummy text of
+								the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+								dummy text ever since the 1500s, when an unknown printer took a galley of type and
+								scrambled it to make a type specimen book."></toth-event>
+								<toth-event label="1V1 MGE TOURNAMENT" info="Lorem Ipsum is simply dummy text of
+								the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+								dummy text ever since the 1500s, when an unknown printer took a galley of type and
+								scrambled it to make a type specimen book."></toth-event>
+								<toth-event label="ULTIDUO MATCHES" info="Lorem Ipsum is simply dummy text of
+								the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+								dummy text ever since the 1500s, when an unknown printer took a galley of type and
+								scrambled it to make a type specimen book."></toth-event>
+								<toth-event label="PUB MATCHES" info="Lorem Ipsum is simply dummy text of
+								the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+								dummy text ever since the 1500s, when an unknown printer took a galley of type and
+								scrambled it to make a type specimen book."></toth-event>
+							</div>
+							<div id="stream-people">
+								<toth-talent name="lange"></toth-talent>
+								<toth-talent name="lange"></toth-talent>
+								<toth-talent name="lange"></toth-talent>
+								<toth-talent name="lange"></toth-talent>
+								<toth-talent name="lange"></toth-talent>
+								<toth-talent name="lange"></toth-talent>
+								<toth-talent name="lange"></toth-talent>
+								<toth-talent name="lange"></toth-talent>
+								<toth-talent name="lange"></toth-talent>
+								<toth-talent name="lange"></toth-talent>
+								<toth-talent name="lange"></toth-talent>
+								<toth-talent name="lange"></toth-talent>
+							</div>
+						</div>
 					</section>
 
 					<section id="cta">

@@ -1,0 +1,46 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/iron-collapse/iron-collapse.html">
+
+<dom-module id="toth-event">
+	<template>
+		<style>
+			:host {
+				@apply(--layout-vertical);
+				width: 100%;
+				margin-bottom: 12px;
+			}
+
+			#event-label {
+				background-color: #fff;
+				font-size: 29px;
+				text-transform: uppercase;
+				font-weight: 600;
+				width: 100%;
+				cursor: pointer;
+				padding: 8px 0;
+			}
+
+			iron-collapse {
+				background-color: #f1e4dc;
+				width: 100%;
+			}
+
+			.label-text {
+				padding-left: 25px;
+			}
+
+			#event-info {
+				font-size: 18px;
+				font-weight: 600;
+				padding: 15px 20px;
+			}
+		</style>
+
+		<div id="event-label" on-click="toggle"><span class="label-text">{{label}}</span></div>
+		<iron-collapse id="collapse">
+			<div id="event-info">{{info}}</div>
+		</iron-collapse>
+	</template>
+
+	<script src="toth-event.js"></script>
+</dom-module>

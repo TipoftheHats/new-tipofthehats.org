@@ -1,0 +1,51 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="toth-talent">
+	<template>
+		<style>
+			:host {
+
+			}
+
+			#talent-image {
+				position: relative;
+				width: 150px;
+				height: 150px;
+			}
+
+			#talent-image img{
+				border: 1px solid #000;
+				width: 150px;
+				height: 150px;
+			}
+
+			#talent-label {
+				position: absolute;
+				height: 31px;
+				top: 134px;
+				left: 0;
+				background-color: #fff;
+				font-size: 17px;
+				text-transform: uppercase;
+				text-align: center;
+				width: 75%;
+				z-index: 2;
+			}
+
+			.label {
+				line-height: 1.8;
+			}
+		</style>
+
+		<div id="talent-image">
+			<img src="img/{{name}}.jpg">
+			<div id="talent-label">
+				<span class="label">{{name}}</span>
+			</div>
+		</div>
+
+
+	</template>
+
+	<script src="toth-talent.js"></script>
+</dom-module>

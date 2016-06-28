@@ -121,6 +121,37 @@
 				margin-right: 25px;
 				margin-bottom: 40px;
 			}
+
+			iron-accordion {
+				@apply(--layout-vertical);
+				width: 100%;
+				margin-bottom: 12px;
+			}
+
+			.event-label {
+				background-color: #fff;
+				font-size: 29px;
+				text-transform: uppercase;
+				font-weight: 600;
+				width: 100%;
+				cursor: pointer;
+				padding: 8px 0;
+			}
+
+			.event-info-wrapper {
+				background-color: #f1e4dc;
+				width: 100%;
+			}
+
+			.label-text {
+				padding-left: 25px;
+			}
+
+			.event-info {
+				font-size: 18px;
+				font-weight: 600;
+				padding: 15px 20px;
+			}
 		</style>
 
 		<app-location route="{{route}}"></app-location>
@@ -168,43 +199,68 @@
 						<h1>Stream Highlights</h1>
 						<div id="stream-main">
 							<div id="stream-events">
-
-								<iron-accordions>
+								<iron-accordions selected="0">
 									<iron-accordion>
-										<h2 header>This is the Header</h2>
-										<p>This is a paragraph</p>
-										<p>And more paragraph here</p>
+										<div class="event-label" header><span class="label-text">6v6 NA vs EU competiTION</span></div>
+										<div class="event-info-wrapper">
+											<div class="event-info">Lorem Ipsum is simply dummy text of
+												the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+												dummy text ever since the 1500s, when an unknown printer took a galley of type and
+												scrambled it to make a type specimen book.
+											</div>
+										</div>
 									</iron-accordion>
 									<iron-accordion>
-										<h2 header>Compound Header</h2>
-										<p>I don't like writing a documentation</p>
-										<p>YEAH!!!</p>
+										<div class="event-label" header><span class="label-text">6v6 NA vs EU competiTION</span></div>
+										<div class="event-info-wrapper">
+											<div class="event-info">Lorem Ipsum is simply dummy text of
+												the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+												dummy text ever since the 1500s, when an unknown printer took a galley of type and
+												scrambled it to make a type specimen book.
+											</div>
+										</div>
+									</iron-accordion>
+									<iron-accordion>
+										<div class="event-label" header><span class="label-text">6v6 NA vs EU competiTION</span></div>
+										<div class="event-info-wrapper">
+											<div class="event-info">Lorem Ipsum is simply dummy text of
+												the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+												dummy text ever since the 1500s, when an unknown printer took a galley of type and
+												scrambled it to make a type specimen book.
+											</div>
+										</div>
+									</iron-accordion>
+									<iron-accordion>
+										<div class="event-label" header><span class="label-text">6v6 NA vs EU competiTION</span></div>
+										<div class="event-info-wrapper">
+											<div class="event-info">Lorem Ipsum is simply dummy text of
+												the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+												dummy text ever since the 1500s, when an unknown printer took a galley of type and
+												scrambled it to make a type specimen book.
+											</div>
+										</div>
+									</iron-accordion>
+									<iron-accordion>
+										<div class="event-label" header><span class="label-text">6v6 NA vs EU competiTION</span></div>
+										<div class="event-info-wrapper">
+											<div class="event-info">Lorem Ipsum is simply dummy text of
+												the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+												dummy text ever since the 1500s, when an unknown printer took a galley of type and
+												scrambled it to make a type specimen book.
+											</div>
+										</div>
+									</iron-accordion>
+									<iron-accordion>
+										<div class="event-label" header><span class="label-text">6v6 NA vs EU competiTION</span></div>
+										<div class="event-info-wrapper">
+											<div class="event-info">Lorem Ipsum is simply dummy text of
+												the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+												dummy text ever since the 1500s, when an unknown printer took a galley of type and
+												scrambled it to make a type specimen book.
+											</div>
+										</div>
 									</iron-accordion>
 								<iron-accordions>
-								<toth-event label="6v6 NA vs EU competiTION" info="Lorem Ipsum is simply dummy text of
-								the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-								dummy text ever since the 1500s, when an unknown printer took a galley of type and
-								scrambled it to make a type specimen book."></toth-event>
-								<toth-event label="SURFING EXHIBITIONS" info="Lorem Ipsum is simply dummy text of
-								the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-								dummy text ever since the 1500s, when an unknown printer took a galley of type and
-								scrambled it to make a type specimen book."></toth-event>
-								<toth-event label="ROCKETJUMP RACES" info="Lorem Ipsum is simply dummy text of
-								the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-								dummy text ever since the 1500s, when an unknown printer took a galley of type and
-								scrambled it to make a type specimen book."></toth-event>
-								<toth-event label="1V1 MGE TOURNAMENT" info="Lorem Ipsum is simply dummy text of
-								the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-								dummy text ever since the 1500s, when an unknown printer took a galley of type and
-								scrambled it to make a type specimen book."></toth-event>
-								<toth-event label="ULTIDUO MATCHES" info="Lorem Ipsum is simply dummy text of
-								the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-								dummy text ever since the 1500s, when an unknown printer took a galley of type and
-								scrambled it to make a type specimen book."></toth-event>
-								<toth-event label="PUB MATCHES" info="Lorem Ipsum is simply dummy text of
-								the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-								dummy text ever since the 1500s, when an unknown printer took a galley of type and
-								scrambled it to make a type specimen book."></toth-event>
 							</div>
 							<div id="stream-people">
 								<toth-talent name="lange"></toth-talent>

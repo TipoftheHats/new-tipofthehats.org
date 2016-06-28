@@ -21,5 +21,8 @@
     "iron-pages": "PolymerElements/iron-pages#^1.0.7",
     "iron-collapse": "PolymerElements/iron-collapse#^1.1.0",
     "iron-accordions": "alijaya/iron-accordions#^1.1.0"
+  },
+  "resolutions": {
+    "iron-collapse": "^1.1.0"
   }
 }

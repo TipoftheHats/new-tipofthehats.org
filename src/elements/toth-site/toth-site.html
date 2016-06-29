@@ -11,6 +11,7 @@
 <link rel="import" href="../toth-splash/toth-splash.html">
 <link rel="import" href="../toth-event/toth-event.html">
 <link rel="import" href="../toth-talent/toth-talent.html">
+<link rel="import" href="../toth-staff/toth-staff.html">
 
 
 <dom-module id="toth-site">
@@ -152,6 +153,63 @@
 				font-weight: 600;
 				padding: 15px 20px;
 			}
+
+			#staff-display {
+				@apply (--layout-horizontal);
+				@apply (--layout-wrap);
+				@apply (--layout-center-center);
+				max-width: 900px;
+				margin: 0 auto;
+				align-items: flex-start;
+			}
+
+			#masthead {
+				@apply (--layout-center-center);
+				margin-top: 50px;
+			}
+
+			#about-masthead {
+				font-size: 47px;
+				font-weight: 800;
+				margin: 0 auto;
+			}
+
+			#masthead-text {
+				max-width: 800px;
+			}
+
+			#contact-links {
+				@apply(--layout-horizontal);
+				align-items: flex-start;
+			}
+
+			.link-icon {
+				@apply(--layout-vertical);
+				@apply(--layout-center-center);
+				padding: 20px;
+			}
+
+			#contact {
+				font-size: 22px;
+			}
+
+			#contact h1, #about-staff h1 {
+				width: 620px;
+				padding: 0;
+				margin-top: 50px;
+			}
+
+			#contact-emails {
+				text-align: center;
+			}
+
+			#contact i {
+				color: var(--toth-orange);
+			}
+
+			#contact a {
+				text-decoration: none;
+			}
 		</style>
 
 		<app-location route="{{route}}"></app-location>
@@ -285,7 +343,69 @@
 					</section>
 				</div>
 
-				<div data-page="about">About</div>
+				<div data-page="about">
+					<section id="masthead">
+						<div id="about-masthead">Tip of the Hats Staff & Info</div>
+						<div id="masthead-text">In 2013, Sean "seanbud" Stradley started what would become Tip of the Hats
+							on his Twitch stream, when Sean started a raffle into which anyone who provided a donation
+							receipt to a charity would be entered. After the initial success of this mini-event, it was
+							clear that something more could be made from it. The first annual Tip of the Hats was held a
+							few months (and a lot of hard work later), in March of 2013.
+						</div>
+					</section>
+					<section id="contact">
+						<h1>CONTACT US</h1>
+						<div id="contact-links">
+							<div class="link-icon">
+								<a href="http://twitter.com/tipofthehats">
+									<i class="fa fa-twitter fa-4x" aria-hidden="true"></i>
+								</a>
+								<a href="http://twitter.com/tipofthehats">
+									<p>@tipofthehats</p>
+								</a>
+							</div>
+							<div class="link-icon">
+								<a href="http://steamcommunity.com/groups/tipofthehats">
+									<i class="fa fa-steam fa-4x" aria-hidden="true"></i>
+								</a>
+								<a href="http://steamcommunity.com/groups/tipofthehats">
+									<p>steamcommunity.com<br>/groups/TipoftheHats</p>
+								</a>
+							</div>
+							<div class="link-icon">
+								<a href="http://twitch.tv/tipofthehats">
+									<i class="fa fa-twitch fa-4x" aria-hidden="true"></i>
+								</a>
+								<a href="http://twitch.tv/tipofthehats">
+									<p class="contact-icon-label">/tipofthehats</p>
+								</a>
+							</div>
+						</div>
+						<div id="contact-emails">
+							<p>General Email: Staff at tipofthehats dot org<br>Prize/Rewards Support: Prizes at tipofthehats dot org</p>
+						</div>
+					</section>
+					<section id="about-staff">
+						<h1>STAFF</h1>
+						<div id="staff-display">
+							<toth-staff name="Sean Stradley" handle="Seanbud" role="Co-Founder" email="seanbud@tipofthehats.org" twitter="seanbud"></toth-staff>
+							<toth-staff name="Alex Van Camp" handle="Lange" role="Co-Founder" website="alexvan.camp" email="lange@tipofthehats.org" twitter="vancamp"></toth-staff>
+							<toth-staff name="Kurt Russ" handle="truktruk" role="Co-Founder" email="truktruk@tipofthehats.org" twitter="kurtisruss"></toth-staff>
+							<toth-staff name="Jason Baxter" handle="whisker" role="Co-Founder" email="whisker@tipofthehats.org" twitter="rbjaxter"></toth-staff>
+							<toth-staff name="William Hild" handle="Auzzie" role="Organizer" email="auzzie@tipofthehats.org" twitter="auzzietf2"></toth-staff>
+							<toth-staff name="Jim Cox" handle="Enryu" role="Organizer" email="enryu@tipofthehats.org"></toth-staff>
+							<toth-staff name="Alex Pylyshyn" handle="dashnerr" role="Production" email="isodes@gmail.com" twitter="apylyshyn"></toth-staff>
+							<toth-staff name="Anthony Oetzmann" handle="Airon" role="Production" email="aironaudio@gmail.com" twitter="airont"></toth-staff>
+							<toth-staff name="James McDonnell" handle="Admirable" role="Donation Bot Dev" website="jjpm.cd"></toth-staff>
+							<toth-staff name="Rob Middleton" handle="Rob" role="Web Dev and Designer" website="www.middlerob.com"></toth-staff>
+							<toth-staff name="Ness Delacroix" handle="uberchain" role="SFM Artist" website="uberchain.deviantart.com" youtube="uberchainYT" twitter="uberchain"></toth-staff>
+							<toth-staff name="Ryan Heads" handle="Krunkidile" role="SFM Artist" youtube="anangrysockpuppet" twitter="krunkidile"></toth-staff>
+							<toth-staff name="Jacko Brain" handle="omnibombulator" role="TF2 HUD Designer" website="huds.tf" youtube="omnibombulator" twitter="omnibombulator"></toth-staff>
+							<toth-staff name="Jasmine Ho" handle="Jasbutts" role="Emote Artist" website="jasbutts.tumblr.com" twitter="miss_jasbutts"></toth-staff>
+							<toth-staff name="Borja Gutierrez" handle="SirVilleta" role="Logo Designer"></toth-staff>
+						</div>
+					</section>
+				</div>
 
 				<div data-page="donate">Donate</div>
 			</iron-pages>

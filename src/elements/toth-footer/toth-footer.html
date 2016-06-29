@@ -5,12 +5,40 @@
 		<style>
 			:host {
 				@apply(--layout-vertical);
+				@apply(--layout-center-center);
 				width: 100%;
 				background-color: #f47425;
 				border-top: 6px solid #c85f1e;
 			}
-		</style>
 
+			#social-icons {
+				margin-top: 20px;
+			}
+
+			#social-icons img {
+				height: 70px;
+				width: auto;
+				margin: 0 30px;
+			}
+
+			ul, li {
+				display: inline;
+				color: #fff;
+				list-style: none;
+				padding: 0;
+			}
+
+			li {
+				margin: 0 15px;
+				font-size: 24px;
+				font-weight: 600;
+			}
+		</style>
+		<div id="social-icons">
+			<img src="img/steam.png">
+			<img src="img/twitter.png">
+			<img src="img/youtube.png">
+		</div>
 		<ul>
 			<li>Staff/Contact</li>
 			<li>FAQ</li>

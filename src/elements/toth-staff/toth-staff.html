@@ -1,4 +1,5 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
+<script src="https://use.fontawesome.com/82e45f5618.js"></script>
 
 <dom-module id="toth-staff">
 	<template>
@@ -10,32 +11,43 @@
 				--half-picture-size: 101px;
 				width: 100%;
 				margin-bottom: 34px;
-				margin-top: var(--half-picture-size);
 				max-width: 220px;
 			}
 
-			#picture-frame {
-				display: flex;
-				justify-content: space-between;
-				width: 100%;
-				margin-bottom: 4px;
-				margin-left: 20px;
-				margin-right: 20px;
-				border: 1px solid #2a2a2a;
-				box-sizing: border-box;
+			#staff-image {
+				position: relative;
+				width: 175px;
+				height: 175px;
+				border: 1px solid #000;
 			}
 
-			#picture {
-				width: var(--picture-size);
-				height: var(--picture-size);
-				margin-top: var(--half-picture-size);
+			#staff-image img{
+				width: 175px;
+				height: 175px;
+			}
+
+			#staff-label {
+				position: absolute;
+				height: 24px;
+				bottom: 0;
+				left: 0;
+				background-color: #fff;
+				font-size: 17px;
+				font-weight: 700;
+				text-align: center;
+				width: 75%;
+				z-index: 2;
+			}
+
+			.label {
+				line-height: 1.5;
 			}
 
 			#wrapper {
 				@apply(--layout-vertical);
 				@apply(--layout-center);
 				flex-grow: 1;
-				padding: 0 22px;
+				padding: 8px 0;
 			}
 
 			#name {
@@ -48,66 +60,28 @@
 			#role {
 				@apply(--layout-vertical);
 				@apply(--layout-center-center);
-				height: 31px;
+				height: 15px;
 				color: #000;
 				font-size: 16px;
 				font-weight: 300;
-				margin-bottom: 11px;
+				margin-bottom: 7px;
 				margin-top: 1px;
 			}
 
-			.handle {
-				@apply(--layout-flex);
-				height: 24px;
-				min-width: 120px;
-				background-color: white;
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				text-align: center;
+			a {
+				color: var(--toth-orange);
+				text-decoration: none;
+				padding: 0 5px;
 			}
 
-			#bio {
-				color: #434343;
-				font-size: 16px;
-				font-weight: 700;
-			}
 
-			#bio ::content a {
-				color: #434343 !important;
-				text-decoration: underline;
-			}
-
-			#icons {
-				@apply(--layout-horizontal);
-				@apply(--layout-center-center);
-				flex-grow: 1;
-				padding-top: 11px;
-				padding-bottom: 19px;
-			}
-
-			#icons iron-icon {
-				margin: 0 20px;
-				width: 34px;
-				height: 34px;
-			}
-
-			@media (min-width: 920px) {
-				:host {
-					max-width: 420px;
-				}
-
-				#icons {
-					padding-top: 40px;
-					padding-bottom: 34px;
-					align-items: flex-end;
-				}
-			}
 		</style>
 
-		<div id="picture-frame">
-			<img id="picture" src$="[[picture]]">
-			<div class="handle">[[handle]]</div>
+		<div id="staff-image">
+			<img src="img/{{handle}}.jpg">
+			<div id="staff-label">
+				<span class="label">{{handle}}</span>
+			</div>
 		</div>
 
 		<div id="wrapper">
@@ -117,26 +91,26 @@
 
 			<div id="icons">
 				<template is="dom-if" if="[[website]]">
-					<a href="https://twitter.com/[[twitter]]" target="_blank">
-						<iron-icon src="../../img/icons/twitter.svg"></iron-icon>
+					<a href="http://{{website}}" target="_blank">
+						<i class="fa fa-globe fa-lg"></i>
 					</a>
 				</template>
 
 				<template is="dom-if" if="[[email]]">
-					<a href="https://twitter.com/[[twitter]]" target="_blank">
-						<iron-icon src="../../img/icons/email.svg"></iron-icon>
+					<a href="mailto://{{email}}" target="_blank">
+						<i class="fa fa-envelope-o fa-lg"></i>
 					</a>
 				</template>
 
 				<template is="dom-if" if="[[youtube]]">
-					<a href="https://dribbble.com/[[dribbble]]" target="_blank">
-						<iron-icon src="../../img/icons/youtube.svg"></iron-icon>
+					<a href="https://youtube.com/{{youtube}}" target="_blank">
+						<i class="fa fa-youtube fa-lg"></i>
 					</a>
 				</template>
 
 				<template is="dom-if" if="[[twitter]]">
-					<a href="https://twitter.com/[[twitter]]" target="_blank">
-						<iron-icon src="../../img/icons/twitter.svg"></iron-icon>
+					<a href="https://twitter.com/{{twitter}}" target="_blank">
+						<i class="fa fa-twitter fa-lg"></i>
 					</a>
 				</template>
 

@@ -1,0 +1,33 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="toth-donate-total">
+	<template>
+		<style>
+			:host {
+				@apply(--layout-vertical);
+				@apply(--layout-center-center);
+				width: 100%;
+				background-color: #8e8e8e;
+				color: #fff;
+				font-weight: 400;
+				padding: 15px;
+				text-shadow: 3px 3px 2px #444;
+			}
+
+			#total-label {
+				font-size: 24px;
+			}
+
+			#total-amount {
+				font-size: 84px;
+				line-height: 0.85;
+			}
+		</style>
+
+		<div id="total-label">#TotH2016 total raised:</div>
+		<div id="total-amount">$84,209.34</div>
+
+	</template>
+
+	<script src="toth-donate-total.js"></script>
+</dom-module>

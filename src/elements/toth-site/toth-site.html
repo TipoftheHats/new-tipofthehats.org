@@ -109,6 +109,7 @@
 				color: var(--toth-orange);
 				font-size: 26px;
 				text-align: center;
+				padding: 0 20px;
 			}
 
 			#stream-main {
@@ -134,10 +135,12 @@
 				display: flex;
 				flex-flow: row wrap;
 				align-content: flex-start;
+				justify-content: space-around;
+				padding: 0 20px;
 			}
 
 			toth-talent {
-				margin-right: 25px;
+				margin-right: 10px;
 				margin-bottom: 40px;
 			}
 
@@ -307,6 +310,7 @@
 					display: flex;
 					flex-flow: row wrap;
 					align-content: flex-start;
+					padding: 0;
 				}
 
 				#stream-events {
@@ -353,7 +357,10 @@
 
 			<iron-pages selected="{{pageData.page}}" attr-for-selected="data-page">
 				<div data-page="">
-					<toth-splash></toth-splash>
+					<section id="splash">
+						<toth-splash></toth-splash>
+					</section>
+
 
 					<section id="intro">
 						<h1>Say, what *is* Tip of the Hats?</h1>
@@ -543,7 +550,7 @@
 						<div id="donate-cash">
 							<div class="donate-header">Monetary contribution</div>
 							<div class="donate-desc">
-								<p>All cash donations go directly to Children's Oncology Services International.</p>
+								<p>All cash donations go directly to Children's Oncology Services, Inc.</p>
 							</div>
 							<div class="donate-button">
 								<paper-button raised>Donate Money</paper-button>

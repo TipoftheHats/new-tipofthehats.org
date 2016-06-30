@@ -9,7 +9,6 @@
 <link rel="import" href="../../style/main-style.html">
 <link rel="import" href="../toth-footer/toth-footer.html">
 <link rel="import" href="../toth-splash/toth-splash.html">
-<link rel="import" href="../toth-event/toth-event.html">
 <link rel="import" href="../toth-talent/toth-talent.html">
 <link rel="import" href="../toth-staff/toth-staff.html">
 <link rel="import" href="../toth-donate-total/toth-donate-total.html">
@@ -50,11 +49,13 @@
 				font-size: 22px;
 				@apply(--layout-center-center);
 				@apply(--layout-vertical);
+				background-color: #fff;
 			}
 
 			#intro-content {
 				display: flex;
-				@apply(--layout-horizontal);
+				@apply(--layout-vertical);
+				max-width: 100%;
 			}
 
 			#stream {
@@ -70,6 +71,10 @@
 				padding: 5px 100px;
 			}
 
+			#cta {
+				background-color: #fff;
+			}
+
 			.cta-info {
 				font-size: 38px;
 				text-align: center;
@@ -78,18 +83,22 @@
 			}
 
 			#campkids {
-				padding-right: 30px;
+				@apply(--layout-center);
+				padding: 30px;
 			}
 
 			#campkids img {
+				display: flex;
 				box-shadow: 4px 4px 4px #ccc;
 				border: 1px solid #000;
+				width: 75%;
+				margin: 0 auto;
 			}
 
 			#campabout {
-				width: 550px;
 				line-height: 1.5;
 				font-weight: 600;
+				padding: 0 15px;
 			}
 
 			#campabout p {
@@ -99,21 +108,29 @@
 			#intro-footer {
 				color: var(--toth-orange);
 				font-size: 26px;
+				text-align: center;
 			}
 
 			#stream-main {
-				@apply(--layout-horizontal);
+				@apply(--layout-vertical);
 				max-width: 1170px;
 			}
 
+			#stream-main h2 {
+				color: #fff;
+				font-size: 28px;
+				font-weight: 600;
+				text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4);
+				text-align: center;
+				text-transform: uppercase;
+			}
+
 			#stream-events {
-				min-width: 445px;
-				width: 445px;
-				max-width: 445px;
-				margin: 0 20px 0 0;
+				margin: 0 20px;
 			}
 
 			#stream-people {
+				@apply(--layout-center-center);
 				display: flex;
 				flex-flow: row wrap;
 				align-content: flex-start;
@@ -274,6 +291,42 @@
 			.donate-footer {
 				margin-top: 5px;
 			}
+
+			@media (min-width: 1200px) {
+				#stream-main {
+					@apply(--layout-horizontal);
+				}
+
+				#stream-people {
+					display: flex;
+					flex-flow: row wrap;
+					align-content: flex-start;
+				}
+
+				#stream-events {
+					min-width: 445px;
+					width: 445px;
+					max-width: 445px;
+					margin: 0 20px 0 0;
+				}
+
+				#intro-content {
+					@apply(--layout-horizontal);
+				}
+
+				#campabout {
+					width: 550px;
+					padding: 0;
+				}
+
+				#campkids {
+					padding: 0 30px;
+				}
+
+				#campkids img {
+					width: 100%;
+				}
+			}
 		</style>
 
 		<app-location route="{{route}}"></app-location>
@@ -321,9 +374,10 @@
 						<h1>Stream Highlights</h1>
 						<div id="stream-main">
 							<div id="stream-events">
+								<h2>Events and Happenings</h2>
 								<iron-accordions selected="0">
 									<iron-accordion>
-										<div class="event-label" header><span class="label-text">6v6 NA vs EU competiTION</span></div>
+										<div class="event-label" header><div class="label-text">6v6 NA vs EU competiTION</div></div>
 										<div class="event-info-wrapper">
 											<div class="event-info">Lorem Ipsum is simply dummy text of
 												the printing and typesetting industry. Lorem Ipsum has been the industry's standard
@@ -333,7 +387,7 @@
 										</div>
 									</iron-accordion>
 									<iron-accordion>
-										<div class="event-label" header><span class="label-text">6v6 NA vs EU competiTION</span></div>
+										<div class="event-label" header><div class="label-text">Surfing Exhibitions</div></div>
 										<div class="event-info-wrapper">
 											<div class="event-info">Lorem Ipsum is simply dummy text of
 												the printing and typesetting industry. Lorem Ipsum has been the industry's standard
@@ -343,7 +397,7 @@
 										</div>
 									</iron-accordion>
 									<iron-accordion>
-										<div class="event-label" header><span class="label-text">6v6 NA vs EU competiTION</span></div>
+										<div class="event-label" header><div class="label-text">Rocketjump Races</div></div>
 										<div class="event-info-wrapper">
 											<div class="event-info">Lorem Ipsum is simply dummy text of
 												the printing and typesetting industry. Lorem Ipsum has been the industry's standard
@@ -353,7 +407,7 @@
 										</div>
 									</iron-accordion>
 									<iron-accordion>
-										<div class="event-label" header><span class="label-text">6v6 NA vs EU competiTION</span></div>
+										<div class="event-label" header><div class="label-text">1v1 MGE Tournament</div></div>
 										<div class="event-info-wrapper">
 											<div class="event-info">Lorem Ipsum is simply dummy text of
 												the printing and typesetting industry. Lorem Ipsum has been the industry's standard
@@ -363,7 +417,7 @@
 										</div>
 									</iron-accordion>
 									<iron-accordion>
-										<div class="event-label" header><span class="label-text">6v6 NA vs EU competiTION</span></div>
+										<div class="event-label" header><div class="label-text">Ultiduo Matches</div></div>
 										<div class="event-info-wrapper">
 											<div class="event-info">Lorem Ipsum is simply dummy text of
 												the printing and typesetting industry. Lorem Ipsum has been the industry's standard
@@ -373,7 +427,7 @@
 										</div>
 									</iron-accordion>
 									<iron-accordion>
-										<div class="event-label" header><span class="label-text">6v6 NA vs EU competiTION</span></div>
+										<div class="event-label" header><div class="label-text">Pub Games</div></div>
 										<div class="event-info-wrapper">
 											<div class="event-info">Lorem Ipsum is simply dummy text of
 												the printing and typesetting industry. Lorem Ipsum has been the industry's standard
@@ -384,19 +438,22 @@
 									</iron-accordion>
 								<iron-accordions>
 							</div>
-							<div id="stream-people">
-								<toth-talent name="lange"></toth-talent>
-								<toth-talent name="lange"></toth-talent>
-								<toth-talent name="lange"></toth-talent>
-								<toth-talent name="lange"></toth-talent>
-								<toth-talent name="lange"></toth-talent>
-								<toth-talent name="lange"></toth-talent>
-								<toth-talent name="lange"></toth-talent>
-								<toth-talent name="lange"></toth-talent>
-								<toth-talent name="lange"></toth-talent>
-								<toth-talent name="lange"></toth-talent>
-								<toth-talent name="lange"></toth-talent>
-								<toth-talent name="lange"></toth-talent>
+							<div id="stream-people-frame">
+								<h2>Scheduled In-Studio Appearances</h2>
+								<div id="stream-people">
+									<toth-talent name="lange"></toth-talent>
+									<toth-talent name="lange"></toth-talent>
+									<toth-talent name="lange"></toth-talent>
+									<toth-talent name="lange"></toth-talent>
+									<toth-talent name="lange"></toth-talent>
+									<toth-talent name="lange"></toth-talent>
+									<toth-talent name="lange"></toth-talent>
+									<toth-talent name="lange"></toth-talent>
+									<toth-talent name="lange"></toth-talent>
+									<toth-talent name="lange"></toth-talent>
+									<toth-talent name="lange"></toth-talent>
+									<toth-talent name="lange"></toth-talent>
+								</div>
 							</div>
 						</div>
 					</section>

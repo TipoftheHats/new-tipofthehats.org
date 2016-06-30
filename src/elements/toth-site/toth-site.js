@@ -2,6 +2,14 @@
 	'use strict';
 
 	Polymer({
-		is: 'toth-site'
+		is: 'toth-site',
+
+		properties: {
+			wideLayout: {
+				type: Boolean,
+				value: false,
+				observer: 'onLayoutChange'
+			}
+		}
 	});
 })();

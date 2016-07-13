@@ -13,7 +13,6 @@
 <link rel="import" href="../toth-staff/toth-staff.html">
 <link rel="import" href="../toth-donate-total/toth-donate-total.html">
 
-
 <dom-module id="toth-site">
 	<template>
 		<style include="main-style">
@@ -219,7 +218,8 @@
 				font-size: 22px;
 			}
 
-			#contact h1, #about-staff h1 {
+			#contact h1,
+			#about-staff h1 {
 				width: 620px;
 				padding: 0;
 				margin-top: 50px;
@@ -247,7 +247,8 @@
 
 			}
 
-			#donate-cash, #donate-items {
+			#donate-cash,
+			#donate-items {
 				box-sizing: border-box;
 				padding: 32px;
 				@apply(--layout-vertical);
@@ -361,7 +362,6 @@
 						<toth-splash></toth-splash>
 					</section>
 
-
 					<section id="intro">
 						<h1>Say, what *is* Tip of the Hats?</h1>
 						<div id="intro-content">
@@ -370,16 +370,21 @@
 							</div>
 							<div id="campabout">
 								<p>
-									Tip of the Hats is a charity event hosted and supported by members of the TF2 community. Since 2013,
-									it has raised over $450,000 for Children's Oncology Services, Inc., which offers camps and other
-									educational and excursion programs throughout the year that allow children with cancer to just be
+									Tip of the Hats is a charity event hosted and supported by members of the TF2
+									community. Since 2013,
+									it has raised over $450,000 for Children's Oncology Services, Inc., which offers
+									camps and other
+									educational and excursion programs throughout the year that allow children with
+									cancer to just be
 									kids.
-									With your help, COSI can offer attendance to kids at little to no cost to their families.
+									With your help, COSI can offer attendance to kids at little to no cost to their
+									families.
 								</p>
 							</div>
 						</div>
 						<div id="intro-footer">
-							<p>"Chemotherapy may have cured my cancer, but camp definitely cured my spirit." - Stephanie</p>
+							<p>"Chemotherapy may have cured my cancer, but camp definitely cured my spirit." -
+								Stephanie</p>
 						</div>
 					</section>
 
@@ -389,67 +394,17 @@
 							<div id="stream-events">
 								<h2>Events and Happenings</h2>
 								<iron-accordions selected="0">
-									<iron-accordion>
-										<div class="event-label" header><div class="label-text">6v6 NA vs EU competiTION</div></div>
-										<div class="event-info-wrapper">
-											<div class="event-info">Lorem Ipsum is simply dummy text of
-												the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-												dummy text ever since the 1500s, when an unknown printer took a galley of type and
-												scrambled it to make a type specimen book.
+									<template is="dom-repeat" items="[[events]]" as="event">
+										<iron-accordion>
+											<div class="event-label" header>
+												<div class="label-text">[[event.label]]</div>
 											</div>
-										</div>
-									</iron-accordion>
-									<iron-accordion>
-										<div class="event-label" header><div class="label-text">Surfing Exhibitions</div></div>
-										<div class="event-info-wrapper">
-											<div class="event-info">Lorem Ipsum is simply dummy text of
-												the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-												dummy text ever since the 1500s, when an unknown printer took a galley of type and
-												scrambled it to make a type specimen book.
+											<div class="event-info-wrapper">
+												<div class="event-info">[[event.info]]</div>
 											</div>
-										</div>
-									</iron-accordion>
-									<iron-accordion>
-										<div class="event-label" header><div class="label-text">Rocketjump Races</div></div>
-										<div class="event-info-wrapper">
-											<div class="event-info">Lorem Ipsum is simply dummy text of
-												the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-												dummy text ever since the 1500s, when an unknown printer took a galley of type and
-												scrambled it to make a type specimen book.
-											</div>
-										</div>
-									</iron-accordion>
-									<iron-accordion>
-										<div class="event-label" header><div class="label-text">1v1 MGE Tournament</div></div>
-										<div class="event-info-wrapper">
-											<div class="event-info">Lorem Ipsum is simply dummy text of
-												the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-												dummy text ever since the 1500s, when an unknown printer took a galley of type and
-												scrambled it to make a type specimen book.
-											</div>
-										</div>
-									</iron-accordion>
-									<iron-accordion>
-										<div class="event-label" header><div class="label-text">Ultiduo Matches</div></div>
-										<div class="event-info-wrapper">
-											<div class="event-info">Lorem Ipsum is simply dummy text of
-												the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-												dummy text ever since the 1500s, when an unknown printer took a galley of type and
-												scrambled it to make a type specimen book.
-											</div>
-										</div>
-									</iron-accordion>
-									<iron-accordion>
-										<div class="event-label" header><div class="label-text">Pub Games</div></div>
-										<div class="event-info-wrapper">
-											<div class="event-info">Lorem Ipsum is simply dummy text of
-												the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-												dummy text ever since the 1500s, when an unknown printer took a galley of type and
-												scrambled it to make a type specimen book.
-											</div>
-										</div>
-									</iron-accordion>
-								<iron-accordions>
+										</iron-accordion>
+									</template>
+								</iron-accordions>
 							</div>
 							<div id="stream-people-frame">
 								<h2>Scheduled In-Studio Appearances</h2>
@@ -480,11 +435,12 @@
 				<div data-page="about">
 					<section class="masthead">
 						<div class="masthead-main">Tip of the Hats Staff & Info</div>
-						<div id="masthead-text">In 2013, Sean "seanbud" Stradley started what would become Tip of the Hats
-							on his Twitch stream, when Sean started a raffle into which anyone who provided a donation
-							receipt to a charity would be entered. After the initial success of this mini-event, it was
-							clear that something more could be made from it. The first annual Tip of the Hats was held a
-							few months (and a lot of hard work later), in March of 2013.
+						<div id="masthead-text">
+							In 2013, Sean "seanbud" Stradley started what would become Tip of the
+							Hats on his Twitch stream, when Sean started a raffle into which anyone who provided a
+							donation receipt to a charity would be entered. After the initial success of this
+							mini-event, it was clear that something more could be made from it. The first annual Tip of
+							the Hats was held a few months (and a lot of hard work later), in March of 2013.
 						</div>
 					</section>
 					<section id="contact">
@@ -516,27 +472,21 @@
 							</div>
 						</div>
 						<div id="contact-emails">
-							<p>General Email: Staff at tipofthehats dot org<br>Prize/Rewards Support: Prizes at tipofthehats dot org</p>
+							<p>
+								General Email: staff@tipofthehats.org
+								<br>
+								Prize/Rewards Support: prizes@tipofthehats.org
+							</p>
 						</div>
 					</section>
 					<section id="about-staff">
 						<h1>STAFF</h1>
 						<div id="staff-display">
-							<toth-staff name="Sean Stradley" handle="Seanbud" role="Co-Founder" email="seanbud@tipofthehats.org" twitter="seanbud"></toth-staff>
-							<toth-staff name="Alex Van Camp" handle="Lange" role="Co-Founder" website="alexvan.camp" email="lange@tipofthehats.org" twitter="vancamp"></toth-staff>
-							<toth-staff name="Kurt Russ" handle="truktruk" role="Co-Founder" email="truktruk@tipofthehats.org" twitter="kurtisruss"></toth-staff>
-							<toth-staff name="Jason Baxter" handle="whisker" role="Co-Founder" email="whisker@tipofthehats.org" twitter="rbjaxter"></toth-staff>
-							<toth-staff name="William Hild" handle="Auzzie" role="Organizer" email="auzzie@tipofthehats.org" twitter="auzzietf2"></toth-staff>
-							<toth-staff name="Jim Cox" handle="Enryu" role="Organizer" email="enryu@tipofthehats.org"></toth-staff>
-							<toth-staff name="Alex Pylyshyn" handle="dashnerr" role="Production" email="isodes@gmail.com" twitter="apylyshyn"></toth-staff>
-							<toth-staff name="Anthony Oetzmann" handle="Airon" role="Production" email="aironaudio@gmail.com" twitter="airont"></toth-staff>
-							<toth-staff name="James McDonnell" handle="Admirable" role="Donation Bot Dev" website="jjpm.cd"></toth-staff>
-							<toth-staff name="Rob Middleton" handle="Rob" role="Web Dev and Designer" website="www.middlerob.com"></toth-staff>
-							<toth-staff name="Ness Delacroix" handle="uberchain" role="SFM Artist" website="uberchain.deviantart.com" youtube="uberchainYT" twitter="uberchain"></toth-staff>
-							<toth-staff name="Ryan Heads" handle="Krunkidile" role="SFM Artist" youtube="anangrysockpuppet" twitter="krunkidile"></toth-staff>
-							<toth-staff name="Jacko Brain" handle="omnibombulator" role="TF2 HUD Designer" website="huds.tf" youtube="omnibombulator" twitter="omnibombulator"></toth-staff>
-							<toth-staff name="Jasmine Ho" handle="Jasbutts" role="Emote Artist" website="jasbutts.tumblr.com" twitter="miss_jasbutts"></toth-staff>
-							<toth-staff name="Borja Gutierrez" handle="SirVilleta" role="Logo Designer"></toth-staff>
+							<template is="dom-repeat" items="[[staff]]">
+								<toth-staff name="[[item.name]]" handle="[[item.handle]]" role="[[item.role]]"
+											email="[[item.email]]" twitter="[[item.twitter]]"
+											websote="[[item.website]]" youtube="[[item.youtube]]"></toth-staff>
+							</template>
 						</div>
 					</section>
 				</div>
@@ -560,7 +510,8 @@
 						<div id="donate-items">
 							<div class="donate-header">TF2 item contribution</div>
 							<div class="donate-desc">
-								<p>You can give items from a pre-selected list of TF2 items through scrap.tf, the value of which will be added to our donation total.</p>
+								<p>You can give items from a pre-selected list of TF2 items through scrap.tf, the value
+									of which will be added to our donation total.</p>
 								<p>(see the list of approved items here)</p>
 							</div>
 							<div class="donate-button">
@@ -580,15 +531,16 @@
 
 						<h1>Lexicon</h1>
 						<h2>Virtual Items</h2>
-						<p>Includes items from any of the following games: Team Fortress 2 (TF2), Counter Strike: Global Offensive (CS:GO).</p>
+						<p>Includes items from any of the following games: Team Fortress 2 (TF2), Counter Strike: Global
+							Offensive (CS:GO).</p>
 						<h2>Donation Bots</h2>
 						<p>Automated Steam accounts that collect and organize donated virtual items.</p>
 						<h2>Tracker / Donation Tracker</h2>
 						<p>Used to donate money along with view prizes, donors, and donations.
-						<br>http://tracker.tipofthehats.org/</p>
+							<br>http://tracker.tipofthehats.org/</p>
 						<h2>Itemlog</h2>
 						<p>Lists all virtual items donated to Tip of the Hats through our Donation Bots.<br>
-						http://tipofthehats.org/itemlog</p>
+							http://tipofthehats.org/itemlog</p>
 						<h1>Privacy</h1>
 						<p>Tip of the Hats only collects personal information you willingly provide through the donation
 							tracker. This information is not sold or otherwise given to any outside parties. Any
@@ -596,48 +548,65 @@
 							purposes. If you would like your information hidden or removed, please email
 							staff@tipofthehats.org.</p>
 						<h1>Transparency</h1>
-						<p>All financial donations go directly to Children's Oncology Services, Inc. The associated email of the charity that receives the donations is lkunkel@onestepcamp.org.</p>
+						<p>All financial donations go directly to Children's Oncology Services, Inc. The associated
+							email of the charity that receives the donations is lkunkel@onestepcamp.org.</p>
 						<h1>Donations</h1>
 						<h2>Virtual Item Donations</h2>
-						<p>Virtual Item Donations do not count towards raffle entries or the Team Fortress 2 "Tipped Lid" or "Jaunty Pin" items. There will be no refunds for Virtual Item Donations.</p>
+						<p>Virtual Item Donations do not count towards raffle entries or the Team Fortress 2 "Tipped
+							Lid" or "Jaunty Pin" items. There will be no refunds for Virtual Item Donations.</p>
 						<h2>Donation Bots</h2>
-						<p>When making item donations, please ensure you're trading with an official bot. To do this:</p>
-						<ul><li>Join the Tip of the Hats Steam group http://steamcommunity.com/groups/TipoftheHats</li>
-						<li>While in a trade, check for the following message at the top of the trade window: "Moderator in your group: Tip of the Hats"</li></ul>
+						<p>When making item donations, please ensure you're trading with an official bot. To do
+							this:</p>
+						<ul>
+							<li>Join the Tip of the Hats Steam group http://steamcommunity.com/groups/TipoftheHats</li>
+							<li>While in a trade, check for the following message at the top of the trade window:
+								"Moderator in your group: Tip of the Hats"
+							</li>
+						</ul>
 						<h2>Monetary Donations</h2>
 						<p>... are tax-deductible.
-						... cannot be refunded.
-						... do not count towards the Team Fortress 2 in-game "Tipped Lid" item.
-						Donations that go towards raffles/prizes are only valid through our donation tracker.
-						PayPal is currently the only means of donating.
-						If you would like your name removed from our donation tracker, please email staff@tipofthehats.org with your relevant donation information.</p>
+							... cannot be refunded.
+							... do not count towards the Team Fortress 2 in-game "Tipped Lid" item.
+							Donations that go towards raffles/prizes are only valid through our donation tracker.
+							PayPal is currently the only means of donating.
+							If you would like your name removed from our donation tracker, please email
+							staff@tipofthehats.org with your relevant donation information.</p>
 						<h1>Prizes</h1>
 						<h2>Preface</h2>
-						<p>Prizes (both virtual items and real-life merchandise) will be delivered within the weeks following
+						<p>Prizes (both virtual items and real-life merchandise) will be delivered within the weeks
+							following
 							the event. Given the scale of the event, this process will take time. You will be notified
 							via email if you've won an item within the first week following Tip of the Hats.</p>
 						<h2>Unclaimed Prizes</h2>
 						<p>An email is dispatched to anyone who wins a prize within the week following the event.
-						If you do not respond to this email within a week of the email's date, a new winner be rolled.</p>
+							If you do not respond to this email within a week of the email's date, a new winner be
+							rolled.</p>
 						<h2>Timed Raffles</h2>
-						<p>Timed Raffles are item raffles that take place solely during an event. They are random and not
-						announced prior. Winner(s) are rolled and emailed shortly after the timed raffle closes.
-						If you do not respond to this email within a week of the email's date, a new winner be rolled.</p>
+						<p>Timed Raffles are item raffles that take place solely during an event. They are random and
+							not
+							announced prior. Winner(s) are rolled and emailed shortly after the timed raffle closes.
+							If you do not respond to this email within a week of the email's date, a new winner be
+							rolled.</p>
 						<h2>Auctions</h2>
-						<p>Auctions are held in the Tip of the Hats Steam group (http://steamcommunity.com/groups/TipoftheHats/discussions)
-						and require a Steam account to participate. Auctions will only contain virtual prizes from Team Fortress 2.
-						Bidding information and rules are provided in each auction found in the Steam group.</p>
+						<p>Auctions are held in the Tip of the Hats Steam group
+							(http://steamcommunity.com/groups/TipoftheHats/discussions)
+							and require a Steam account to participate. Auctions will only contain virtual prizes from
+							Team Fortress 2.
+							Bidding information and rules are provided in each auction found in the Steam group.</p>
 						<h2>The Jaunty Pin</h2>
 						<p>The Jaunty Pin is awarded to anyone who:</p>
-							<ul><li>donates $20 USD (cumulatively) through our event</li>
-								<li>provides a valid SteamID64</li></ul>
+						<ul>
+							<li>donates $20 USD (cumulatively) through our event</li>
+							<li>provides a valid SteamID64</li>
+						</ul>
 						<p>Pins will be distributed to applicable donors following the event. If you feel you should
 							have received a pin, please email prizes@tipofthehats.org with the email you donated under
 							along with your SteamID64. To find your SteamID64, please use https://steamid.io/lookup</p>
 						<h2>The Tipped Lid</h2>
 						<p>The Tipped Lid can be purchased in the Team Fortress 2 shop for $4.99 USD.
-						All revenue (excluding the cut Valve takes) goes directly to Children's Oncology Services, Inc.
-						The Tipped Lid is not received by donating with items or money to Tip of the Hats.</p>
+							All revenue (excluding the cut Valve takes) goes directly to Children's Oncology Services,
+							Inc.
+							The Tipped Lid is not received by donating with items or money to Tip of the Hats.</p>
 					</section>
 				</div>
 			</iron-pages>

@@ -1,4 +1,4 @@
-<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/iron-image/iron-image.html">
 
 <dom-module id="toth-footer">
 	<template>
@@ -12,45 +12,51 @@
 			}
 
 			#social-icons {
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
 				margin-top: 20px;
+				max-width: 460px;
+				margin-left: 16px;
+				margin-right: 16px;
+				box-sizing: border-box;
+				width: 100%;
 			}
 
 			#social-icons img {
-				height: 70px;
-				width: auto;
-				margin: 0 30px;
+				max-height: 70px;
 			}
 
-			ul, li {
-				display: inline;
-				color: #fff;
-				list-style: none;
-				padding: 0;
-			}
-
-			li {
-				margin: 0 15px;
-				font-size: 24px;
-				font-weight: 600;
+			#footer-links {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				margin-top: 16px;
+				margin-bottom: 16px;
 			}
 
 			a {
+				margin: 0 15px;
+				font-size: 24px;
+				font-weight: 600;
 				color: #fff;
 				text-decoration: none;
+				white-space: nowrap;
 			}
 		</style>
+
 		<div id="social-icons">
 			<img src="img/steam.png">
 			<img src="img/twitter.png">
 			<img src="img/youtube.png">
 		</div>
-		<ul>
-			<li><a href="/about">Staff/Contact</a></li>
-			<li><a href="/terms">Terms & Conditions</a></li>
-			<li><a href="/donate">Donate</a></li>
-		</ul>
+
+		<div id="footer-links">
+			<a href="/about">Staff/Contact</a>
+			<a href="/terms">Terms & Conditions</a>
+			<a href="/donate">Donate</a>
+		</div>
 	</template>
 
 	<script src="toth-footer.js"></script>
 </dom-module>
-

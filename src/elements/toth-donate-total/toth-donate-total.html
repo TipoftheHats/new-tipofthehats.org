@@ -1,4 +1,4 @@
-<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/iron-ajax/iron-ajax.html">
 
 <dom-module id="toth-donate-total">
 	<template>
@@ -31,8 +31,16 @@
 			}
 		</style>
 
+		<iron-ajax
+				id="totalAjax"
+				auto
+				url="/stats"
+				handle-as="json"
+				last-response="{{stats}}"
+				debounce-duration="300"></iron-ajax>
+
 		<div id="total-label">#TotH2016 total raised:</div>
-		<div id="total-amount">$84,209.34</div>
+		<div id="total-amount">[[stats.total]]</div>
 	</template>
 
 	<script src="toth-donate-total.js"></script>

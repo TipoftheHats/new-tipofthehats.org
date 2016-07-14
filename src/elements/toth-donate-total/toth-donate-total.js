@@ -5,7 +5,12 @@
 		is: 'toth-donate-total',
 
 		properties: {
-			amount: String
+			ready() {
+				// Update the total every minute.
+				setInterval(() => {
+					this.$.totalAjax.generateRequest();
+				}, 60 * 1000);
+			}
 		}
 	});
 })();

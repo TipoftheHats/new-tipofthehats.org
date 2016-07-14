@@ -42,6 +42,13 @@ if (conf.env === 'production') {
 }
 
 app.use(express.static(root));
+
+app.get('/stats', (req, res) => {
+	res.json({
+		total: '$12,345.67'
+	});
+});
+
 app.use(fallback('index.html', {root}));
 
 lex.create({
@@ -60,3 +67,6 @@ lex.create({
 	const protocol = ('requestCert' in this) ? 'https' : 'http';
 	console.log(`Listening at ${protocol}://${conf.hostname}:${this.address().port}`);
 });
+
+// Get the latest donation total once a minute.
+

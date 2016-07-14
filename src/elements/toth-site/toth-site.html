@@ -16,6 +16,10 @@
 <dom-module id="toth-site">
 	<template>
 		<style include="main-style">
+			:host {
+				display: block;
+			}
+
 			app-header {
 				background-color: #f47425;
 			}
@@ -67,7 +71,7 @@
 				background-color: #fff;
 				color: var(--toth-orange);
 				text-transform: uppercase;
-				padding: 5px 100px;
+				padding: 5px 70px;
 			}
 
 			#cta {
@@ -139,7 +143,6 @@
 			}
 
 			toth-talent {
-				margin-right: 10px;
 				margin-bottom: 40px;
 			}
 
@@ -354,7 +357,8 @@
 				</app-toolbar>
 			</app-header>
 
-			<toth-donate-total></toth-donate-total>
+			<!-- Disabled until we start accepting donations -->
+			<!--<toth-donate-total></toth-donate-total>-->
 
 			<iron-pages selected="{{pageData.page}}" attr-for-selected="data-page">
 				<div data-page="">

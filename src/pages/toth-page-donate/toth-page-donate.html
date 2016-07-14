@@ -1,0 +1,103 @@
+<link rel="import" href="../../style/toth-shared-style.html">
+
+<dom-module id="toth-page-donate">
+	<template>
+		<style include="toth-shared-style">
+			#donate-text {
+				font-size: 32px;
+				font-weight: 800;
+			}
+
+			#donate-methods {
+				@apply(--layout-horizontal);
+				@apply(--layout-center-center);
+				align-items: stretch;
+				margin: 60px auto;
+				justify-content: space-between;
+				max-width: 875px;
+			}
+
+			#donate-cash,
+			#donate-items {
+				box-sizing: border-box;
+				padding: 32px;
+				@apply(--layout-vertical);
+				@apply(--layout-center-center);
+				background-color: #ffcfb1;
+				width: 424px;
+				border-radius: 15px;
+				text-align: center;
+			}
+
+			.donate-header {
+				@apply(--layout-center-center);
+				font-size: 32px;
+				font-weight: 800;
+				flex: 1;
+			}
+
+			.donate-desc {
+				@apply(--layout-center-center);
+				flex: 2;
+			}
+
+			.donate-desc p {
+				font-size: 18px;
+				font-weight: 800;
+			}
+
+			.donate-button {
+				flex: 1;
+			}
+
+			.donate-button paper-button {
+				width: 100%;
+				background-color: var(--toth-orange);
+				font-size: 37px;
+				font-weight: 800;
+				color: #fff;
+				margin: 0;
+				border-radius: 15px;
+				padding-top: 25px;
+				padding-bottom: 25px;
+			}
+
+			.donate-footer {
+				margin-top: 5px;
+			}
+		</style>
+
+		<section class="masthead">
+			<div class="masthead-main">Thank you for donating to One Step programs!</div>
+			<div id="donate-text">Please choose one of the following options:</div>
+		</section>
+
+		<section id="donate-methods">
+			<div id="donate-cash">
+				<div class="donate-header">Monetary contribution</div>
+				<div class="donate-desc">
+					<p>All cash donations go directly to Children's Oncology Services, Inc.</p>
+				</div>
+				<div class="donate-button">
+					<paper-button raised>Donate Money</paper-button>
+				</div>
+				<div class="donate-footer">this link will take you to paypal.com</div>
+			</div>
+
+			<div id="donate-items">
+				<div class="donate-header">TF2 item contribution</div>
+				<div class="donate-desc">
+					<p>You can give items from a pre-selected list of TF2 items through scrap.tf, the value
+						of which will be added to our donation total.</p>
+					<p>(see the list of approved items here)</p>
+				</div>
+				<div class="donate-button">
+					<paper-button raised>Donate Items</paper-button>
+				</div>
+				<div class="donate-footer">this link will take you to scrap.tf's website</div>
+			</div>
+		</section>
+	</template>
+
+	<script src="toth-page-donate.js"></script>
+</dom-module>

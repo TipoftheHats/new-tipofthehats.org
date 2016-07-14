@@ -1,0 +1,123 @@
+<link rel="import" href="../../style/toth-shared-style.html">
+
+<dom-module id="toth-page-about">
+	<template>
+		<style include="toth-shared-style">
+			:host {
+				display: block;
+			}
+
+			#masthead-text {
+				max-width: 800px;
+			}
+
+			#contact-links {
+				@apply(--layout-horizontal);
+				align-items: flex-start;
+			}
+
+			.link-icon {
+				@apply(--layout-vertical);
+				@apply(--layout-center-center);
+				padding: 20px;
+			}
+
+			#contact {
+				font-size: 22px;
+			}
+
+			#contact h1,
+			#about-staff h1 {
+				width: 620px;
+				padding: 0;
+				margin-top: 50px;
+			}
+
+			#contact-emails {
+				text-align: center;
+			}
+
+			#contact i {
+				color: var(--toth-orange);
+			}
+
+			#contact a {
+				text-decoration: none;
+			}
+
+			#staff-display {
+				@apply (--layout-horizontal);
+				@apply (--layout-wrap);
+				@apply (--layout-center-center);
+				max-width: 900px;
+				margin: 0 auto;
+				align-items: flex-start;
+			}
+		</style>
+
+		<section class="masthead">
+			<div class="masthead-main">Tip of the Hats Staff & Info</div>
+			<div id="masthead-text">
+				In 2013, Sean "seanbud" Stradley started what would become Tip of the
+				Hats on his Twitch stream, when Sean started a raffle into which anyone who provided a
+				donation receipt to a charity would be entered. After the initial success of this
+				mini-event, it was clear that something more could be made from it. The first annual Tip of
+				the Hats was held a few months (and a lot of hard work later), in March of 2013.
+			</div>
+		</section>
+
+		<section id="contact">
+			<h1>CONTACT US</h1>
+			<div id="contact-links">
+				<div class="link-icon">
+					<a href="http://twitter.com/tipofthehats">
+						<i class="fa fa-twitter fa-4x" aria-hidden="true"></i>
+					</a>
+					<a href="http://twitter.com/tipofthehats">
+						<p>@tipofthehats</p>
+					</a>
+				</div>
+				<div class="link-icon">
+					<a href="http://steamcommunity.com/groups/tipofthehats">
+						<i class="fa fa-steam fa-4x" aria-hidden="true"></i>
+					</a>
+					<a href="http://steamcommunity.com/groups/tipofthehats">
+						<p>steamcommunity.com<br>/groups/TipoftheHats</p>
+					</a>
+				</div>
+				<div class="link-icon">
+					<a href="http://twitch.tv/tipofthehats">
+						<i class="fa fa-twitch fa-4x" aria-hidden="true"></i>
+					</a>
+					<a href="http://twitch.tv/tipofthehats">
+						<p class="contact-icon-label">/tipofthehats</p>
+					</a>
+				</div>
+			</div>
+			<div id="contact-emails">
+				<p>
+					General Email: staff@tipofthehats.org
+					<br>
+					Prize/Rewards Support: prizes@tipofthehats.org
+				</p>
+			</div>
+		</section>
+
+		<section id="about-staff">
+			<h1>STAFF</h1>
+			<div id="staff-display">
+				<template is="dom-repeat" items="[[staff]]">
+					<toth-staff name="[[item.name]]"
+								handle="[[item.handle]]"
+								role="[[item.role]]"
+								email="[[item.email]]"
+								twitter="[[item.twitter]]"
+								website="[[item.website]]"
+								youtube="[[item.youtube]]"></toth-staff>
+				</template>
+			</div>
+		</section>
+	</template>
+
+	<script src="toth-page-about.js"></script>
+</dom-module>

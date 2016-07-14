@@ -1,0 +1,253 @@
+<link rel="import" href="../../bower_components/iron-accordions/iron-accordions.html">
+<link rel="import" href="../../style/toth-shared-style.html">
+
+<dom-module id="toth-page-index">
+	<template>
+		<style include="toth-shared-style">
+			:host {
+				display: block;
+			}
+
+			#intro {
+				font-size: 22px;
+				@apply(--layout-center-center);
+				@apply(--layout-vertical);
+				background-color: #fff;
+			}
+
+			#intro-content {
+				display: flex;
+				@apply(--layout-vertical);
+				max-width: 100%;
+			}
+
+			#stream {
+				background-image: url('../../img/orange-dots.jpg');
+				width: 100%;
+				min-height: 500px;
+			}
+
+			#stream h1 {
+				background-color: #fff;
+				color: var(--toth-orange);
+				text-transform: uppercase;
+				padding: 5px 70px;
+			}
+
+			#cta {
+				background-color: #fff;
+			}
+
+			.cta-info {
+				font-size: 38px;
+				text-align: center;
+				font-weight: 600;
+				margin-bottom: 29px;
+			}
+
+			#campkids {
+				@apply(--layout-center);
+				padding: 30px;
+			}
+
+			#campkids img {
+				display: flex;
+				box-shadow: 4px 4px 4px #ccc;
+				border: 1px solid #000;
+				width: 75%;
+				margin: 0 auto;
+			}
+
+			#campabout {
+				line-height: 1.5;
+				font-weight: 600;
+				padding: 0 15px;
+			}
+
+			#campabout p {
+				margin-top: 15px;
+			}
+
+			#intro-footer {
+				color: var(--toth-orange);
+				font-size: 26px;
+				text-align: center;
+				padding: 0 20px;
+			}
+
+			#stream-main {
+				@apply(--layout-vertical);
+				max-width: 1170px;
+			}
+
+			#stream-main h2 {
+				color: #fff;
+				font-size: 28px;
+				font-weight: 600;
+				text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4);
+				text-align: center;
+				text-transform: uppercase;
+			}
+
+			#stream-events {
+				margin: 0 20px;
+			}
+
+			#stream-people {
+				@apply(--layout-center-center);
+				display: flex;
+				flex-flow: row wrap;
+				align-content: flex-start;
+				justify-content: space-around;
+				padding: 0 20px;
+			}
+
+			toth-talent {
+				margin-bottom: 40px;
+			}
+
+			iron-accordion {
+				@apply(--layout-vertical);
+				width: 100%;
+				margin-bottom: 12px;
+			}
+
+			.event-label {
+				background-color: #fff;
+				font-size: 29px;
+				text-transform: uppercase;
+				font-weight: 600;
+				width: 100%;
+				cursor: pointer;
+				padding: 8px 0;
+			}
+
+			.event-info-wrapper {
+				background-color: #f1e4dc;
+				width: 100%;
+			}
+
+			.label-text {
+				padding-left: 25px;
+			}
+
+			.event-info {
+				font-size: 18px;
+				font-weight: 600;
+				padding: 15px 20px;
+			}
+
+			@media (min-width: 1200px) {
+				#stream-main {
+					@apply(--layout-horizontal);
+				}
+
+				#stream-people {
+					display: flex;
+					flex-flow: row wrap;
+					align-content: flex-start;
+					padding: 0;
+				}
+
+				#stream-events {
+					min-width: 445px;
+					width: 445px;
+					max-width: 445px;
+					margin: 0 20px 0 0;
+				}
+
+				#intro-content {
+					@apply(--layout-horizontal);
+				}
+
+				#campabout {
+					width: 550px;
+					padding: 0;
+				}
+
+				#campkids {
+					padding: 0 30px;
+				}
+
+				#campkids img {
+					width: 100%;
+				}
+			}
+		</style>
+
+		<section id="splash">
+			<toth-splash></toth-splash>
+		</section>
+
+		<section id="intro">
+			<h1>Say, what *is* Tip of the Hats?</h1>
+			<div id="intro-content">
+				<div id="campkids">
+					<img src="../../img/campkids.png">
+				</div>
+				<div id="campabout">
+					<p>
+						Tip of the Hats is a charity event hosted and supported by members of the TF2
+						community. Since 2013,
+						it has raised over $450,000 for Children's Oncology Services, Inc., which offers
+						camps and other
+						educational and excursion programs throughout the year that allow children with
+						cancer to just be
+						kids.
+						With your help, COSI can offer attendance to kids at little to no cost to their
+						families.
+					</p>
+				</div>
+			</div>
+			<div id="intro-footer">
+				<p>"Chemotherapy may have cured my cancer, but camp definitely cured my spirit." -
+					Stephanie</p>
+			</div>
+		</section>
+
+		<section id="stream">
+			<h1>Stream Highlights</h1>
+			<div id="stream-main">
+				<div id="stream-events">
+					<h2>Events and Happenings</h2>
+					<iron-accordions selected="0">
+						<template is="dom-repeat" items="[[events]]" as="event">
+							<iron-accordion>
+								<div class="event-label" header>
+									<div class="label-text">[[event.label]]</div>
+								</div>
+								<div class="event-info-wrapper">
+									<div class="event-info">[[event.info]]</div>
+								</div>
+							</iron-accordion>
+						</template>
+					</iron-accordions>
+				</div>
+				<div id="stream-people-frame">
+					<h2>Scheduled In-Studio Appearances</h2>
+					<div id="stream-people">
+						<toth-talent name="lange"></toth-talent>
+						<toth-talent name="lange"></toth-talent>
+						<toth-talent name="lange"></toth-talent>
+						<toth-talent name="lange"></toth-talent>
+						<toth-talent name="lange"></toth-talent>
+						<toth-talent name="lange"></toth-talent>
+						<toth-talent name="lange"></toth-talent>
+						<toth-talent name="lange"></toth-talent>
+						<toth-talent name="lange"></toth-talent>
+						<toth-talent name="lange"></toth-talent>
+						<toth-talent name="lange"></toth-talent>
+						<toth-talent name="lange"></toth-talent>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="cta">
+			<h1>TUNE IN AND SUPPORT TOTH</h1>
+			<span class="cta-info">Stream starts September 16th @ 11 AM CST</span>
+		</section>
+	</template>
+
+	<script src="toth-page-index.js"></script>
+</dom-module>

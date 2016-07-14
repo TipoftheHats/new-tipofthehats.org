@@ -1,0 +1,41 @@
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
+
+<dom-module id="toth-shared-style">
+	<template>
+		<style>
+			p {
+				font-weight: 600;
+			}
+
+			a {
+				color: #000;
+			}
+
+			h1 {
+				text-align: center;
+				background-color: var(--toth-orange);
+				padding: 5px 60px;
+				color: white;
+				font-size: 36px;
+				font-weight: 600;
+				margin: 29px 0;
+			}
+
+			section {
+				@apply(--layout-vertical);
+				@apply(--layout-center-center);
+			}
+
+			.masthead {
+				@apply (--layout-center-center);
+				margin-top: 50px;
+			}
+
+			.masthead-main {
+				font-size: 47px;
+				font-weight: 800;
+				margin: 0 auto;
+			}
+		</style>
+	</template>
+</dom-module>

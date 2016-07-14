@@ -102,6 +102,25 @@
 				padding: 0 20px;
 			}
 
+			.event-label {
+				background-color: #fff;
+				font-size: 29px;
+				text-transform: uppercase;
+				font-weight: 600;
+				width: 100%;
+				cursor: pointer;
+				padding: 8px 0 8px 25px;
+			}
+
+			.event-info {
+				background-color: #f1e4dc;
+				width: 100%;
+				font-size: 18px;
+				font-weight: 600;
+				padding: 15px 20px;
+				box-sizing: border-box;
+			}
+
 			toth-talent {
 				margin-bottom: 40px;
 			}
@@ -112,41 +131,26 @@
 				margin-bottom: 12px;
 			}
 
-			.event-label {
-				background-color: #fff;
-				font-size: 29px;
-				text-transform: uppercase;
-				font-weight: 600;
-				width: 100%;
-				cursor: pointer;
-				padding: 8px 0;
-			}
-
-			.event-info-wrapper {
-				background-color: #f1e4dc;
-				width: 100%;
-			}
-
-			.label-text {
-				padding-left: 25px;
-			}
-
-			.event-info {
-				font-size: 18px;
-				font-weight: 600;
-				padding: 15px 20px;
-			}
-
 			@media (min-width: 1200px) {
-				#stream-main {
+				#intro-content {
 					@apply(--layout-horizontal);
 				}
 
-				#stream-people {
-					display: flex;
-					flex-flow: row wrap;
-					align-content: flex-start;
+				#campkids {
+					padding: 0 30px;
+				}
+
+				#campkids img {
+					width: 100%;
+				}
+
+				#campabout {
+					width: 550px;
 					padding: 0;
+				}
+
+				#stream-main {
+					@apply(--layout-horizontal);
 				}
 
 				#stream-events {
@@ -156,21 +160,11 @@
 					margin: 0 20px 0 0;
 				}
 
-				#intro-content {
-					@apply(--layout-horizontal);
-				}
-
-				#campabout {
-					width: 550px;
+				#stream-people {
+					display: flex;
+					flex-flow: row wrap;
+					align-content: flex-start;
 					padding: 0;
-				}
-
-				#campkids {
-					padding: 0 30px;
-				}
-
-				#campkids img {
-					width: 100%;
 				}
 			}
 		</style>
@@ -185,24 +179,19 @@
 				<div id="campkids">
 					<img src="../../img/campkids.png">
 				</div>
-				<div id="campabout">
-					<p>
-						Tip of the Hats is a charity event hosted and supported by members of the TF2
-						community. Since 2013,
-						it has raised over $450,000 for Children's Oncology Services, Inc., which offers
-						camps and other
-						educational and excursion programs throughout the year that allow children with
-						cancer to just be
-						kids.
-						With your help, COSI can offer attendance to kids at little to no cost to their
-						families.
-					</p>
-				</div>
+
+				<p id="campabout">
+					Tip of the Hats is a charity event hosted and supported by members of the TF2
+					community. Since 2013, it has raised over $450,000 for Children's Oncology Services, Inc.,
+					which offers camps and other educational and excursion programs throughout the year that allow
+					children with cancer to just be kids. With your help, COSI can offer attendance to kids at little
+					to no cost to their families.
+				</p>
 			</div>
-			<div id="intro-footer">
-				<p>"Chemotherapy may have cured my cancer, but camp definitely cured my spirit." -
-					Stephanie</p>
-			</div>
+
+			<p id="intro-footer">
+				"Chemotherapy may have cured my cancer, but camp definitely cured my spirit." - Stephanie
+			</p>
 		</section>
 
 		<section id="stream">
@@ -213,16 +202,13 @@
 					<iron-accordions selected="0">
 						<template is="dom-repeat" items="[[events]]" as="event">
 							<iron-accordion>
-								<div class="event-label" header>
-									<div class="label-text">[[event.label]]</div>
-								</div>
-								<div class="event-info-wrapper">
-									<div class="event-info">[[event.info]]</div>
-								</div>
+								<div class="event-label" header>[[event.label]]</div>
+								<div class="event-info">[[event.info]]</div>
 							</iron-accordion>
 						</template>
 					</iron-accordions>
 				</div>
+
 				<div id="stream-people-frame">
 					<h2>Scheduled In-Studio Appearances</h2>
 					<div id="stream-people">

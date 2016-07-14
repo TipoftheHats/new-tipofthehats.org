@@ -75,10 +75,11 @@
 				margin-top: 30px;
 			}
 
-			.splash-byline {
+			#splash-byline {
 				font-size: 21px;
 				font-weight: 700;
 				text-align: center;
+				max-width: 450px;
 			}
 
 			h2 {
@@ -146,7 +147,7 @@
 					@apply(--layout-horizontal);
 				}
 
-				.splash-byline {
+				#splash-byline {
 					text-align: left;
 				}
 
@@ -176,11 +177,14 @@
 				</div>
 				<div id="splash-text">
 					<h1>Tip of the Hats 2016</h1>
-					<span class="splash-byline">A charity marathon benefitting One Step Camp programs for kids with cancer</span>
+					<span id="splash-byline">
+						A charity marathon benefitting One Step Camp programs for kids with cancer
+					</span>
 					<h2>September 16-18</h2>
-					<span class="splash-twitch"><a href="http://twitch.tv/tipofthehats">Live at twitch.tv/tipofthehats</a></span>
+					<a href="http://twitch.tv/tipofthehats" class="splash-twitch">Live at twitch.tv/tipofthehats</a>
 				</div>
 			</div>
+
 			<div id="splash-footer">
 				<div class="splash-sponsors">With generous support provided by our event sponsors:</div>
 				<div class="splash-sponsors-logos">

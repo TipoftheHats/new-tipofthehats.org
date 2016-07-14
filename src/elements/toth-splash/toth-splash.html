@@ -22,6 +22,11 @@
 				overflow: hidden;
 			}
 
+			a {
+				color: #fff;
+				text-decoration: none;
+			}
+
 			#overlay {
 				position: absolute;
 				width: 100%;
@@ -110,15 +115,13 @@
 				filter: drop-shadow(3px 3px 2px rgba(0,0,0,0.3));
 			}
 
-			.splash-sponsors-logos img {
+			.splash-sponsors-logos a {
 				padding-bottom: 40px;
 			}
 
-			.splash-sponsors-logos img:last-of-type {
+			.splash-sponsors-logos a:last-of-type {
 				padding-bottom: 0;
 			}
-
-
 
 			.splash-sponsors-logos {
 				@apply(--layout-vertical);
@@ -147,12 +150,12 @@
 					text-align: left;
 				}
 
-				.splash-sponsors-logos img {
+				.splash-sponsors-logos a {
 					padding-right: 80px;
 					padding-bottom: 0;
 				}
 
-				.splash-sponsors-logos img:last-of-type {
+				.splash-sponsors-logos a:last-of-type {
 					padding-right: 0;
 				}
 
@@ -173,14 +176,14 @@
 					<h1>Tip of the Hats 2016</h1>
 					<span class="splash-byline">A charity marathon benefitting One Step Programs<br>for kids with cancer</span>
 					<h2>September 16-18</h2>
-					<span class="splash-twitch">Live at twitch.tv/tipofthehats</span>
+					<span class="splash-twitch"><a href="http://twitch.tv/tipofthehats">Live at twitch.tv/tipofthehats</a></span>
 				</div>
 			</div>
 			<div id="splash-footer">
 				<div class="splash-sponsors">With generous support provided by our event sponsors:</div>
 				<div class="splash-sponsors-logos">
-					<img src="img/scraptf.svg" height="50">
-					<img src="img/backpacktf.png">
+					<a href="http://scrap.tf"><img src="img/scraptf.svg" height="50"></a>
+					<a href="http://backpack.tf"><img src="img/backpacktf.png"></a>
 				</div>
 			</div>
 		</div>

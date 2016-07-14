@@ -73,14 +73,12 @@
 				text-decoration: none;
 				padding: 0 5px;
 			}
-
-
 		</style>
 
 		<div id="staff-image">
-			<img src="img/{{handle}}.jpg">
+			<img src="/img/portraits/[[handle]].jpg">
 			<div id="staff-label">
-				<span class="label">{{handle}}</span>
+				<span class="label">[[handle]]</span>
 			</div>
 		</div>
 
@@ -91,29 +89,28 @@
 
 			<div id="icons">
 				<template is="dom-if" if="[[website]]">
-					<a href="http://{{website}}" target="_blank">
+					<a href="http://[[website]]" target="_blank">
 						<i class="fa fa-globe fa-lg"></i>
 					</a>
 				</template>
 
 				<template is="dom-if" if="[[email]]">
-					<a href="mailto://{{email}}" target="_blank">
+					<a href="mailto://[[email]]" target="_blank">
 						<i class="fa fa-envelope-o fa-lg"></i>
 					</a>
 				</template>
 
 				<template is="dom-if" if="[[youtube]]">
-					<a href="https://youtube.com/{{youtube}}" target="_blank">
+					<a href="https://youtube.com/[[youtube]]" target="_blank">
 						<i class="fa fa-youtube fa-lg"></i>
 					</a>
 				</template>
 
 				<template is="dom-if" if="[[twitter]]">
-					<a href="https://twitter.com/{{twitter}}" target="_blank">
+					<a href="https://twitter.com/[[twitter]]" target="_blank">
 						<i class="fa fa-twitter fa-lg"></i>
 					</a>
 				</template>
-
 			</div>
 		</div>
 	</template>

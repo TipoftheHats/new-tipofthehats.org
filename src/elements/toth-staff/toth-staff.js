@@ -13,6 +13,10 @@
 			twitter: String,
 			youtube: String,
 			website: String
+		},
+
+		calcImageSrc(handle) {
+			return `/img/portraits/${handle.toLowerCase()}.jpg`;
 		}
 	});
 })();

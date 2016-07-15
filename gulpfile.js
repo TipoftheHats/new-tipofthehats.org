@@ -3,7 +3,7 @@
 const gulp = require('gulp');
 const vulcanize = require('gulp-vulcanize');
 const crisper = require('gulp-crisper');
-const uglify = require('gulp-uglify');
+//const uglify = require('gulp-uglify');
 const pump = require('pump');
 const htmlmin = require('gulp-htmlmin');
 const imagemin = require('gulp-imagemin');
@@ -31,6 +31,7 @@ gulp.task('vulcanize', ['clean'], () =>
 gulp.task('minify', ['minify:js', 'minify:html', 'minify:images']);
 
 gulp.task('minify:js', ['vulcanize'], cb => {
+	return;
 	pump([
 		gulp.src('dist/**/*.js'),
 		uglify(),

@@ -15,7 +15,7 @@
 			website: String
 		},
 
-		calcImageSrc(handle) {
+		calcImgSrc(handle) {
 			return `/img/portraits/${handle.toLowerCase()}.jpg`;
 		}
 	});

@@ -5,11 +5,6 @@
 		is: 'toth-site',
 
 		properties: {
-			wideLayout: {
-				type: Boolean,
-				value: false,
-				observer: 'onLayoutChange'
-			},
 			events: {
 				type: Array,
 				readOnly: true,

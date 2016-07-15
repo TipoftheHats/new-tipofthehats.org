@@ -48,7 +48,8 @@
 				@apply(--layout-vertical);
 				@apply(--layout-center-center);
 				z-index: 2;
-				padding: 70px 0;
+				padding: 70px 16px;
+				text-align: center;
 			}
 
 			#splash-content-main {
@@ -73,6 +74,10 @@
 				align-items: center;
 				text-shadow: 3px 3px 2px rgba(0,0,0,0.3);
 				margin-top: 30px;
+			}
+
+			#splash-text h1 {
+				display: none; /* hide on narrow layouts, shows only on wide layouts */
 			}
 
 			#splash-byline {
@@ -130,12 +135,20 @@
 			}
 
 			@media (min-width: 1000px) {
+				#splash-content {
+					text-align: inherit;
+				}
+
 				#splash-content-main {
 					@apply(--layout-horizontal);
 				}
 
 				#splash-text {
 					align-items: flex-start;
+				}
+
+				#splash-text h1 {
+					display: block;
 				}
 
 				#splash-logo img {

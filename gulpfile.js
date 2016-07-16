@@ -3,7 +3,8 @@
 const gulp = require('gulp');
 const vulcanize = require('gulp-vulcanize');
 const crisper = require('gulp-crisper');
-//const uglify = require('gulp-uglify');
+const uglify = require('gulp-uglify');
+const babel = require('gulp-babel');
 const pump = require('pump');
 const htmlmin = require('gulp-htmlmin');
 const imagemin = require('gulp-imagemin');
@@ -31,9 +32,12 @@ gulp.task('vulcanize', ['clean'], () =>
 gulp.task('minify', ['minify:js', 'minify:html', 'minify:images']);
 
 gulp.task('minify:js', ['vulcanize'], cb => {
-	return;
 	pump([
 		gulp.src('dist/**/*.js'),
+		// Uglify can't handle ES2016, so we have to run it through babel first :/
+		babel({
+			presets: ['es2015']
+		}),
 		uglify(),
 		gulp.dest('dist')
 	], cb);

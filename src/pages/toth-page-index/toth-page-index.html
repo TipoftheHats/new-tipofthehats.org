@@ -213,18 +213,9 @@
 				<div id="stream-people-frame">
 					<h2>Scheduled In-Studio Appearances</h2>
 					<div id="stream-people">
-						<toth-talent name="lange"></toth-talent>
-						<toth-talent name="lange"></toth-talent>
-						<toth-talent name="lange"></toth-talent>
-						<toth-talent name="lange"></toth-talent>
-						<toth-talent name="lange"></toth-talent>
-						<toth-talent name="lange"></toth-talent>
-						<toth-talent name="lange"></toth-talent>
-						<toth-talent name="lange"></toth-talent>
-						<toth-talent name="lange"></toth-talent>
-						<toth-talent name="lange"></toth-talent>
-						<toth-talent name="lange"></toth-talent>
-						<toth-talent name="lange"></toth-talent>
+						<template is="dom-repeat" items="[[talent]]">
+							<toth-talent name="[[item.name]]"></toth-talent>
+						</template>
 					</div>
 				</div>
 			</div>

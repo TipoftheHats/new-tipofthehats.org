@@ -22,8 +22,8 @@ app.use(favicon(path.join(__dirname, 'src/favicon.ico')));
 
 let root;
 if (conf.env === 'production') {
-	console.log('Starting in production mode (serving files from "dist")');
-	root = path.join(__dirname, 'dist');
+	console.log('Starting in production mode (serving files from "build")');
+	root = path.join(__dirname, 'build');
 } else {
 	console.log('Starting in development mode (serving files from "src")');
 	root = path.join(__dirname, 'src');

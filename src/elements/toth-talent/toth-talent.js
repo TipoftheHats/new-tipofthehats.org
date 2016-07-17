@@ -6,6 +6,10 @@
 
 		properties: {
 			name: String
+		},
+
+		calcImgSrc(handle) {
+			return `/img/portraits/${handle.toLowerCase()}.jpg`;
 		}
 	});
 })();

@@ -1,4 +1,5 @@
 <link rel="import" href="../../bower_components/iron-accordions/iron-accordions.html">
+<link rel="import" href="../../bower_components/iron-media-query/iron-media-query.html">
 <link rel="import" href="../../style/toth-shared-style.html">
 
 <dom-module id="toth-page-index">
@@ -124,6 +125,7 @@
 
 			toth-talent {
 				margin-bottom: 40px;
+				margin-right: 8px;
 			}
 
 			iron-accordion {
@@ -132,7 +134,7 @@
 				margin-bottom: 12px;
 			}
 
-			@media (min-width: 1200px) {
+			@media (min-width: 1050px) {
 				#intro-content {
 					@apply(--layout-horizontal);
 				}
@@ -147,7 +149,7 @@
 
 				#campabout {
 					width: 550px;
-					padding: 0;
+					padding-left: 0;
 				}
 
 				#stream-main {
@@ -158,7 +160,7 @@
 					min-width: 445px;
 					width: 445px;
 					max-width: 445px;
-					margin: 0 20px 0 0;
+					margin: 0 20px 0 16px;
 				}
 
 				#stream-people {
@@ -169,6 +171,8 @@
 				}
 			}
 		</style>
+
+		<iron-media-query query="(min-width: 1050px)" query-matches="{{wideLayout}}"></iron-media-query>
 
 		<section id="splash">
 			<toth-splash></toth-splash>
@@ -202,7 +206,7 @@
 					<h2>Events and Happenings</h2>
 					<iron-accordions selected="0">
 						<template is="dom-repeat" items="[[events]]" as="event">
-							<iron-accordion>
+							<iron-accordion opened="[[!wideLayout]]">
 								<div class="event-label" header>[[event.label]]</div>
 								<div class="event-info">[[event.info]]</div>
 							</iron-accordion>
@@ -210,7 +214,7 @@
 					</iron-accordions>
 				</div>
 
-				<div id="stream-people-frame">
+				<div>
 					<h2>Scheduled In-Studio Appearances</h2>
 					<div id="stream-people">
 						<template is="dom-repeat" items="[[talent]]">

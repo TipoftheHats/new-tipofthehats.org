@@ -123,8 +123,8 @@
 			}
 		},
 
-		routeChanged(e) {
-			window.scrollTo(0,0);
+		routeChanged() {
+			window.scrollTo(0, 0);
 		}
 	});
 })();

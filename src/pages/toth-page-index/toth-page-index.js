@@ -56,7 +56,7 @@
 				return;
 			}
 
-			e.target.closest('iron-accordion')._originalOnHeaderTap(e);
+			e.target.parentNode.parentNode._originalOnHeaderTap(e);
 		}
 	});
 })();

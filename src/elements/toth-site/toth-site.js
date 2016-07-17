@@ -121,6 +121,10 @@
 					role: 'Logo Designer'
 				}]
 			}
+		},
+
+		routeChanged(e) {
+			window.scrollTo(0,0);
 		}
 	});
 })();

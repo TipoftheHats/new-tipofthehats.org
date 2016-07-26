@@ -1,58 +1,65 @@
 'use strict';
 
 const gulp = require('gulp');
+const pump = require('pump');
 const vulcanize = require('gulp-vulcanize');
 const crisper = require('gulp-crisper');
 const uglify = require('gulp-uglify');
 const babel = require('gulp-babel');
-const pump = require('pump');
+const sourcemaps = require('gulp-sourcemaps');
 const htmlmin = require('gulp-htmlmin');
 const imagemin = require('gulp-imagemin');
 const clean = require('gulp-clean');
 
-gulp.task('clean', () =>
-	gulp.src('dist', {read: false})
-		.pipe(clean())
-);
+gulp.task('clean', cb => {
+	pump([
+		gulp.src('build', {read: false}),
+		clean()
+	], cb);
+});
 
-gulp.task('vulcanize', ['clean'], () =>
-	gulp.src('src/index.html')
-		.pipe(vulcanize({
+gulp.task('vulcanize', ['clean'], cb => {
+	pump([
+		gulp.src('src/index.html'),
+		vulcanize({
 			abspath: '',
 			excludes: [],
 			stripExcludes: false,
 			inlineScripts: true,
 			inlineCss: true,
 			stripComments: true
-		}))
-		.pipe(crisper(/* default options are fine! */))
-		.pipe(gulp.dest('dist'))
-);
+		}),
+		crisper(/* default options are fine! */),
+		gulp.dest('build')
+	], cb);
+});
 
 gulp.task('minify', ['minify:js', 'minify:html', 'minify:images']);
 
 gulp.task('minify:js', ['vulcanize'], cb => {
 	pump([
-		gulp.src('dist/**/*.js'),
+		gulp.src('build/**/*.js'),
+		sourcemaps.init(),
 		// Uglify can't handle ES2016, so we have to run it through babel first :/
 		babel({
 			presets: ['es2015']
 		}),
 		uglify(),
-		gulp.dest('dist')
+		sourcemaps.write('./'),
+		gulp.dest('build')
 	], cb);
 });
 
 gulp.task('minify:html', ['vulcanize'], cb => {
 	pump([
-		gulp.src('dist/**/*.html'),
+		gulp.src('build/**/*.html'),
 		htmlmin({
 			collapseWhitespace: true,
 			removeComments: true,
 			minifyCSS: true,
 			minifyJS: true
 		}),
-		gulp.dest('dist')
+		gulp.dest('build')
 	], cb);
 });
 
@@ -63,7 +70,7 @@ gulp.task('minify:images', ['clean'], cb => {
 			progressive: true,
 			svgoPlugins: [{removeViewBox: false}]
 		}),
-		gulp.dest('dist')
+		gulp.dest('build')
 	], cb);
 });
 

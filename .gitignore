@@ -3,6 +3,10 @@ bower_components
 dist
 build
 
-# Overrides global .gitignore
-!/.idea
+/.idea/compiler.xml
+/.idea/encodings.xml
+/.idea/copyright/profiles_settings.xml
 /.idea/workspace.xml
+.DS_Store
+.idea/shelf/
+

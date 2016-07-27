@@ -34,6 +34,8 @@
 					name: 'Getawhale'
 				}, {
 					name: 'slin'
+				}, {
+					name: 'Sideshow'
 				}]
 			}
 		},

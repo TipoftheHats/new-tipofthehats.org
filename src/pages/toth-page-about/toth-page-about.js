@@ -47,7 +47,7 @@
 				}, {
 					name: 'Alex Pylyshyn',
 					handle: 'dashner',
-					role: 'Production',
+					role: 'Producer',
 					email: 'isodes@gmail.com',
 					twitter: 'apylyshyn'
 				}, {

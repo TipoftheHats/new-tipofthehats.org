@@ -77,7 +77,7 @@
 					name: 'Jasmine Ho',
 					handle: 'Jasbutts',
 					role: 'Artist',
-					website: 'jasbutts.tumblr.com',
+					website: 'http://jasbutts.com/',
 					twitter: 'miss_jasbutts'
 				}, {
 					name: 'Jacko Brain',

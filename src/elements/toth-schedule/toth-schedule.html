@@ -1,0 +1,60 @@
+<link rel="import" href="../../bower_components/paper-tabs/paper-tabs.html">
+<link rel="import" href="../../bower_components/paper-tabs/paper-tab.html">
+
+<dom-module id="toth-schedule">
+	<template>
+		<style>
+			:host {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+
+			paper-tabs {
+				--paper-tabs-selection-bar: {
+					z-index: 1;
+					background-color: #f57c2e;
+				}
+			}
+
+			paper-tab {
+				background-color: #f68e56;
+				color: white;
+
+				--paper-tab: {
+					margin: 0 8px;
+				};
+
+				--paper-tab-content: {
+					font-size: 29px;
+					/* Disable bolding when focused */
+					font-weight: 600!important;
+				}
+			}
+
+			paper-tab.iron-selected {
+				background-color: white;
+				color: black;
+			}
+
+			#calendar {
+				background-color: white;
+				width: 100%;
+				padding: 48px;
+			}
+		</style>
+
+		<paper-tabs selected="0">
+			<paper-tab>SEPTEMBER 16</paper-tab>
+			<paper-tab>SEPTEMBER 17</paper-tab>
+			<paper-tab>SEPTEMBER 18</paper-tab>
+		</paper-tabs>
+
+		<div id="calendar">
+
+		</div>
+	</template>
+
+	<script src="toth-schedule.js"></script>
+</dom-module>

@@ -27,5 +27,6 @@
   },
   "resolutions": {
     "iron-collapse": "^1.1.0"
+    "paper-tabs": "PolymerElements/paper-tabs#^1.6.2"
   }
 }

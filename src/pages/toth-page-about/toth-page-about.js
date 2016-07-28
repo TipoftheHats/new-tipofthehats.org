@@ -101,6 +101,12 @@
 					name: 'Borja Gutierrez',
 					handle: 'SirVilleta',
 					role: 'Logo Designer'
+				}, {
+					name: 'Chris Hanel',
+					handle: 'chrishanel',
+					role: 'Website/Broadcast Designer',
+					website: 'http://supportclass.net/',
+					twitter: 'chrishanel'
 				}]
 			}
 		}

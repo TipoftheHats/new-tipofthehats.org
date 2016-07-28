@@ -37,7 +37,7 @@ app.get('/stats', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-	res.sendFile('index.html');
+	res.sendFile('index.html', {root});
 });
 
 app.listen(80, () => {

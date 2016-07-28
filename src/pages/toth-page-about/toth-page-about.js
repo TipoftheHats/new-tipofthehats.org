@@ -55,7 +55,8 @@
 					handle: 'Airon',
 					role: 'Audio Engineer',
 					email: 'aironaudio@gmail.com',
-					twitter: 'airont'
+					twitter: 'airont',
+					website: 'http://aironaudio.weebly.com/'
 				}, {
 					name: 'Ness Delacroix',
 					handle: 'uberchain',

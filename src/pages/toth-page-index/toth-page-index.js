@@ -15,27 +15,29 @@
 				}, {
 					name: 'truktruk'
 				}, {
-					name: 'Whisker'
-				}, {
-					name: 'seanbud'
-				}, {
-					name: 'Admirable'
+					name: 'ma3la'
 				}, {
 					name: 'Krunkidile'
 				}, {
-					name: 'uberchain'
-				}, {
 					name: 'mala'
-				}, {
-					name: 'ma3la'
-				}, {
-					name: 'cbear'
 				}, {
 					name: 'Getawhale'
 				}, {
-					name: 'slin'
+					name: 'uberchain'
 				}, {
 					name: 'Sideshow'
+				}, {
+					name: 'Whisker'
+				}, {
+					name: 'cbear'
+				}, {
+					name: 'seanbud'
+				}, {
+					name: 'slin'
+				}, {
+					name: 'Admirable'
+				}, {
+					name: 'and more!'
 				}]
 			}
 		},

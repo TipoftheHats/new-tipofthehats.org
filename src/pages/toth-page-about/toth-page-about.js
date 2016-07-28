@@ -12,7 +12,7 @@
 					name: 'Alex Van Camp',
 					handle: 'Lange',
 					role: 'Executive Producer',
-					website: 'alexvan.camp',
+					website: 'http://alexvan.camp',
 					email: 'lange@tipofthehats.org',
 					twitter: 'vancamp'
 				}, {
@@ -61,7 +61,7 @@
 					name: 'Ness Delacroix',
 					handle: 'uberchain',
 					role: 'SFM Artist',
-					website: 'uberchain.deviantart.com',
+					website: 'http://uberchain.deviantart.com',
 					twitter: 'uberchain',
 					youtube: 'uberchainYT'
 				}, {
@@ -84,7 +84,7 @@
 					name: 'Jacko Brain',
 					handle: 'omnibombulator',
 					role: 'TF2 HUD Designer',
-					website: 'huds.tf',
+					website: 'http://huds.tf',
 					twitter: 'omnibombulator',
 					youtube: 'omnibombulator'
 				}, {

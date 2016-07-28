@@ -2,7 +2,6 @@
 
 const path = require('path');
 const express = require('express');
-const fallback = require('express-history-api-fallback');
 const favicon = require('serve-favicon');
 const convict = require('convict');
 const app = express();
@@ -37,7 +36,9 @@ app.get('/stats', (req, res) => {
 	});
 });
 
-app.use(fallback('index.html', {root}));
+app.get('/about', (req, res) => {
+	res.sendFile('index.html');
+});
 
 app.listen(80, () => {
 	console.log('Ready!');

@@ -26,7 +26,7 @@
     "iron-media-query": "PolymerElements/iron-media-query#^1.0.8"
   },
   "resolutions": {
-    "iron-collapse": "^1.1.0"
+    "iron-collapse": "^1.1.0",
     "paper-tabs": "PolymerElements/paper-tabs#^1.6.2"
   }
 }

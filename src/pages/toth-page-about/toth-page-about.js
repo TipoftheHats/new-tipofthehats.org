@@ -88,26 +88,26 @@
 					twitter: 'omnibombulator',
 					youtube: 'omnibombulator'
 				}, {
-					name: 'Ben Congdon',
-					handle: 'bcongdon',
-					role: 'Engineer',
-					website: 'http://benjamincongdon.me/',
-					twitter: 'BenRCongdon'
-				}, {
 					name: 'Erin',
 					handle: 'erynn',
 					role: 'Engineer',
 					twitter: 'erynntf2'
-				}, {
-					name: 'Borja Gutierrez',
-					handle: 'SirVilleta',
-					role: 'Logo Designer'
 				}, {
 					name: 'Chris Hanel',
 					handle: 'chrishanel',
 					role: 'Website/Broadcast Designer',
 					website: 'http://supportclass.net/',
 					twitter: 'chrishanel'
+				}, {
+					name: 'Ben Congdon',
+					handle: 'bcongdon',
+					role: 'Engineer',
+					website: 'http://benjamincongdon.me/',
+					twitter: 'BenRCongdon'
+				}, {
+					name: 'Borja Gutierrez',
+					handle: 'SirVilleta',
+					role: 'Logo Designer'
 				}]
 			}
 		}

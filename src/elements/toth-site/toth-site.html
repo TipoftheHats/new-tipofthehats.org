@@ -7,9 +7,8 @@
 <link rel="import" href="../../bower_components/paper-button/paper-button.html">
 <link rel="import" href="../../pages/toth-page-about/toth-page-about.html">
 <link rel="import" href="../../pages/toth-page-index/toth-page-index.html">
-<!-- Disabled until we start accepting donations -->
-<!-- <link rel="import" href="../../pages/toth-page-donate/toth-page-donate.html">
-<link rel="import" href="../../pages/toth-page-terms/toth-page-terms.html"> -->
+<link rel="import" href="../../pages/toth-page-donate/toth-page-donate.html">
+<link rel="import" href="../../pages/toth-page-terms/toth-page-terms.html">
 <link rel="import" href="../../style/toth-shared-style.html">
 <link rel="import" href="../toth-donate-total/toth-donate-total.html">
 <link rel="import" href="../toth-footer/toth-footer.html">
@@ -63,8 +62,7 @@
 				width: 255px;
 			}
 
-			/* Disabled until we start accepting donations */
-			/*@media (max-width: 600px) {
+			@media (max-width: 600px) {
 				app-toolbar {
 					flex-direction: column;
 					justify-content: space-around;
@@ -74,7 +72,7 @@
 				#header-title {
 					display: none;
 				}
-			}*/
+			}
 		</style>
 
 		<app-location route="{{route}}" on-route-changed="routeChanged"></app-location>
@@ -85,22 +83,21 @@
 				<app-toolbar>
 					<a id="header-title" title href="/" style="pointer-events: all;">TIP OF THE HATS 2016</a>
 
-					<!-- Disabled until we start accepting donations -->
-					<!--<a href="/donate">
+					<a href="/donate">
 						<paper-button id="header-donate" raised>Donate to Tip of the Hats</paper-button>
-					</a>-->
+					</a>
 				</app-toolbar>
 			</app-header>
 
-			<!-- Disabled until we start accepting donations -->
+			<!-- Disabled until the tracker is ready -->
 			<!-- <toth-donate-total></toth-donate-total> -->
 
 			<iron-pages selected="{{pageData.page}}" attr-for-selected="data-page">
 				<toth-page-index data-page="" events="[[events]]"></toth-page-index>
 				<toth-page-about data-page="about"></toth-page-about>
 				<!-- Disabled until we start accepting donations -->
-				<!--<toth-page-donate data-page="donate"></toth-page-donate>
-				<toth-page-terms data-page="terms"></toth-page-terms>-->
+				<toth-page-donate data-page="donate"></toth-page-donate>
+				<toth-page-terms data-page="terms"></toth-page-terms>
 			</iron-pages>
 
 			<toth-footer></toth-footer>

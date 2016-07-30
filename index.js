@@ -36,10 +36,14 @@ app.get('/stats', (req, res) => {
 	});
 });
 
-app.get('/about', (req, res) => {
-	res.sendFile('index.html', {root});
-});
+app.get('/about', defaultHandler);
+app.get('/donate', defaultHandler);
+app.get('/terms', defaultHandler);
 
 app.listen(80, () => {
 	console.log('Ready!');
 });
+
+function defaultHandler(req, res) {
+	res.sendFile('index.html', {root});
+}

@@ -9,13 +9,18 @@
 			}
 
 			#donate-methods {
+				@apply(--layout-vertical);
+				@apply(--layout-center);
+				@apply(--layout-justified);
+				margin: 40px auto;
+				max-width: 875px;
+			}
+
+			#main-donate-methods {
 				@apply(--layout-horizontal);
 				@apply(--layout-center);
 				@apply(--layout-justified);
 				align-items: stretch;
-				margin: 40px auto;
-				justify-content: space-between;
-				max-width: 1200px;
 			}
 
 			.donate-method {
@@ -64,15 +69,30 @@
 				background-color: #bbb;
 			}
 
-			.disabled .donate-button {
-				background-color: #3d3d3d;
+			.disabled a {
 				pointer-events: none;
 			}
 
+			.disabled .donate-button {
+				background-color: #3d3d3d;
+			}
+
+			#giveaway {
+				background-color: transparent;
+				border: 1px solid #7a7a7a;
+			}
+
 			@media (max-width: 950px) {
-				#donate-methods {
+				#main-donate-methods {
 					@apply(--layout-vertical);
 					@apply(--layout-center-center);
+				}
+			}
+
+			@media (min-width: 951px) {
+				#giveaway {
+					width: 100%;
+					box-sizing: border-box;
 				}
 			}
 
@@ -87,28 +107,30 @@
 		</section>
 
 		<section id="donate-methods">
-			<div class="donate-method disabled">
-				<div class="donate-header">Monetary contribution</div>
-				<p class="donate-desc">All cash donations go directly to Children's Oncology Services, Inc.</p>
-				<a href="">
-					<paper-button class="donate-button" raised>Coming Soon</paper-button>
-				</a>
-				<div class="donate-footer">cash donations open on Sept. 9</div>
+			<div id="main-donate-methods">
+				<div class="donate-method disabled">
+					<div class="donate-header">Monetary Contribution</div>
+					<p class="donate-desc">All cash donations go directly to Children's Oncology Services, Inc.</p>
+					<a href="">
+						<paper-button class="donate-button" raised>Coming Soon</paper-button>
+					</a>
+					<div class="donate-footer">cash donations open on Sept. 9</div>
+				</div>
+
+				<div class="donate-method">
+					<div class="donate-header">Item Contribution</div>
+					<p class="donate-desc">
+						You can give items from a pre-selected list of TF2 items through ScrapTF, the value of which will
+						be added to our donation total.
+					</p>
+					<a href="https://scrap.tf/toth" target="_blank">
+						<paper-button class="donate-button" raised>Donate Items</paper-button>
+					</a>
+					<div class="donate-footer">this link will take you to ScrapTF</div>
+				</div>
 			</div>
 
-			<div class="donate-method">
-				<div class="donate-header">TF2 item contribution</div>
-				<p class="donate-desc">
-					You can give items from a pre-selected list of TF2 items through scrap.tf, the value of which will
-					be added to our donation total.
-				</p>
-				<a href="https://scrap.tf/toth" target="_blank">
-					<paper-button class="donate-button" raised>Donate Items</paper-button>
-				</a>
-				<div class="donate-footer">this link will take you to scrap.tf</div>
-			</div>
-
-			<div class="donate-method">
+			<div id="giveaway" class="donate-method">
 				<div class="donate-header">Giveaway contribution</div>
 				<p class="donate-desc">
 					Got TF2 items not accepted in our main ScrapTF fundraiser? Donate them to our giveaways to be
@@ -117,7 +139,7 @@
 				<a href="https://scrap.tf/tothgiveaways" target="_blank">
 					<paper-button class="donate-button" raised>Giveaway Items</paper-button>
 				</a>
-				<div class="donate-footer">this link will take you to scrap.tf</div>
+				<div class="donate-footer">this link will take you to ScrapTF</div>
 			</div>
 		</section>
 	</template>

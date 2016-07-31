@@ -37,6 +37,8 @@
 				}, {
 					name: 'Admirable'
 				}, {
+					name: 'Auzzie'
+				}, {
 					name: 'and more!'
 				}]
 			}

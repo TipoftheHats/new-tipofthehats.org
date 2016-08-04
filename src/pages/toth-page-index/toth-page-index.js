@@ -39,6 +39,10 @@
 				}, {
 					name: 'Auzzie'
 				}, {
+					name: 'Bloodsire'
+				}, {
+					name: 'raysfire'
+				}, {
 					name: 'and more!'
 				}]
 			}

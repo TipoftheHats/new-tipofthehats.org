@@ -23,10 +23,10 @@
     "iron-accordions": "alijaya/iron-accordions#^1.1.0",
     "iron-ajax": "PolymerElements/iron-ajax#^1.4.0",
     "iron-image": "PolymerElements/iron-image#^1.2.3",
-    "iron-media-query": "PolymerElements/iron-media-query#^1.0.8"
+    "iron-media-query": "PolymerElements/iron-media-query#^1.0.8",
+    "paper-tabs": "PolymerElements/paper-tabs#^1.6.2"
   },
   "resolutions": {
-    "iron-collapse": "^1.1.0",
-    "paper-tabs": "PolymerElements/paper-tabs#^1.6.2"
+    "iron-collapse": "^1.1.0"
   }
 }

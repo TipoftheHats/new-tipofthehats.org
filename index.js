@@ -13,6 +13,27 @@ const conf = convict({
 		default: 'development',
 		env: 'NODE_ENV',
 		arg: 'env'
+	},
+	trackerEventId: {
+		doc: 'The numerical ID of the tracker event whose total to poll.',
+		format: Number,
+		default: 3,
+		env: 'TRACKER_EVENT_ID',
+		arg: 'trackerEventId'
+	},
+	scrapFundraiserId: {
+		doc: 'The ID of the ScrapTF fundraiser whose total to poll.',
+		format: String,
+		default: '',
+		env: 'SCRAP_FUNDRAISER_ID',
+		arg: 'scrapFundraiserId'
+	},
+	scrapApiKey: {
+		doc: 'A ScrapTF API key, needed to make API requests.',
+		format: String,
+		default: '',
+		env: 'SCRAP_API_KEY',
+		arg: 'scrapApiKey'
 	}
 }).getProperties();
 
@@ -30,15 +51,12 @@ if (conf.env === 'production') {
 
 app.use(express.static(root));
 
-app.get('/stats', (req, res) => {
-	res.json({
-		total: '$12,345.67'
-	});
-});
-
 app.get('/about', defaultHandler);
 app.get('/donate', defaultHandler);
 app.get('/terms', defaultHandler);
+
+// Spin up "total" lib
+require('./lib/total')(conf, app);
 
 app.listen(80, () => {
 	console.log('Ready!');

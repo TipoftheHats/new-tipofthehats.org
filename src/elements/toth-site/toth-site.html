@@ -89,13 +89,11 @@
 				</app-toolbar>
 			</app-header>
 
-			<!-- Disabled until the tracker is ready -->
-			<!-- <toth-donate-total></toth-donate-total> -->
+			<toth-donate-total></toth-donate-total>
 
 			<iron-pages selected="{{pageData.page}}" attr-for-selected="data-page">
 				<toth-page-index data-page="" events="[[events]]"></toth-page-index>
 				<toth-page-about data-page="about"></toth-page-about>
-				<!-- Disabled until we start accepting donations -->
 				<toth-page-donate data-page="donate"></toth-page-donate>
 				<toth-page-terms data-page="terms"></toth-page-terms>
 			</iron-pages>

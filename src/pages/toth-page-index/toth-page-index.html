@@ -1,5 +1,6 @@
 <link rel="import" href="../../bower_components/iron-accordions/iron-accordions.html">
 <link rel="import" href="../../bower_components/iron-media-query/iron-media-query.html">
+<link rel="import" href="../../elements/toth-schedule/toth-schedule.html">
 <link rel="import" href="../../elements/toth-splash/toth-splash.html">
 <link rel="import" href="../../elements/toth-talent/toth-talent.html">
 <link rel="import" href="../../style/toth-shared-style.html">
@@ -202,9 +203,12 @@
 		</section>
 
 		<section id="stream">
-			<h1>Stream Highlights</h1>
+			<h1>Schedule</h1>
+
+			<toth-schedule></toth-schedule>
+
 			<div id="stream-main">
-				<div id="stream-events">
+				<!--<div id="stream-events">
 					<h2>Events and Happenings</h2>
 					<iron-accordions selected="0">
 						<template is="dom-repeat" items="[[events]]" as="event">
@@ -214,7 +218,7 @@
 							</iron-accordion>
 						</template>
 					</iron-accordions>
-				</div>
+				</div>-->
 
 				<div>
 					<h2>Scheduled In-Studio Appearances</h2>

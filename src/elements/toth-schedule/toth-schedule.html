@@ -1,5 +1,6 @@
-<link rel="import" href="../../bower_components/paper-tabs/paper-tabs.html">
+<link rel="import" href="../../bower_components/iron-pages/iron-pages.html">
 <link rel="import" href="../../bower_components/paper-tabs/paper-tab.html">
+<link rel="import" href="../../bower_components/paper-tabs/paper-tabs.html">
 
 <dom-module id="toth-schedule">
 	<template>
@@ -21,13 +22,13 @@
 			paper-tab {
 				background-color: #f68e56;
 				color: white;
+				font-size: 29px;
 
 				--paper-tab: {
 					margin: 0 8px;
 				};
 
 				--paper-tab-content: {
-					font-size: 29px;
 					/* Disable bolding when focused */
 					font-weight: 600!important;
 				}
@@ -41,19 +42,247 @@
 			#calendar {
 				background-color: white;
 				width: 100%;
-				padding: 48px;
+				padding: 24px;
+				text-transform: uppercase;
+				border-spacing: 10px;
+				font-size: 24px;
+			}
+
+			th {
+				font-weight: 600;
+				color: white;
+				background-color: #f57c2e;
+				text-align: left;
+			}
+
+			th,
+			td {
+				padding: 4px 12px;
+			}
+
+			th:first-of-type {
+				margin-left: 0;
+			}
+
+			th:last-of-type {
+				margin-right: 0;
+			}
+
+			tr {
+				font-weight: 400;
+			}
+
+			tr:nth-of-type(even) {
+				background-color: #e6e6e6;
+			}
+
+			@media (max-width: 800px) {
+				paper-tab {
+					font-size: 20px;
+				}
+
+				#calendar {
+					font-size: 16px;
+					border-spacing: 4px;
+				}
+
+				th,
+				td {
+					padding: 2px 6px;
+				}
 			}
 		</style>
 
-		<paper-tabs selected="0">
-			<paper-tab>SEPTEMBER 16</paper-tab>
-			<paper-tab>SEPTEMBER 17</paper-tab>
-			<paper-tab>SEPTEMBER 18</paper-tab>
+		<paper-tabs selected="{{selected}}">
+			<paper-tab>SEPT. 16</paper-tab>
+			<paper-tab>SEPT. 17</paper-tab>
+			<paper-tab>SEPT. 18</paper-tab>
 		</paper-tabs>
 
-		<div id="calendar">
+		<table id="calendar">
+			<thead>
+			<tr>
+				<th>TIME (CDT)</th>
+				<th>SEGMENT</th>
+				<th>DONATION INCENTIVE</th>
+			</tr>
+			</thead>
 
-		</div>
+			<template is="dom-if" if="[[calcFirstSelected(selected)]]">
+				<tbody>
+				<tr>
+					<td>11 AM</td>
+					<td>Introduction</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>3 PM</td>
+					<td>Communities Pub</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>5 PM</td>
+					<td>1v1 MGE Tourney</td>
+					<td>No Chairs</td>
+				</tr>
+
+				<tr>
+					<td>6 PM</td>
+					<td>TF2 Variety Block</td>
+					<td>Sideshow GoPro</td>
+				</tr>
+
+				<tr>
+					<td>8 PM</td>
+					<td>Pubs</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>9 PM</td>
+					<td>Dreamcast Block</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>10 PM</td>
+					<td>Day 1 Wrap - MvM</td>
+					<td></td>
+				</tr>
+				</tbody>
+			</template>
+
+			<template is="dom-if" if="[[calcSecondSelected(selected)]]">
+				<tbody>
+				<tr>
+					<td>11 AM</td>
+					<td>Intro Pubs</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>12 PM</td>
+					<td>Source Filmmaker</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>2 PM</td>
+					<td>Variety Block</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>3 PM</td>
+					<td>Pubs</td>
+					<td>Sideshow Box + Controller</td>
+				</tr>
+
+				<tr>
+					<td>4 PM</td>
+					<td>Ultiduo Tourney</td>
+					<td>Players switch mice</td>
+				</tr>
+
+				<tr>
+					<td>5 PM</td>
+					<td>Pubs</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>6 PM</td>
+					<td>TF2 Surf</td>
+					<td>Co-op surfing</td>
+				</tr>
+
+				<tr>
+					<td>7 PM</td>
+					<td>Co-op pubbing</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>8 PM</td>
+					<td>Jackbox Party Pack</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>9 PM</td>
+					<td>Day 2 Wrap - Pubs</td>
+					<td></td>
+				</tr>
+				</tbody>
+			</template>
+
+			<template is="dom-if" if="[[calcThirdSelected(selected)]]">
+				<tbody>
+				<tr>
+					<td>11 AM</td>
+					<td>Intro Pubs</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>12 PM</td>
+					<td>Source Filmmaker</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>1 PM</td>
+					<td>Pubs</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>2 PM</td>
+					<td>Jump</td>
+					<td>Engineer Jumps, Loose Cannon Jumps</td>
+				</tr>
+
+				<tr>
+					<td>4 PM</td>
+					<td>Pubs</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>5 PM</td>
+					<td>Variety Block</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>6 PM</td>
+					<td>Pubs</td>
+					<td>Pyro Hero</td>
+				</tr>
+
+				<tr>
+					<td>7 PM</td>
+					<td>Keep Talking & Nobody Explodes</td>
+					<td>Echo Delay</td>
+				</tr>
+
+				<tr>
+					<td>8 PM</td>
+					<td>Dota Fortress</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>10 PM</td>
+					<td>Event Wrap</td>
+					<td></td>
+				</tr>
+				</tbody>
+			</template>
+		</table>
+
 	</template>
 
 	<script src="toth-schedule.js"></script>

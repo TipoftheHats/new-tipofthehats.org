@@ -5,6 +5,10 @@
 		is: 'toth-schedule',
 
 		properties: {
+			selected: {
+				type: Number,
+				value: 0
+			},
 			events: {
 				type: Array,
 				readOnly: true,
@@ -32,6 +36,18 @@
 					info: 'We\'ve got three days of fun planned, and it\'s all for charity!'
 				}]
 			}
+		},
+
+		calcFirstSelected(selected) {
+			return selected === 0;
+		},
+
+		calcSecondSelected(selected) {
+			return selected === 1;
+		},
+
+		calcThirdSelected(selected) {
+			return selected === 2;
 		}
 	});
 })();

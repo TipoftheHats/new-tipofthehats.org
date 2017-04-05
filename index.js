@@ -37,7 +37,7 @@ const conf = convict({
 	}
 }).getProperties();
 
-app.use(require('compression')()); // enable gzip
+app.use(require('compression')()); // Enable gzip
 app.use(favicon(path.join(__dirname, 'src/favicon.ico')));
 
 let root;

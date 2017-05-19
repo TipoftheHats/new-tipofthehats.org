@@ -9,41 +9,7 @@
 				type: Array,
 				readOnly: true,
 				value: [{
-					name: 'Lange'
-				}, {
-					name: 'tagg'
-				}, {
-					name: 'truktruk'
-				}, {
-					name: 'ma3la'
-				}, {
-					name: 'Krunkidile'
-				}, {
-					name: 'mala'
-				}, {
-					name: 'Getawhale'
-				}, {
-					name: 'uberchain'
-				}, {
-					name: 'Sideshow'
-				}, {
-					name: 'Whisker'
-				}, {
-					name: 'cbear'
-				}, {
-					name: 'seanbud'
-				}, {
-					name: 'slin'
-				}, {
-					name: 'Admirable'
-				}, {
-					name: 'Auzzie'
-				}, {
-					name: 'Bloodsire'
-				}, {
-					name: 'raysfire'
-				}, {
-					name: 'and more!'
+					name: 'TBA'
 				}]
 			}
 		},

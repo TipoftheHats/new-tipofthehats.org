@@ -78,10 +78,12 @@
 		<app-location route="{{route}}" on-route-changed="routeChanged"></app-location>
 		<app-route route="{{route}}" pattern="/:page" data="{{pageData}}" tail="{{pageTail}}"></app-route>
 
+<!-- 5/18/17 jb - Comment out header bar until donations open again
+
 		<app-header-layout>
 			<app-header>
 				<app-toolbar>
-					<a id="header-title" title href="/" style="pointer-events: all;">TIP OF THE HATS 2016</a>
+					<a id="header-title" title href="/" style="pointer-events: all;">TIP OF THE HATS 2017</a>
 
 					<a href="/donate">
 						<paper-button id="header-donate" raised>Donate to Tip of the Hats</paper-button>
@@ -90,6 +92,8 @@
 			</app-header>
 
 			<toth-donate-total></toth-donate-total>
+
+-->
 
 			<iron-pages selected="{{pageData.page}}" attr-for-selected="data-page">
 				<toth-page-index data-page="" events="[[events]]"></toth-page-index>

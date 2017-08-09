@@ -94,15 +94,15 @@
 		</style>
 
 		<paper-tabs selected="{{selected}}">
-			<paper-tab>DAY 1</paper-tab>
-			<paper-tab>DAY 2</paper-tab>
-			<paper-tab>DAY 3</paper-tab>
+			<paper-tab>SEPT 22</paper-tab>
+			<paper-tab>SEPT 23</paper-tab>
+			<paper-tab>SEPT 24</paper-tab>
 		</paper-tabs>
 
 		<table id="calendar">
 			<thead>
 			<tr>
-				<th>TIME (CDT)</th>
+				<th>TIME (PDT)</th>
 				<th>SEGMENT</th>
 				<th>DONATION INCENTIVE</th>
 			</tr>
@@ -111,28 +111,142 @@
 			<template is="dom-if" if="[[calcFirstSelected(selected)]]">
 				<tbody>
 				<tr>
-					<td>TBA</td>
+					<td>11AM - 1PM</td>
+					<td><b>Team Fortress 2</b><br>Day 1 Intro</td>
 					<td></td>
+				</tr>
+
+				<tr>
+					<td>1PM - 3PM</td>
+					<td><b>Team Fortress 2</b><br>6v6 NA vs EU</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>3PM - 5PM</td>
+					<td><b>Team Fortress 2</b><br>Communities Pub</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>5PM - 7PM</td>
+					<td><b>PUBG</b><br>Four Man from the LAN<br>50vs50</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>7PM - 8PM</td>
+					<td><b>Variety</b><br>Clustertruck<br>Jackbox Party Pack</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>8PM - 10PM</td>
+					<td><b>Overwatch</b><br>TBA</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>10PM - 11PM</td>
+					<td><b>TBA</b><br>Day 1 Outro</td>
 					<td></td>
 				</tr>
 				</template>
 
 				<template is="dom-if" if="[[calcSecondSelected(selected)]]">
 				<tbody>
-				<tr>
-					<td>TBA</td>
-					<td></td>
-					<td></td>
-				</tr>
+					<tr>
+						<td>11AM - 12PM</td>
+						<td><b>Source Filmmaker</b><br>Day 2 Intro</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td>12PM - 1PM</td>
+						<td><b>VR</b><br> Tilt Brush Pictionary</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td>1PM - 3PM</td>
+						<td><b>Overwatch</b><br>TBA</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td>3PM - 4PM</td>
+						<td><b>Dreamcast</b><br>Muscle March<br>Samba De Amigo<br>Sega Bass Fishing</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td>4PM - 6PM</td>
+						<td><b>Team Fortress 2</b><br>Surf</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td>6PM - 7PM</td>
+						<td><b>Variety</b><br>1-2-switch<br>Mario Kart 8<br>Snipperclips</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td>7PM - 10PM</td>
+						<td><b>PUBG</b><br>Four Man from the LAN<br>Ten Teams of Ten<br>Medieval Warfare</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td>10PM - 11PM</td>
+						<td><b>TBA</b><br>Day 2 Outro</td>
+						<td></td>
+					</tr>
 			</template>
 
 			<template is="dom-if" if="[[calcThirdSelected(selected)]]">
 				<tbody>
-				<tr>
-					<td>TBA</td>
-					<td></td>
-					<td></td>
-				</tr>
+					<tr>
+						<td>11AM - 1PM</td>
+						<td><b>TBA</b><br>Day 3 Intro</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td>1PM - 4PM</td>
+						<td><b>PUBG</b><br>Four Man from the LAN<br>Zombies</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td>4PM - 5PM</td>
+						<td><b>Overwatch</b><br>TBA</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td>5PM - 6PM</td>
+						<td><b>Variety</b><br>Choice Chamber<br>Gang Beasts<br>Keep Talking</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td>6PM - 8PM</td>
+						<td><b>VR</b><br>Star Trek: Bridge Crew</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td>8PM - 10PM</td>
+						<td><b>Team Fortress 2</b><br>Jump</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td>10PM - 11PM</td>
+						<td><b>Wrap-up</b><br></td>
+						<td></td>
+					</tr>
 		 		</tbody>
 			</template>
 		</table>

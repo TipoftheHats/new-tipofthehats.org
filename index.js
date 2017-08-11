@@ -54,7 +54,9 @@ app.use(express.static(root));
 app.get('/about', defaultHandler);
 app.get('/donate', defaultHandler);
 app.get('/terms', defaultHandler);
-app.get('/attend', defaultHandler);
+app.get('/attend', (req, res) => {
+	res.redirect('https://matcherino.com/events/7583/');
+});
 
 // Spin up "total" lib
 require('./lib/total')(conf, app);

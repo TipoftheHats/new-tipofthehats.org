@@ -25,13 +25,13 @@
 					name: 'Kurt Russ',
 					handle: 'truktruk',
 					role: 'Co-Founder',
-					email: 'truktruk@tipofthehats.org',
+					email: 'kurt@tipofthehats.org',
 					twitter: 'kurtisruss'
 				}, {
 					name: 'Jason Baxter',
 					handle: 'whisker',
 					role: 'Co-Founder',
-					email: 'whisker@tipofthehats.org',
+					email: 'jason@tipofthehats.org',
 					twitter: 'rbjaxter'
 				}, {
 					name: 'William Hild',
@@ -40,16 +40,11 @@
 					email: 'auzzie@tipofthehats.org',
 					twitter: 'auzzietf2'
 				}, {
-					name: 'Jim Cox',
-					handle: 'Enryu',
-					role: 'Organizer',
-					email: 'enryu@tipofthehats.org'
-				}, {
 					name: 'Alex Pylyshyn',
 					handle: 'dashner',
 					role: 'Producer',
 					email: 'isodes@gmail.com',
-					twitter: 'apylyshyn'
+					twitter: 'dashnerrr'
 				}, {
 					name: 'Anthony Oetzmann',
 					handle: 'Airon',
@@ -70,10 +65,6 @@
 					role: 'SFM Artist',
 					twitter: 'krunkidile',
 					youtube: 'anangrysockpuppet'
-				}, {
-					name: 'Paul van den Hoogenhof',
-					handle: 'bapaul',
-					role: '3D Artist'
 				}, {
 					name: 'Jasmine Ho',
 					handle: 'Jasbutts',
@@ -104,6 +95,26 @@
 					role: 'Engineer',
 					website: 'http://benjamincongdon.me/',
 					twitter: 'BenRCongdon'
+				}, {
+					name: 'Mark',
+					handle: 'mark',
+					role: 'Audio Engineer',
+					twitter: 'M_Schwartzkopf'
+				}, {
+					name: 'SedimentarySocks',
+					handle: 'SediSocks',
+					role: '3D Modeler',
+					twitter: ''
+				}, {
+					name: 'mathsad',
+					handle: 'mathsad',
+					role: 'Producer'
+				}, {
+					name: 'Ryan Callard',
+					handle: 'loris',
+					role: 'Videographer',
+					email: 'ryancallardmusic@gmail.com',
+					twitter: 'lor_is'
 				}, {
 					name: 'Borja Gutierrez',
 					handle: 'SirVilleta',

@@ -54,6 +54,7 @@ app.use(express.static(root));
 app.get('/about', defaultHandler);
 app.get('/donate', defaultHandler);
 app.get('/terms', defaultHandler);
+app.get('/attend', defaultHandler);
 
 // Spin up "total" lib
 require('./lib/total')(conf, app);

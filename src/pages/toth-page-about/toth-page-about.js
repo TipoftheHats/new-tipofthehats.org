@@ -90,6 +90,12 @@
 					website: 'http://supportclass.net/',
 					twitter: 'chrishanel'
 				}, {
+					name: 'Ben Congdon',
+					handle: 'bcongdon',
+					role: 'Engineer',
+					website: 'http://benjamincongdon.me/',
+					twitter: 'BenRCongdon'
+				}, {
 					name: 'Mark',
 					handle: 'mark',
 					role: 'Audio Engineer',

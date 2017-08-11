@@ -41,6 +41,10 @@
 				}, {
 					name: 'loris'
 				}, {
+					name: 'tagg'
+				}, {
+					name: 'Lange'
+				}, {
 					name: 'TBA'
 				}]
 			}

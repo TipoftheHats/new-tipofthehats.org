@@ -39,6 +39,8 @@
 				}, {
 					name: 'erynn'
 				}, {
+					name: 'loris'
+				}, {
 					name: 'TBA'
 				}]
 			}

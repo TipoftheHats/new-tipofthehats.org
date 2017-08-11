@@ -25,6 +25,19 @@
 				max-width: 100%;
 			}
 
+			#attend {
+				font-size: 22px;
+				@apply(--layout-center-center);
+				@apply(--layout-vertical);
+				background-color: #fff;
+			}
+
+			#attend-content {
+				display: flex;
+				@apply(--layout-vertical);
+				max-width: 100%;
+			}
+
 			#stream {
 				background-image: url('../../img/orange-dots.jpg');
 				width: 100%;
@@ -63,6 +76,20 @@
 				margin: 0 auto;
 			}
 
+			#esaimg {
+				@apply(--layout-center);
+				padding: 30px;
+			}
+
+			#esaimg img {
+				display: flex;
+				box-shadow: 4px 4px 4px #ccc;
+				border: 1px solid #000;
+				width: 100%;
+				max-width: 300px;
+				margin: 0 auto;
+			}
+
 			#campabout {
 				line-height: 1.5;
 				font-weight: 600;
@@ -70,6 +97,16 @@
 			}
 
 			#campabout p {
+				margin-top: 15px;
+			}
+
+			#esaabout {
+				line-height: 1.5;
+				font-weight: 600;
+				padding: 0 15px;
+			}
+
+			#esaabout p {
 				margin-top: 15px;
 			}
 
@@ -142,6 +179,10 @@
 					@apply(--layout-horizontal);
 				}
 
+				#attend-content {
+					@apply(--layout-horizontal);
+				}
+
 				#campkids {
 					padding: 0 30px;
 				}
@@ -150,7 +191,20 @@
 					width: 100%;
 				}
 
+				#esaimg {
+					padding: 0 30px;
+				}
+
+				#esaimg img {
+					width: 100%;
+				}
+
 				#campabout {
+					width: 550px;
+					padding-left: 0;
+				}
+
+				#esaabout {
 					width: 550px;
 					padding-left: 0;
 				}
@@ -200,6 +254,25 @@
 			<p id="intro-footer">
 				"Chemotherapy may have cured my cancer, but camp definitely cured my spirit." - Stephanie
 			</p>
+		</section>
+
+		<section id="attend">
+			<h1>Tip of the Hats 2017 Viewing Party</h1>
+			<div id="attend-content">
+				<div id="esaimg">
+					<img src="../../img/esaimg.jpg">
+				</div>
+
+				<p id="esaabout">
+Tip of the Hats 2017 will be produced live from Esports Arena in Santa Ana, CA.
+While the studio itself will not be public, we will be hosting a live viewing
+party on the main floor that will be open to attendees.
+
+					<br><br>
+					Check out this link for more details:
+					<a href="https://matcherino.com/events/7583" target="_blank">http://tipofthehats.org/attend</a>
+				</p>
+			</div>
 		</section>
 
 		<section id="stream">

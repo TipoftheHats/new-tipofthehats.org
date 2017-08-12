@@ -13,6 +13,8 @@
 				}, {
 					name: 'truktruk'
 				}, {
+					name: 'Lange'
+				}, {
 					name: 'Auzzie'
 				}, {
 					name: 'Krunkidile'
@@ -42,8 +44,6 @@
 					name: 'loris'
 				}, {
 					name: 'tagg'
-				}, {
-					name: 'Lange'
 				}, {
 					name: 'TBA'
 				}]

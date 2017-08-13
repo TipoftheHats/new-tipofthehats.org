@@ -3,6 +3,21 @@
 <dom-module id="toth-shared-style">
 	<template>
 		<style>
+			html,
+			:host > * {
+				--toth-orange: #f47425;
+				--toth-font-proxima-nova: {
+					font-family: "proxima-nova", sans-serif;
+				};
+				--toth-no-select: {
+					-webkit-user-select: none;
+					-moz-user-select: none;
+					-ms-user-select: none;
+					user-select: none;
+					cursor: default;
+				}
+			}
+
 			p {
 				font-weight: 600;
 			}
@@ -22,8 +37,8 @@
 			}
 
 			section {
-				@apply(--layout-vertical);
-				@apply(--layout-center-center);
+				@apply --layout-vertical;
+				@apply --layout-center-center;
 			}
 
 			.masthead {

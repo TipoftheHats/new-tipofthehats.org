@@ -10,6 +10,10 @@ dependencies:
     - "/opt/circleci/nodejs/v8.2.1/lib/node_modules"
     - "/opt/circleci/nodejs/v8.2.1/bin"
 
+test:
+  override:
+    - npm run build
+
 deployment:
   production:
     branch: master

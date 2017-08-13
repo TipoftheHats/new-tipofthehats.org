@@ -1,10 +1,15 @@
-(function () {
-	'use strict';
+/**
+ * @customElement
+ * @polymer
+ * @extends Polymer.Element
+ */
+class TothSchedule extends Polymer.Element {
+	static get is() {
+		return 'toth-schedule';
+	}
 
-	Polymer({
-		is: 'toth-schedule',
-
-		properties: {
+	static get properties() {
+		return {
 			selected: {
 				type: Number,
 				value: 0
@@ -36,18 +41,12 @@
 					info: 'We\'ve got three days of fun planned, and it\'s all for charity!'
 				}]
 			}
-		},
+		};
+	}
 
-		calcFirstSelected(selected) {
-			return selected === 0;
-		},
+	_equal(a, b) {
+		return a === b;
+	}
+}
 
-		calcSecondSelected(selected) {
-			return selected === 1;
-		},
-
-		calcThirdSelected(selected) {
-			return selected === 2;
-		}
-	});
-})();
+customElements.define(TothSchedule.is, TothSchedule);

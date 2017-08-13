@@ -1,9 +1,20 @@
 {
-	"lint": {
-		"rules": ["polymer-2"]
-	},
-	"sources": [
-		"src/**/*",
-		"bower.json"
+  "entrypoint": "src/index.html",
+  "sources": [
+	"src/**/*"
+  ],
+  "lint": {
+	"rules": [
+	  "polymer-2"
+	],
+	"ignoreWarnings": [
+	  "unknown-superclass"
 	]
+  },
+  "builds": [{
+	"bundle": true,
+	"js": {"minify": true},
+	"css": {"minify": true},
+	"html": {"minify": true}
+  }]
 }

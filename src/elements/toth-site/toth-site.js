@@ -1,10 +1,15 @@
-(function () {
-	'use strict';
+/**
+ * @customElement
+ * @polymer
+ * @extends Polymer.Element
+ */
+class TothSite extends Polymer.Element {
+	static get is() {
+		return 'toth-site';
+	}
 
-	Polymer({
-		is: 'toth-site',
-
-		properties: {
+	static get properties() {
+		return {
 			pageData: Object,
 			pageTail: String,
 			events: {
@@ -34,10 +39,12 @@
 					info: 'We\'ve got three days of fun planned, and it\'s all for charity!'
 				}]
 			}
-		},
+		};
+	}
 
-		routeChanged() {
-			window.scrollTo(0, 0);
-		}
-	});
-})();
+	routeChanged() {
+		window.scrollTo(0, 0);
+	}
+}
+
+customElements.define(TothSite.is, TothSite);

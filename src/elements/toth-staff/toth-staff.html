@@ -1,11 +1,13 @@
-<link rel="import" href="../../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../icomoon-polymer/icomoon-iconset-svg.html">
 
 <dom-module id="toth-staff">
 	<template>
 		<style>
 			:host {
-				@apply(--layout-vertical);
-				@apply(--layout-center);
+				@apply --layout-vertical;
+				@apply --layout-center;
 				--picture-size: 175px;
 				--half-picture-size: 101px;
 				width: 100%;
@@ -43,8 +45,8 @@
 			}
 
 			#wrapper {
-				@apply(--layout-vertical);
-				@apply(--layout-center);
+				@apply --layout-vertical;
+				@apply --layout-center;
 				flex-grow: 1;
 				padding: 8px 0;
 			}
@@ -57,8 +59,8 @@
 			}
 
 			#role {
-				@apply(--layout-vertical);
-				@apply(--layout-center-center);
+				@apply --layout-vertical;
+				@apply --layout-center-center;
 				height: 15px;
 				color: #000;
 				font-size: 16px;
@@ -89,25 +91,25 @@
 			<div id="icons">
 				<template is="dom-if" if="[[website]]">
 					<a href="[[website]]" target="_blank">
-						<i class="fa fa-globe fa-lg"></i>
+						<iron-icon icon="icomoon:link"></iron-icon>
 					</a>
 				</template>
 
 				<template is="dom-if" if="[[email]]">
 					<a href="mailto://[[email]]" target="_blank">
-						<i class="fa fa-envelope-o fa-lg"></i>
+						<iron-icon icon="icomoon:envelope"></iron-icon>
 					</a>
 				</template>
 
 				<template is="dom-if" if="[[youtube]]">
 					<a href="https://youtube.com/[[youtube]]" target="_blank">
-						<i class="fa fa-youtube fa-lg"></i>
+						<iron-icon icon="icomoon:youtube"></iron-icon>
 					</a>
 				</template>
 
 				<template is="dom-if" if="[[twitter]]">
 					<a href="https://twitter.com/[[twitter]]" target="_blank">
-						<i class="fa fa-twitter fa-lg"></i>
+						<iron-icon icon="icomoon:twitter"></iron-icon>
 					</a>
 				</template>
 			</div>

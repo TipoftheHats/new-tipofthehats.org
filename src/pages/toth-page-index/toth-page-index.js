@@ -1,10 +1,15 @@
-(function () {
-	'use strict';
+/**
+ * @customElement
+ * @polymer
+ * @extends Polymer.Element
+ */
+class TothPageIndex extends Polymer.Element {
+	static get is() {
+		return 'toth-page-index';
+	}
 
-	Polymer({
-		is: 'toth-page-index',
-
-		properties: {
+	static get properties() {
+		return {
 			events: Array,
 			wideLayout: Boolean,
 			talent: {
@@ -50,27 +55,29 @@
 					name: 'TBA'
 				}]
 			}
-		},
+		};
+	}
 
-		attached() {
-			// Attach our custom header tap override to each iron-accordion.
-			const accordions = Polymer.dom(this.root).querySelectorAll('iron-accordion');
-			accordions.forEach(accordion => {
-				accordion._originalOnHeaderTap = accordion._onHeaderTap;
-				accordion._onHeaderTap = this.accordionHeaderTapOverride.bind(this);
-			});
-		},
+	attached() {
+		// Attach our custom header tap override to each iron-accordion.
+		const accordions = Polymer.dom(this.root).querySelectorAll('iron-accordion');
+		accordions.forEach(accordion => {
+			accordion._originalOnHeaderTap = accordion._onHeaderTap;
+			accordion._onHeaderTap = this.accordionHeaderTapOverride.bind(this);
+		});
+	}
 
-		/**
-		 * A custom override to prevent accordions from being collapsible on the narrow layout.
-		 * @param e
-		 */
-		accordionHeaderTapOverride(e) {
-			if (!this.wideLayout) {
-				return;
-			}
-
-			e.target.parentNode.parentNode._originalOnHeaderTap(e);
+	/**
+	 * A custom override to prevent accordions from being collapsible on the narrow layout.
+	 * @param e
+	 */
+	accordionHeaderTapOverride(e) {
+		if (!this.wideLayout) {
+			return;
 		}
-	});
-})();
+
+		e.target.parentNode.parentNode._originalOnHeaderTap(e);
+	}
+}
+
+customElements.define(TothPageIndex.is, TothPageIndex);

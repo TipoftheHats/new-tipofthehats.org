@@ -5,6 +5,8 @@
 		is: 'toth-page-index',
 
 		properties: {
+			events: Array,
+			wideLayout: Boolean,
 			talent: {
 				type: Array,
 				readOnly: true,

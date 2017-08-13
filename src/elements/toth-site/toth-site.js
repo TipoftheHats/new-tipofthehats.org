@@ -5,6 +5,8 @@
 		is: 'toth-site',
 
 		properties: {
+			pageData: Object,
+			pageTail: String,
 			events: {
 				type: Array,
 				readOnly: true,

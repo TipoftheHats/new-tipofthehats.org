@@ -14,27 +14,27 @@
 
 			#intro {
 				font-size: 22px;
-				@apply(--layout-center-center);
-				@apply(--layout-vertical);
+				@apply --layout-center-center;
+				@apply --layout-vertical;
 				background-color: #fff;
 			}
 
 			#intro-content {
 				display: flex;
-				@apply(--layout-vertical);
+				@apply --layout-vertical;
 				max-width: 100%;
 			}
 
 			#attend {
 				font-size: 22px;
-				@apply(--layout-center-center);
-				@apply(--layout-vertical);
+				@apply --layout-center-center;
+				@apply --layout-vertical;
 				background-color: #fff;
 			}
 
 			#attend-content {
 				display: flex;
-				@apply(--layout-vertical);
+				@apply --layout-vertical;
 				max-width: 100%;
 			}
 
@@ -63,7 +63,7 @@
 			}
 
 			#campkids {
-				@apply(--layout-center);
+				@apply --layout-center;
 				padding: 30px;
 			}
 
@@ -77,7 +77,7 @@
 			}
 
 			#esaimg {
-				@apply(--layout-center);
+				@apply --layout-center;
 				padding: 30px;
 			}
 
@@ -118,7 +118,7 @@
 			}
 
 			#stream-main {
-				@apply(--layout-vertical);
+				@apply --layout-vertical;
 				max-width: 1170px;
 			}
 
@@ -136,7 +136,7 @@
 			}
 
 			#stream-people {
-				@apply(--layout-center-center);
+				@apply --layout-center-center;
 				display: flex;
 				flex-flow: row wrap;
 				align-content: flex-start;
@@ -169,18 +169,18 @@
 			}
 
 			iron-accordion {
-				@apply(--layout-vertical);
+				@apply --layout-vertical;
 				width: 100%;
 				margin-bottom: 12px;
 			}
 
 			@media (min-width: 1050px) {
 				#intro-content {
-					@apply(--layout-horizontal);
+					@apply --layout-horizontal;
 				}
 
 				#attend-content {
-					@apply(--layout-horizontal);
+					@apply --layout-horizontal;
 				}
 
 				#campkids {
@@ -210,7 +210,7 @@
 				}
 
 				#stream-main {
-					@apply(--layout-horizontal);
+					@apply --layout-horizontal;
 				}
 
 				#stream-events {

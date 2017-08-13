@@ -4,9 +4,9 @@
   "description": "Tip of the Hats' website",
   "main": "index.js",
   "scripts": {
-    "test": "npm run static",
-    "static": "eslint index.js src/**/*.html src/**/*.js && polymer lint",
-    "build": "gulp",
+    "test": "eslint index.js src/**/*.html src/**/*.js && polymer lint",
+    "prebuild": "npm run test",
+    "build": "polymer build && gulp minify:images",
     "start": "node index.js --env production"
   },
   "repository": {
@@ -19,26 +19,18 @@
   "dependencies": {
     "bluebird": "^3.5.0",
     "compression": "^1.6.2",
-    "convict": "^3.0.0",
+    "convict": "^4.0.0",
     "express": "^4.15.3",
     "request": "^2.81.0",
     "request-promise": "^4.2.1",
     "serve-favicon": "^2.4.3"
   },
   "devDependencies": {
-    "babel-preset-es2015-nostrict": "^6.6.2",
-    "eslint": "^3.19.0",
+    "eslint": "^4.4.1",
     "eslint-config-xo": "^0.18.2",
-    "eslint-plugin-html": "^2.0.3",
+    "eslint-plugin-html": "^3.2.0",
     "gulp": "^3.9.1",
-    "gulp-babel": "^6.1.2",
-    "gulp-clean": "^0.3.2",
-    "gulp-crisper": "^1.1.0",
-    "gulp-htmlmin": "^3.0.0",
-    "gulp-imagemin": "^3.2.0",
-    "gulp-sourcemaps": "^2.6.0",
-    "gulp-uglify": "^2.1.2",
-    "gulp-vulcanize": "^6.1.0",
+    "gulp-imagemin": "^3.3.0",
     "pump": "^1.0.2"
   }
 }

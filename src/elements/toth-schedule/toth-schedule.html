@@ -108,7 +108,7 @@
 			</tr>
 			</thead>
 
-			<template is="dom-if" if="[[calcFirstSelected(selected)]]">
+			<template is="dom-if" if="[[_equal(selected, 0)]]">
 				<tbody>
 				<tr>
 					<td>11AM - 1PM</td>
@@ -153,7 +153,7 @@
 				</tr>
 				</template>
 
-				<template is="dom-if" if="[[calcSecondSelected(selected)]]">
+				<template is="dom-if" if="[[_equal(selected, 1)]]">
 				<tbody>
 					<tr>
 						<td>11AM - 12PM</td>
@@ -204,7 +204,7 @@
 					</tr>
 			</template>
 
-			<template is="dom-if" if="[[calcThirdSelected(selected)]]">
+			<template is="dom-if" if="[[_equal(selected, 2)]]">
 				<tbody>
 					<tr>
 						<td>11AM - 1PM</td>

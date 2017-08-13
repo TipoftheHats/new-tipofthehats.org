@@ -1,3 +1,4 @@
+<link rel="import" href="../../elements/icomoon-polymer/icomoon-iconset-svg.html">
 <link rel="import" href="../../elements/toth-staff/toth-staff.html">
 <link rel="import" href="../../style/toth-shared-style.html">
 
@@ -13,14 +14,14 @@
 			}
 
 			#contact-links {
-				@apply(--layout-horizontal);
+				@apply --layout-horizontal;
 				align-items: flex-start;
 			}
 
 			.link-icon {
-				@apply(--layout-vertical);
-				@apply(--layout-center-center);
 				padding: 20px;
+				@apply --layout-vertical;
+				@apply --layout-center-center;
 			}
 
 			#contact {
@@ -59,10 +60,16 @@
 				padding: 0 16px;
 			}
 
+			iron-icon {
+				width: 64px;
+				height: 64px;
+				color: var(--toth-orange);
+			}
+
 			@media (max-width: 600px) {
 				#contact-links {
-					@apply(--layout-vertical);
-					@apply(--layout-center);
+					@apply --layout-vertical;
+					@apply --layout-center;
 				}
 			}
 		</style>
@@ -83,7 +90,7 @@
 			<div id="contact-links">
 				<div class="link-icon">
 					<a href="http://twitter.com/tipofthehats">
-						<i class="fa fa-twitter fa-4x" aria-hidden="true"></i>
+						<iron-icon icon="icomoon:twitter"></iron-icon>
 					</a>
 					<a href="http://twitter.com/tipofthehats">
 						<p>@tipofthehats</p>
@@ -91,7 +98,7 @@
 				</div>
 				<div class="link-icon">
 					<a href="http://steamcommunity.com/groups/tipofthehats">
-						<i class="fa fa-steam fa-4x" aria-hidden="true"></i>
+						<iron-icon icon="icomoon:steam"></iron-icon>
 					</a>
 					<a href="http://steamcommunity.com/groups/tipofthehats">
 						<p>steamcommunity.com<br>/groups/tipofthehats</p>
@@ -99,7 +106,7 @@
 				</div>
 				<div class="link-icon">
 					<a href="http://twitch.tv/tipofthehats">
-						<i class="fa fa-twitch fa-4x" aria-hidden="true"></i>
+						<iron-icon icon="icomoon:twitch"></iron-icon>
 					</a>
 					<a href="http://twitch.tv/tipofthehats">
 						<p class="contact-icon-label">/tipofthehats</p>

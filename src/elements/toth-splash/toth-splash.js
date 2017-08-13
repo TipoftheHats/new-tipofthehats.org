@@ -1,7 +1,12 @@
-(function () {
-	'use strict';
+/**
+ * @customElement
+ * @polymer
+ * @extends Polymer.Element
+ */
+class TothSplash extends Polymer.Element {
+	static get is() {
+		return 'toth-splash';
+	}
+}
 
-	Polymer({
-		is: 'toth-splash'
-	});
-})();
+customElements.define(TothSplash.is, TothSplash);

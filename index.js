@@ -43,9 +43,10 @@ app.use(favicon(path.join(__dirname, 'src/favicon.ico')));
 let root;
 if (conf.env === 'production') {
 	console.log('Starting in production mode (serving files from "build")');
-	root = path.join(__dirname, 'build');
+	root = path.join(__dirname, 'build/default/src');
 } else {
 	console.log('Starting in development mode (serving files from "src")');
+	app.use('/bower_components', express.static(path.resolve(__dirname, 'bower_components')));
 	root = path.join(__dirname, 'src');
 }
 

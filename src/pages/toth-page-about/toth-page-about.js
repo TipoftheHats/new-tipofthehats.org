@@ -1,10 +1,15 @@
-(function () {
-	'use strict';
+/**
+ * @customElement
+ * @polymer
+ * @extends Polymer.Element
+ */
+class TothPageAbout extends Polymer.Element {
+	static get is() {
+		return 'toth-page-about';
+	}
 
-	Polymer({
-		is: 'toth-page-about',
-
-		properties: {
+	static get properties() {
+		return {
 			staff: {
 				type: Array,
 				readOnly: true,
@@ -122,6 +127,8 @@
 					role: 'Logo Designer'
 				}]
 			}
-		}
-	});
-})();
+		};
+	}
+}
+
+customElements.define(TothPageAbout.is, TothPageAbout);

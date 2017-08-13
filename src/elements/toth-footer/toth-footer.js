@@ -1,7 +1,12 @@
-(function () {
-	'use strict';
+/**
+ * @customElement
+ * @polymer
+ * @extends Polymer.Element
+ */
+class TothFooter extends Polymer.Element {
+	static get is() {
+		return 'toth-footer';
+	}
+}
 
-	Polymer({
-		is: 'toth-footer'
-	});
-})();
+customElements.define(TothFooter.is, TothFooter);

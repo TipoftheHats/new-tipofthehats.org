@@ -1,5 +1,5 @@
 {
-  "entrypoint": "src/index.html",
+  "entrypoint": "src/elements/all-elements.html",
   "sources": [
 	"src/**/*"
   ],

@@ -22,8 +22,6 @@ class TothPageIndex extends Polymer.Element {
 				}, {
 					name: 'Lange'
 				}, {
-					name: 'Auzzie'
-				}, {
 					name: 'Krunkidile'
 				}, {
 					name: 'dashner'
@@ -31,8 +29,6 @@ class TothPageIndex extends Polymer.Element {
 					name: 'Jasbutts'
 				}, {
 					name: 'Ma3la'
-				}, {
-					name: 'Admirable'
 				}, {
 					name: 'mala'
 				}, {
@@ -53,6 +49,8 @@ class TothPageIndex extends Polymer.Element {
 					name: 'tagg'
 				}, {
 					name: 'Uncle Dane'
+				}, {
+					name: 'Sideshow'
 				}, {
 					name: 'Getawhale'
 				}, {

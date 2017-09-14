@@ -54,6 +54,8 @@ class TothPageIndex extends Polymer.Element {
 				}, {
 					name: 'Getawhale'
 				}, {
+					name: 'harsha'
+				}, {
 					name: 'TBA'
 				}]
 			}

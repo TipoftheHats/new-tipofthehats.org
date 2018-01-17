@@ -56,6 +56,7 @@ app.use(express.static(root));
 app.get('/about', defaultHandler);
 app.get('/donate', defaultHandler);
 app.get('/terms', defaultHandler);
+app.get('/conduct', defaultHandler);
 app.get('/attend', (req, res) => {
 	res.redirect('https://matcherino.com/events/7583/');
 });

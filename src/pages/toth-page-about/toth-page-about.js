@@ -45,12 +45,6 @@ class TothPageAbout extends Polymer.Element {
 					email: 'auzzie@tipofthehats.org',
 					twitter: 'auzzietf2'
 				}, {
-					name: 'Alex Pylyshyn',
-					handle: 'dashner',
-					role: 'Producer',
-					email: 'isodes@gmail.com',
-					twitter: 'dashnerrr'
-				}, {
 					name: 'Anthony Oetzmann',
 					handle: 'Airon',
 					role: 'Audio Engineer',

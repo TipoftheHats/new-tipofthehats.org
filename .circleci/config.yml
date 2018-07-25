@@ -10,12 +10,8 @@ jobs:
     # Restore the dependency cache
     - restore_cache:
         keys:
-        # This branch if available
-        - v1-dep-{{ .Branch }}-
-        # Default branch if not
-        - v1-dep-master-
-        # Any branch if there are none on the default branch - this should be unnecessary if you have your default branch configured correctly
-        - v1-dep-
+        - v1-npm-deps-{{ checksum "package-lock.json" }}
+        - v1-npm-deps-
     - run: npm install --global bower polymer-cli
     - run: bower install
     - run: if [ -z "${NODE_ENV:-}" ]; then export NODE_ENV=test; fi
@@ -23,9 +19,8 @@ jobs:
     - run: npm install
     # Save dependency cache
     - save_cache:
-        key: v1-dep-{{ .Branch }}-{{ epoch }}
+        key: v1-npm-deps-{{ checksum "package-lock.json" }}
         paths:
-        - ~/.cache/bower
         - ~/usr/local/lib/node_modules
     - run: npm run build
   deploy:

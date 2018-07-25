@@ -29,6 +29,10 @@ jobs:
         - ~/usr/local/lib/node_modules
     - run: npm run build
   deploy:
+    shell: /bin/bash --login
+    docker:
+    - image: circleci/node:8
+      command: /sbin/init
     steps:
     - checkout
     - run: ./deploy-to-production.sh

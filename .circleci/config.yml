@@ -1,0 +1,46 @@
+version: 2
+jobs:
+  test:
+    environment:
+      NPM_CONFIG_PREFIX: ~/.npm-global
+    docker:
+    - image: circleci/node:8
+    steps:
+    - checkout
+    # Restore the dependency cache
+    - restore_cache:
+        keys:
+        - node-v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
+        - node-v1-{{ .Branch }}-
+        - node-v1-
+    - run:
+        name: Fix npm permissions and paths
+        command: |
+          echo 'export PATH=/home/circleci/.npm-global/bin:$PATH' >> $BASH_ENV
+          source /home/circleci/.bashrc
+    - run: npm install --global bower polymer-cli
+    - run: bower install
+    - run: npm install
+    # Save dependency cache
+    - save_cache:
+        key: node-v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
+        paths:
+        - ~/.npm-global
+    - run: npm run build
+  deploy:
+    docker:
+    - image: circleci/node:8
+    steps:
+    - checkout
+    - run: ./deploy-to-production.sh
+workflows:
+  version: 2
+  test-and-deploy:
+    jobs:
+      - test
+      - deploy:
+          requires:
+            - test
+          filters:
+            branches:
+              only: master

@@ -76,13 +76,6 @@ class TothPageAbout extends Polymer.Element {
 					website: 'http://jasbutts.com/',
 					twitter: 'miss_jasbutts'
 				}, {
-					name: 'Jacko Brain',
-					handle: 'omnibombulator',
-					role: 'TF2 HUD Designer',
-					website: 'http://huds.tf',
-					twitter: 'omnibombulator',
-					youtube: 'omnibombulator'
-				}, {
 					name: 'Erin',
 					handle: 'erynn',
 					role: 'Engineer',
@@ -119,10 +112,6 @@ class TothPageAbout extends Polymer.Element {
 					role: 'Videographer',
 					email: 'ryancallardmusic@gmail.com',
 					twitter: 'lor_is'
-				}, {
-					name: 'Borja Gutierrez',
-					handle: 'SirVilleta',
-					role: 'Logo Designer'
 				}]
 			},
 			talent: {
@@ -132,27 +121,38 @@ class TothPageAbout extends Polymer.Element {
 					name: 'Talent McTalent',
 					handle: 'talent',
 					role: 'Surfer'
-				},
-				{
+				}, {
 					name: 'The Great Talento',
 					handle: 'talento',
 					role: 'Prognosticator'
-				}
-				]
+				}]
 			},
 			thankees: {
 				type: Array,
 				readOnly: true,
-				value: [
-					'The Academy',
-					'Valve'
-				]
+				value: [{
+					name: 'Borja Gutierrez',
+					handle: 'SirVilleta',
+					role: 'Logo Designer'
+				}, {
+					name: 'Jacko Brain',
+					handle: 'omnibombulator',
+					role: 'TF2 HUD Designer',
+					website: 'http://huds.tf',
+					twitter: 'omnibombulator',
+					youtube: 'omnibombulator'
+				}]
 			}
 		};
 	}
 
-	_equal(a, b) {
-		return a === b;
+	_calcStaff(selected) {
+		switch (selected) {
+			case 0: return this.staff;
+			case 1: return this.talent;
+			case 2: return this.thankees;
+			default: return this.staff;
+		}
 	}
 }
 

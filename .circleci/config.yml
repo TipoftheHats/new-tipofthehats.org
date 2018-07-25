@@ -11,7 +11,7 @@ jobs:
         - node-v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
         - node-v1-{{ .Branch }}-
         - node-v1-
-    - run: npm install --global bower polymer-cli
+    - run: sudo npm install --global bower polymer-cli
     - run: bower install
     - run: if [ -z "${NODE_ENV:-}" ]; then export NODE_ENV=test; fi
     - run: export PATH="~/TipoftheHats/new-tipofthehats.org/node_modules/.bin:$PATH"

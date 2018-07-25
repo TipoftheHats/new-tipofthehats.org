@@ -109,7 +109,7 @@ class TothPageAbout extends Polymer.Element {
 				}, {
 					name: 'mathsad',
 					handle: 'mathsad',
-					role: 'Producer'
+					role: 'Assistant Producer'
 				}, {
 					name: 'Ryan Callard',
 					handle: 'loris',

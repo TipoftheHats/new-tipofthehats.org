@@ -117,6 +117,10 @@ class TothPageAbout extends Polymer.Element {
 					role: 'Videographer',
 					email: 'ryancallardmusic@gmail.com',
 					twitter: 'lor_is'
+				}, {
+					name: 'Justin Kim',
+					handle: 'justinkim',
+					role: 'Engineer'
 				}]
 			},
 			thankees: {

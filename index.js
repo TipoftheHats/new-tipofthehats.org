@@ -41,14 +41,17 @@ app.use(require('compression')()); // Enable gzip
 app.use(favicon(path.join(__dirname, 'src/favicon.ico')));
 
 let root;
+let port;
 if (conf.env === 'production') {
 	console.log('Starting in production mode (serving files from "build")');
 	root = path.join(__dirname, 'build/default/src');
+	port = 80;
 	app.use('/bower_components', express.static(path.resolve(__dirname, 'build/default/bower_components')));
 } else {
 	console.log('Starting in development mode (serving files from "src")');
 	app.use('/bower_components', express.static(path.resolve(__dirname, 'bower_components')));
 	root = path.join(__dirname, 'src');
+	port = 8080;
 }
 
 app.use(express.static(root));
@@ -64,7 +67,7 @@ app.get('/attend', (req, res) => {
 // Spin up "total" lib
 require('./lib/total')(conf, app);
 
-app.listen(80, () => {
+app.listen(port, () => {
 	console.log('Ready!');
 });
 

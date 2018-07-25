@@ -14,6 +14,6 @@ Our website.
 	
 ## Usage
 1. Run `node index.js --env development`
-1. Open http://localhost/ in your browser
+1. Open http://localhost:8080/ in your browser
 
 Bear in mind that you may need to run `npm install` and/or `bower install` again after pulling down new commits.

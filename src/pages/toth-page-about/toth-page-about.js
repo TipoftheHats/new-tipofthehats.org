@@ -83,8 +83,7 @@ class TothPageAbout extends Polymer.Element {
 				}, {
 					name: 'SedimentarySocks',
 					handle: 'SediSocks',
-					role: '3D Modeler',
-					twitter: ''
+					role: '3D Modeler'
 				}, {
 					name: 'Erin',
 					handle: 'erynn',

@@ -49,6 +49,18 @@ class TothPageAbout extends Polymer.Element {
 					email: 'auzzie@tipofthehats.org',
 					twitter: 'auzzietf2'
 				}, {
+					name: 'Jasmine Ho',
+					handle: 'Jasbutts',
+					role: 'Merch Coordinator & Artist',
+					email: 'jasbutts.toth@gmail.com',
+					website: 'http://jasbutts.com/',
+					twitter: 'miss_jasbutts'
+				}]
+			},
+			castAndCrew: {
+				type: Array,
+				readOnly: true,
+				value: [{
 					name: 'Anthony Oetzmann',
 					handle: 'Airon',
 					role: 'Audio Engineer',
@@ -69,12 +81,10 @@ class TothPageAbout extends Polymer.Element {
 					twitter: 'krunkidile',
 					youtube: 'anangrysockpuppet'
 				}, {
-					name: 'Jasmine Ho',
-					handle: 'Jasbutts',
-					role: 'Artist',
-					email: 'jasbutts.toth@gmail.com',
-					website: 'http://jasbutts.com/',
-					twitter: 'miss_jasbutts'
+					name: 'SedimentarySocks',
+					handle: 'SediSocks',
+					role: '3D Modeler',
+					twitter: ''
 				}, {
 					name: 'Erin',
 					handle: 'erynn',
@@ -98,11 +108,6 @@ class TothPageAbout extends Polymer.Element {
 					role: 'Audio Engineer',
 					twitter: 'M_Schwartzkopf'
 				}, {
-					name: 'SedimentarySocks',
-					handle: 'SediSocks',
-					role: '3D Modeler',
-					twitter: ''
-				}, {
 					name: 'mathsad',
 					handle: 'mathsad',
 					role: 'Producer'
@@ -112,19 +117,6 @@ class TothPageAbout extends Polymer.Element {
 					role: 'Videographer',
 					email: 'ryancallardmusic@gmail.com',
 					twitter: 'lor_is'
-				}]
-			},
-			talent: {
-				type: Array,
-				readOnly: true,
-				value: [{
-					name: 'Talent McTalent',
-					handle: 'talent',
-					role: 'Surfer'
-				}, {
-					name: 'The Great Talento',
-					handle: 'talento',
-					role: 'Prognosticator'
 				}]
 			},
 			thankees: {
@@ -149,7 +141,7 @@ class TothPageAbout extends Polymer.Element {
 	_calcStaff(selected) {
 		switch (selected) {
 			case 0: return this.staff;
-			case 1: return this.talent;
+			case 1: return this.castAndCrew;
 			case 2: return this.thankees;
 			default: return this.staff;
 		}

@@ -1,6 +1,8 @@
 version: 2
 jobs:
   test:
+    environment:
+      NPM_CONFIG_PREFIX: ~/.npm-global
     docker:
     - image: circleci/node:8
     steps:
@@ -11,7 +13,7 @@ jobs:
         - node-v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
         - node-v1-{{ .Branch }}-
         - node-v1-
-    - run: sudo npm install --global bower polymer-cli
+    - run: npm install --global bower polymer-cli
     - run: bower install
     - run: if [ -z "${NODE_ENV:-}" ]; then export NODE_ENV=test; fi
     - run: export PATH="~/TipoftheHats/new-tipofthehats.org/node_modules/.bin:$PATH"
@@ -20,7 +22,7 @@ jobs:
     - save_cache:
         key: node-v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
         paths:
-        - ~/usr/local/lib/node_modules
+        - ~/.npm-global
     - run: npm run build
   deploy:
     docker:

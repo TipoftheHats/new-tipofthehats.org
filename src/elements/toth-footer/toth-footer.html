@@ -6,17 +6,16 @@
 			:host {
 				@apply --layout-vertical;
 				@apply --layout-center-center;
-				width: 100%;
+				@apply --layout-flex;
 				background-color: #f47425;
 				border-top: 6px solid #c85f1e;
 			}
 
 			#social-icons {
-				display: flex;
-				align-items: center;
-				justify-content: space-around;
+				@apply --layout-horizontal;
+				@apply --layout-center-center;
+				@apply --layout-wrap;
 				margin-top: 20px;
-				max-width: 460px;
 				margin-left: 16px;
 				margin-right: 16px;
 				box-sizing: border-box;
@@ -28,9 +27,9 @@
 			}
 
 			#footer-links {
-				display: flex;
-				justify-content: center;
-				flex-wrap: wrap;
+				@apply --layout-horizontal;
+				@apply --layout-center-center;
+				@apply --layout-wrap;
 				margin-top: 16px;
 				margin-bottom: 16px;
 			}

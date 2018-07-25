@@ -10,6 +10,10 @@ class TothPageAbout extends Polymer.Element {
 
 	static get properties() {
 		return {
+			selected: {
+				type: Number,
+				value: 0
+			},
 			staff: {
 				type: Array,
 				readOnly: true,
@@ -120,8 +124,35 @@ class TothPageAbout extends Polymer.Element {
 					handle: 'SirVilleta',
 					role: 'Logo Designer'
 				}]
+			},
+			talent: {
+				type: Array,
+				readOnly: true,
+				value: [{
+					name: 'Talent McTalent',
+					handle: 'talent',
+					role: 'Surfer'
+				},
+				{
+					name: 'The Great Talento',
+					handle: 'talento',
+					role: 'Prognosticator'
+				}
+				]
+			},
+			thankees: {
+				type: Array,
+				readOnly: true,
+				value: [
+					'The Academy',
+					'Valve'
+				]
 			}
 		};
+	}
+
+	_equal(a, b) {
+		return a === b;
 	}
 }
 

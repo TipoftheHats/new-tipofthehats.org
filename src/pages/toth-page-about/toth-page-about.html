@@ -1,12 +1,41 @@
 <link rel="import" href="../../elements/icomoon-polymer/icomoon-iconset-svg.html">
 <link rel="import" href="../../elements/toth-staff/toth-staff.html">
 <link rel="import" href="../../style/toth-shared-style.html">
+<link rel="import" href="../../../bower_components/paper-tabs/paper-tab.html">
+<link rel="import" href="../../../bower_components/paper-tabs/paper-tabs.html">
 
 <dom-module id="toth-page-about">
 	<template>
 		<style include="toth-shared-style">
 			:host {
 				display: block;
+			}
+
+			paper-tabs {
+				--paper-tabs-selection-bar-color: #f57c2e;
+				--paper-tabs-selection-bar: {
+					z-index: 1;
+				}
+			}
+
+			paper-tab {
+				background-color: #f68e56;
+				color: white;
+				font-size: 29px;
+
+				--paper-tab: {
+					margin: 0 8px;
+				};
+
+				--paper-tab-content: {
+					/* Disable bolding when focused */
+					font-weight: 600!important;
+				}
+			}
+
+			paper-tab.iron-selected {
+				background-color: white;
+				color: black;
 			}
 
 			#masthead-text {
@@ -123,18 +152,50 @@
 		</section>
 
 		<section id="about-staff">
-			<h1>STAFF</h1>
-			<div id="staff-display">
-				<template is="dom-repeat" items="[[staff]]">
-					<toth-staff name="[[item.name]]"
-								handle="[[item.handle]]"
-								role="[[item.role]]"
-								email="[[item.email]]"
-								twitter="[[item.twitter]]"
-								website="[[item.website]]"
-								youtube="[[item.youtube]]"></toth-staff>
-				</template>
-			</div>
+			<paper-tabs selected="{{selected}}">
+				<paper-tab>STAFF</paper-tab>
+				<paper-tab>TALENT</paper-tab>
+				<paper-tab>SPECIAL THANKS</paper-tab>
+			</paper-tabs>
+
+			<template is="dom-if" if="[[_equal(selected, 0)]]">
+				<div id="staff-display">
+					<template is="dom-repeat" items="[[staff]]">
+						<toth-staff name="[[item.name]]"
+									handle="[[item.handle]]"
+									role="[[item.role]]"
+									email="[[item.email]]"
+									twitter="[[item.twitter]]"
+									website="[[item.website]]"
+									youtube="[[item.youtube]]"></toth-staff>
+					</template>
+				</div>
+			</template>
+
+			<template is="dom-if" if="[[_equal(selected, 1)]]">
+				<div id="staff-display">
+					<template is="dom-repeat" items="[[talent]]">
+						<toth-staff name="[[item.name]]"
+									handle="[[item.handle]]"
+									role="[[item.role]]"
+									email="[[item.email]]"
+									twitter="[[item.twitter]]"
+									website="[[item.website]]"
+									youtube="[[item.youtube]]"></toth-staff>
+					</template>
+				</div>
+			</template>
+
+			<template is="dom-if" if="[[_equal(selected, 2)]]">
+				<div id="staff-display">
+					<ul>
+						<template is="dom-repeat" items="[[thankees]]">
+							<li>[[item]]</li>
+						</template>
+					</ul>
+				</div>
+			</template>
+
 		</section>
 	</template>
 

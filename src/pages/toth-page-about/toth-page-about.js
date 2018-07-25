@@ -52,7 +52,7 @@ class TothPageAbout extends Polymer.Element {
 					name: 'Jasmine Ho',
 					handle: 'Jasbutts',
 					role: 'Merch Coordinator & Artist',
-					email: 'jasbutts.toth@gmail.com',
+					email: 'jasbutts@tipofthehats.org',
 					website: 'http://jasbutts.com/',
 					twitter: 'miss_jasbutts'
 				}]

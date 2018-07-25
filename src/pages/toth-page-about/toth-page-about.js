@@ -10,6 +10,10 @@ class TothPageAbout extends Polymer.Element {
 
 	static get properties() {
 		return {
+			selected: {
+				type: Number,
+				value: 0
+			},
 			staff: {
 				type: Array,
 				readOnly: true,
@@ -45,6 +49,18 @@ class TothPageAbout extends Polymer.Element {
 					email: 'auzzie@tipofthehats.org',
 					twitter: 'auzzietf2'
 				}, {
+					name: 'Jasmine Ho',
+					handle: 'Jasbutts',
+					role: 'Merch Coordinator & Artist',
+					email: 'jasbutts@tipofthehats.org',
+					website: 'http://jasbutts.com/',
+					twitter: 'miss_jasbutts'
+				}]
+			},
+			castAndCrew: {
+				type: Array,
+				readOnly: true,
+				value: [{
 					name: 'Anthony Oetzmann',
 					handle: 'Airon',
 					role: 'Audio Engineer',
@@ -65,19 +81,9 @@ class TothPageAbout extends Polymer.Element {
 					twitter: 'krunkidile',
 					youtube: 'anangrysockpuppet'
 				}, {
-					name: 'Jasmine Ho',
-					handle: 'Jasbutts',
-					role: 'Artist',
-					email: 'jasbutts.toth@gmail.com',
-					website: 'http://jasbutts.com/',
-					twitter: 'miss_jasbutts'
-				}, {
-					name: 'Jacko Brain',
-					handle: 'omnibombulator',
-					role: 'TF2 HUD Designer',
-					website: 'http://huds.tf',
-					twitter: 'omnibombulator',
-					youtube: 'omnibombulator'
+					name: 'SedimentarySocks',
+					handle: 'SediSocks',
+					role: '3D Modeler'
 				}, {
 					name: 'Erin',
 					handle: 'erynn',
@@ -96,19 +102,14 @@ class TothPageAbout extends Polymer.Element {
 					website: 'http://benjamincongdon.me/',
 					twitter: 'BenRCongdon'
 				}, {
-					name: 'Mark',
-					handle: 'mark',
+					name: 'Mark Schwartzkopf',
+					handle: 'mark_foundry',
 					role: 'Audio Engineer',
 					twitter: 'M_Schwartzkopf'
 				}, {
-					name: 'SedimentarySocks',
-					handle: 'SediSocks',
-					role: '3D Modeler',
-					twitter: ''
-				}, {
 					name: 'mathsad',
 					handle: 'mathsad',
-					role: 'Producer'
+					role: 'Assistant Producer'
 				}, {
 					name: 'Ryan Callard',
 					handle: 'loris',
@@ -116,12 +117,37 @@ class TothPageAbout extends Polymer.Element {
 					email: 'ryancallardmusic@gmail.com',
 					twitter: 'lor_is'
 				}, {
+					name: 'Justin Kim',
+					handle: 'justinkim',
+					role: 'Engineer'
+				}]
+			},
+			thankees: {
+				type: Array,
+				readOnly: true,
+				value: [{
 					name: 'Borja Gutierrez',
 					handle: 'SirVilleta',
 					role: 'Logo Designer'
+				}, {
+					name: 'Jacko Brain',
+					handle: 'omnibombulator',
+					role: 'TF2 HUD Designer',
+					website: 'http://huds.tf',
+					twitter: 'omnibombulator',
+					youtube: 'omnibombulator'
 				}]
 			}
 		};
+	}
+
+	_calcStaff(selected) {
+		switch (selected) {
+			case 0: return this.staff;
+			case 1: return this.castAndCrew;
+			case 2: return this.thankees;
+			default: return this.staff;
+		}
 	}
 }
 

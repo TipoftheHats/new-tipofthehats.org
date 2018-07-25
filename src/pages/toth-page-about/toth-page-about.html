@@ -1,3 +1,5 @@
+<link rel="import" href="../../../bower_components/paper-tabs/paper-tab.html">
+<link rel="import" href="../../../bower_components/paper-tabs/paper-tabs.html">
 <link rel="import" href="../../elements/icomoon-polymer/icomoon-iconset-svg.html">
 <link rel="import" href="../../elements/toth-staff/toth-staff.html">
 <link rel="import" href="../../style/toth-shared-style.html">
@@ -6,7 +8,45 @@
 	<template>
 		<style include="toth-shared-style">
 			:host {
-				display: block;
+				@apply --layout-vertical;
+			}
+
+			paper-tabs {
+				--paper-tabs-selection-bar-color: #f57c2e;
+				--paper-tabs-selection-bar: {
+					border-bottom: 3px solid transparent;
+					z-index: 1;
+				}
+			}
+
+			paper-tab {
+				background-color: #f68e56;
+				color: white;
+				font-size: 29px;
+				margin: 0 8px;
+
+				--paper-tab: {
+					border: 3px solid var(--toth-orange);
+					border-bottom: 0;
+				};
+
+				--paper-tab-content: {
+					/* Disable bolding when focused */
+					font-weight: 600 !important;
+				};
+			}
+
+			paper-tab:first-of-type {
+				margin-left: 0;
+			}
+
+			paper-tab:last-of-type {
+				margin-right: 0;
+			}
+
+			paper-tab.iron-selected {
+				background-color: white;
+				color: black;
 			}
 
 			#masthead-text {
@@ -30,7 +70,8 @@
 
 			#contact h1,
 			#about-staff h1 {
-				width: 620px;
+				max-width: 620px;
+				width: 100%;
 				padding: 0;
 				margin-top: 50px;
 			}
@@ -47,13 +88,33 @@
 				text-decoration: none;
 			}
 
+			#about-staff {
+				@apply --layout-vertical;
+				@apply --layout-center;
+				@apply --layout-flex-none;
+				@apply --layout-self-center;
+			}
+
+			#staff-tabs {
+				margin-bottom: -3px;
+			}
+
 			#staff-display {
+				@apply --layout-center-center;
 				@apply --layout-horizontal;
 				@apply --layout-wrap;
-				@apply --layout-center-center;
-				max-width: 900px;
-				margin: 0 auto;
+				min-width: 100%;
 				align-items: flex-start;
+				border-style: solid;
+				border-width: 3px;
+				box-sizing: border-box;
+				max-width: 900px;
+				padding-top: 28px;
+				border-image: linear-gradient(
+						to bottom,
+						rgba(244, 116, 37, 1) 0%,
+						rgba(244, 116, 37, 0) 85%
+				) 1;
 			}
 
 			.masthead {
@@ -67,9 +128,18 @@
 			}
 
 			@media (max-width: 600px) {
+				#contact {
+					font-size: 16px;
+				}
+
 				#contact-links {
 					@apply --layout-vertical;
 					@apply --layout-center;
+				}
+
+				paper-tab {
+					font-size: 15px;
+					margin: 0 4px;
 				}
 			}
 		</style>
@@ -123,16 +193,25 @@
 		</section>
 
 		<section id="about-staff">
-			<h1>STAFF</h1>
+			<paper-tabs id="staff-tabs" selected="{{selected}}">
+				<paper-tab>STAFF</paper-tab>
+				<paper-tab>CAST & CREW</paper-tab>
+				<paper-tab>SPECIAL THANKS</paper-tab>
+			</paper-tabs>
+
+			<div id="staff-divider"></div>
+
 			<div id="staff-display">
-				<template is="dom-repeat" items="[[staff]]">
-					<toth-staff name="[[item.name]]"
-								handle="[[item.handle]]"
-								role="[[item.role]]"
-								email="[[item.email]]"
-								twitter="[[item.twitter]]"
-								website="[[item.website]]"
-								youtube="[[item.youtube]]"></toth-staff>
+				<template is="dom-repeat" items="[[_calcStaff(selected)]]">
+					<toth-staff
+						name="[[item.name]]"
+						handle="[[item.handle]]"
+						role="[[item.role]]"
+						email="[[item.email]]"
+						twitter="[[item.twitter]]"
+						website="[[item.website]]"
+						youtube="[[item.youtube]]">
+					</toth-staff>
 				</template>
 			</div>
 		</section>

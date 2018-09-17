@@ -16,45 +16,63 @@ class TothPageIndex extends Polymer.Element {
 				type: Array,
 				readOnly: true,
 				value: [{
-					name: 'Whisker'
+					name: 'Seagull'
 				}, {
-					name: 'truktruk'
-				}, {
-					name: 'Lange'
-				}, {
-					name: 'Krunkidile'
-				}, {
-					name: 'Jasbutts'
-				}, {
-					name: 'Ma3la'
-				}, {
-					name: 'mala'
-				}, {
-					name: 'uberchain'
-				}, {
-					name: 'Mark'
-				}, {
-					name: 'Geel'
-				}, {
-					name: 'mathsad'
-				}, {
-					name: 'samiface'
-				}, {
-					name: 'erynn'
-				}, {
-					name: 'loris'
-				}, {
-					name: 'tagg'
-				}, {
-					name: 'Uncle Dane'
+					name: 'ster'
 				}, {
 					name: 'Sideshow'
 				}, {
-					name: 'Getawhale'
+					name: 'Bren'
+				}, {
+					name: 'clockwork'
+				}, {
+					name: 'Muma'
 				}, {
 					name: 'harsha'
 				}, {
-					name: 'ScottJAw'
+					name: 'tagg'
+				}, {
+					name: 'Ma3la'
+				}, {
+					name: 'truktruk'
+				}, {
+					name: 'raysfire'
+				}, {
+					name: 'Getawhale'
+				}, {
+					name: 'Bloodsire'
+				}, {
+					name: 'Lange'
+				}, {
+					name: 'mala'
+				}, {
+					name: 'Admirable'
+				}, {
+					name: 'Krunkidile'
+				}, {
+					name: 'seanbud'
+				}, {
+					name: 'Auzzie'
+				}, {
+					name: 'Whisker'
+				}, {
+					name: 'erynn'
+				}, {
+					name: 'Jasbutts'
+				}, {
+					name: 'loris'
+				}, {
+					name: 'Mark'
+				}, {
+					name: 'stevebud'
+				}, {
+					name: 'justinkim'
+				}, {
+					name: 'uberchain'
+				}, {
+					name: 'Geel'
+				}, {
+					name: 'Jessecar'
 				}]
 			}
 		};

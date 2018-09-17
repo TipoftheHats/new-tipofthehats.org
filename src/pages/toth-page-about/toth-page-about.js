@@ -96,20 +96,10 @@ class TothPageAbout extends Polymer.Element {
 					website: 'http://supportclass.net/',
 					twitter: 'chrishanel'
 				}, {
-					name: 'Ben Congdon',
-					handle: 'bcongdon',
-					role: 'Engineer',
-					website: 'http://benjamincongdon.me/',
-					twitter: 'BenRCongdon'
-				}, {
 					name: 'Mark Schwartzkopf',
 					handle: 'mark_foundry',
 					role: 'Audio Engineer',
 					twitter: 'M_Schwartzkopf'
-				}, {
-					name: 'mathsad',
-					handle: 'mathsad',
-					role: 'Assistant Producer'
 				}, {
 					name: 'Ryan Callard',
 					handle: 'loris',

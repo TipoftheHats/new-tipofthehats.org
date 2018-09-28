@@ -20,20 +20,6 @@ const conf = convict({
 		default: 3,
 		env: 'TRACKER_EVENT_ID',
 		arg: 'trackerEventId'
-	},
-	scrapFundraiserId: {
-		doc: 'The ID of the ScrapTF fundraiser whose total to poll.',
-		format: String,
-		default: '',
-		env: 'SCRAP_FUNDRAISER_ID',
-		arg: 'scrapFundraiserId'
-	},
-	scrapApiKey: {
-		doc: 'A ScrapTF API key, needed to make API requests.',
-		format: String,
-		default: '',
-		env: 'SCRAP_API_KEY',
-		arg: 'scrapApiKey'
 	}
 }).getProperties();
 

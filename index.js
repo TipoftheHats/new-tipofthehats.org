@@ -61,6 +61,7 @@ app.get('/donate', defaultHandler);
 app.get('/terms', defaultHandler);
 app.get('/conduct', defaultHandler);
 app.get('/sweepstakes', defaultHandler);
+app.get('/privacy', defaultHandler);
 
 // Spin up "total" lib
 require('./lib/total')(conf, app);

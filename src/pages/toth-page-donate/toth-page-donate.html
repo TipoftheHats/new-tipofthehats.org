@@ -78,22 +78,10 @@
 				background-color: #3d3d3d;
 			}
 
-			#giveaway {
-				background-color: transparent;
-				border: 1px solid #7a7a7a;
-			}
-
 			@media (max-width: 950px) {
 				#main-donate-methods {
 					@apply --layout-vertical;
 					@apply --layout-center-center;
-				}
-			}
-
-			@media (min-width: 951px) {
-				#giveaway {
-					width: 100%;
-					box-sizing: border-box;
 				}
 			}
 
@@ -109,38 +97,25 @@
 
 		<section id="donate-methods">
 			<div id="main-donate-methods">
-				<div class="donate-method disabled">
+				<div class="donate-method">
 					<div class="donate-header">Monetary Contribution</div>
 					<p class="donate-desc">All cash donations go directly to Children's Oncology Services, Inc.</p>
 					<a href="https://tracker.tipofthehats.org/donate/toth2018">
 						<paper-button class="donate-button" raised>Donate Cash</paper-button>
 					</a>
-					<div class="donate-footer">Cash donations are not open yet!</div>
 				</div>
 
-				<div class="donate-method disabled">
+				<div class="donate-method">
 					<div class="donate-header">Item Contribution</div>
 					<p class="donate-desc">
-						You can give from a pre-selected list of TF2 & CS:GO items through ScrapTF. These item donations
+						You can give from a pre-selected list of TF2 items through ScrapTF. These item donations
 						will be treated as cash.
 					</p>
 					<a href="https://scrap.tf/toth" target="_blank">
 						<paper-button class="donate-button" raised>Donate Items</paper-button>
 					</a>
-					<div class="donate-footer">Item donations are not open yet!</div>
 				</div>
-
-			<!--<div id="giveaway" class="donate-method">
-				<div class="donate-header">Giveaway contribution</div>
-				<p class="donate-desc">
-					Got TF2 items not accepted in our main ScrapTF fundraiser? Donate them to our giveaways to be
-					given away in chat during the event.
-				</p>
-				<a href="https://scrap.tf/tothgiveaways" target="_blank">
-					<paper-button class="donate-button" raised>Giveaway Items</paper-button>
-				</a>
-				<div class="donate-footer">this link will take you to ScrapTF</div>
-			</div>-->
+			</div>
 		</section>
 	</template>
 

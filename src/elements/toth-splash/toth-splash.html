@@ -12,7 +12,7 @@
 				color: #fff;
 			}
 
-			video {
+			#background {
 				position: absolute;
 				min-width: 100%;
 				min-height: 100%;
@@ -68,7 +68,6 @@
 			#splash-logo {
 				-webkit-filter: drop-shadow(3px 3px 2px rgba(0,0,0,0.3));
 				filter: drop-shadow(3px 3px 2px rgba(0,0,0,0.3));
-
 			}
 
 			#splash-text {
@@ -105,6 +104,30 @@
 				font-weight: 700;
 			}
 
+			#splash-content-stream-wrapper {
+				@apply --layout-center;
+				@apply --layout-flex-none;
+				@apply --layout-self-stretch;
+				@apply --layout-vertical;
+				margin-top: 24px;
+				overflow: hidden;
+				padding-top: calc(1080 / 1920 * 100%);
+				position: relative;
+			}
+
+			#splash-content-stream {
+				max-height: 480px;
+				max-width: 854px;
+			}
+
+			#splash-content-stream iframe {
+				height: 100%;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 100%;
+			}
+
 			#splash-footer {
 				@apply --layout-vertical;
 				@apply --layout-center-center;
@@ -133,6 +156,22 @@
 				@apply --layout-center-center;
 			}
 
+			@media (max-width: 999px) {
+				#splash-content {
+					padding-top: 35px;
+					padding-bottom: 35px;
+				}
+
+				#splash-text {
+					margin-top: 20px;
+				}
+
+				.splash-twitch {
+					margin-top: 8px;
+					font-size: 22px;
+				}
+			}
+
 			@media (min-width: 1000px) {
 				#splash-content {
 					text-align: inherit;
@@ -151,6 +190,7 @@
 				}
 
 				#splash-logo {
+					width: 420px;
 					height: 300px;
 					padding-right: 20px;
 				}
@@ -170,24 +210,39 @@
 			}
 		</style>
 
-		<video autoplay loop muted>
-			<source src="/img/splash/header.mp4" type="video/mp4">
-			<source src="/img/splash/header.webm" type="video/webm">
-		</video>
+		<!--<video id="background" autoplay loop muted>-->
+			<!--<source src="/img/splash/header.mp4" type="video/mp4">-->
+			<!--<source src="/img/splash/header.webm" type="video/webm">-->
+		<!--</video>-->
+		<img id="background" src="/img/splash/log_crossing.jpg">
 
 		<div id="overlay"></div>
 		<div id="overlay-dots"></div>
 
 		<div id="splash-content">
 			<div id="splash-content-main">
-				<img id="splash-logo" src="/img/toth_logo.svg">
+				<picture id="splash-logo">
+					<source media="(max-width: 999px)" srcset="/img/toth_logo_horizontal.svg">
+					<source media="(min-width: 1000px)" srcset="/img/toth_logo.svg">
+					<img src="/img/toth_logo.svg" alt="Tip of the Hats Logo">
+				</picture>
+
 				<div id="splash-text">
 					<h1>Tip of the Hats 2018</h1>
 					<span id="splash-byline">
 						A three-day charity broadcast benefiting Camp One Step programs for kids with cancer
 					</span>
 					<h2>October 5th - 7th</h2>
-					<a href="http://twitch.tv/tipofthehats" target="_blank" class="splash-twitch">Hosted live on Twitch!</a>
+					<a href="http://twitch.tv/tipofthehats" target="_blank" class="splash-twitch">
+						Hosted live on Twitch!
+					</a>
+				</div>
+			</div>
+
+			<div id="splash-content-stream-wrapper">
+				<div id="splash-content-stream">
+					<!-- Twitch player gets embedded here. -->
+					<!-- See toth-splash.js for configuration. -->
 				</div>
 			</div>
 
@@ -200,8 +255,8 @@
 				</div>
 			</div>
 		</div>
-
 	</template>
 
+	<script src="https://embed.twitch.tv/embed/v1.js"></script>
 	<script src="toth-splash.js"></script>
 </dom-module>

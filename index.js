@@ -53,7 +53,11 @@ app.get('/privacy', defaultHandler);
 require('./lib/total')(conf, app);
 
 app.listen(port, () => {
-	console.log('Ready!');
+	if (conf.env === 'production') {
+		console.log('Ready!');
+	} else {
+		console.log(`Ready! http://localhost:${port}`);
+	}
 });
 
 function defaultHandler(req, res) {

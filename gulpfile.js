@@ -11,10 +11,16 @@ const pump = require('pump');
 gulp.task('minify:images', cb => {
 	pump([
 		gulp.src('src/img/**', {base: 'src'}),
-		imagemin({
-			progressive: true,
-			svgoPlugins: [{removeViewBox: false}]
-		}),
+		imagemin([
+			imagemin.gifsicle({interlaced: true}),
+			imagemin.jpegtran({progressive: true}),
+			imagemin.optipng({optimizationLevel: 5}),
+			imagemin.svgo({
+				plugins: [
+					{removeViewBox: false}
+				]
+			})
+		]),
 		gulp.dest('build/default/src')
 	], cb);
 });

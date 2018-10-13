@@ -1,14 +1,20 @@
 {
-  "entrypoint": "src/elements/all-elements.html",
+  "entrypoint": "index.html",
+  "shell": "src/elements/all-elements.html",
   "sources": [
-	"src/**/*"
+	"src/**/*",
+	"images/**/*",
+	"bower.json"
+  ],
+  "extraDependencies": [
+	"manifest.json",
+	"bower_components/webcomponentsjs/webcomponents-lite.js"
   ],
   "lint": {
 	"rules": [
 	  "polymer-2"
 	],
 	"ignoreWarnings": [
-	  "unknown-superclass",
 	  "not-loadable"
 	]
   },

@@ -1,7 +1,6 @@
 /**
  * @customElement
  * @polymer
- * @extends Polymer.Element
  */
 class TothSchedule extends Polymer.Element {
 	static get is() {

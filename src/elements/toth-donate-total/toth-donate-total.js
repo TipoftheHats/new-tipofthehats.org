@@ -1,11 +1,23 @@
 /**
  * @customElement
  * @polymer
- * @extends Polymer.Element
  */
 class TothDonateTotal extends Polymer.Element {
 	static get is() {
 		return 'toth-donate-total';
+	}
+
+	static get properties() {
+		return {
+			/**
+			 * The tracker eventId to pull donation totals for.
+			 */
+			eventId: {
+				type: Number,
+				value: 5,
+				readOnly: true
+			}
+		};
 	}
 
 	ready() {

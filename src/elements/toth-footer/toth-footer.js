@@ -1,7 +1,6 @@
 /**
  * @customElement
  * @polymer
- * @extends Polymer.Element
  */
 class TothFooter extends Polymer.Element {
 	static get is() {

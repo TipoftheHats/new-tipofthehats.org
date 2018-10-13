@@ -1,4 +1,4 @@
-# new-tipofthehats.org [![CircleCI](https://circleci.com/gh/TipoftheHats/new-tipofthehats.org.svg?style=svg&circle-token=c1812d1090db2c23939a3a8bf84461c895e8bb20)](https://circleci.com/gh/TipoftheHats/new-tipofthehats.org)
+# new-tipofthehats.org 
 Our website.
 
 ## Installation

@@ -21,6 +21,7 @@
 		<style include="toth-shared-style">
 			:host {
 				display: block;
+				min-height: 100vh;
 			}
 
 			app-header {
@@ -90,7 +91,7 @@
 		<app-location route="{{route}}" on-route-changed="routeChanged"></app-location>
 		<app-route route="{{route}}" pattern="/:page" data="{{pageData}}" tail="{{pageTail}}"></app-route>
 
-		<app-header-layout>
+		<app-header-layout fullbleed>
 			<app-header fixed>
 				<app-toolbar>
 					<a id="header-title" title href="/" style="pointer-events: all;">TIP OF THE HATS 2018</a>

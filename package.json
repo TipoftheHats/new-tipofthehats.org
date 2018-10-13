@@ -2,12 +2,12 @@
   "name": "tipofthehats.org",
   "version": "1.0.0",
   "description": "Tip of the Hats' website",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "eslint index.js src/**/*.html src/**/*.js && polymer lint",
+    "test": "eslint src/**/*.html src/**/*.js && polymer lint",
     "prebuild": "npm run test",
     "build": "polymer build && gulp minify:images",
-    "start": "node index.js --env production"
+    "start": "polymer serve --compile never"
   },
   "repository": {
     "type": "git",
@@ -15,11 +15,12 @@
   },
   "author": "Tip of the Has",
   "private": true,
-  "homepage": "http://tipofthehats.org",
+  "homepage": "https://tipofthehats.org",
   "dependencies": {
     "compression": "^1.7.3",
     "convict": "^4.4.0",
     "express": "^4.16.3",
+    "polymer-cli": "^1.8.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
     "serve-favicon": "^2.5.0"
@@ -30,6 +31,7 @@
     "eslint-plugin-html": "^4.0.6",
     "gulp": "^3.9.1",
     "gulp-imagemin": "^4.1.0",
-    "pump": "^3.0.0"
+    "pump": "^3.0.0",
+    "serve": "^10.0.2"
   }
 }

@@ -1,0 +1,9 @@
+{
+  "name": "Tip of the Hats",
+  "short_name": "Tip of the Hats",
+  "theme_color": "#f47425",
+  "background_color": "#ffffff",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/"
+}

@@ -35,13 +35,13 @@
 		<iron-ajax
 				id="totalAjax"
 				auto
-				url="/stats"
+				url="https://tracker.tipofthehats.org/[[eventId]]?json"
 				handle-as="json"
 				last-response="{{stats}}"
 				debounce-duration="300"></iron-ajax>
 
 		<div id="total-label">#TotH2018 total raised:</div>
-		<div id="total-amount">[[stats.total]]</div>
+		<div id="total-amount">[[_formatTotal(stats.agg.amount)]]</div>
 	</template>
 
 	<script src="toth-donate-total.js"></script>

@@ -28,6 +28,16 @@ class TothDonateTotal extends Polymer.Element {
 			this.$.totalAjax.generateRequest();
 		}, 60 * 1000);
 	}
+
+	_formatTotal(amount) {
+		const parsedAmount = typeof amount === 'string' ? parseFloat(amount) : amount;
+		return parsedAmount.toLocaleString('en-US', {
+			style: 'currency',
+			currency: 'USD',
+			maximumFractionDigits: 0,
+			minimumFractionDigits: 0
+		});
+	}
 }
 
 customElements.define(TothDonateTotal.is, TothDonateTotal);

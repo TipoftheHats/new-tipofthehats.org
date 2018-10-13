@@ -41,7 +41,7 @@
 				debounce-duration="300"></iron-ajax>
 
 		<div id="total-label">#TotH2018 total raised:</div>
-		<div id="total-amount">$[[stats.agg.amount]]</div>
+		<div id="total-amount">[[_formatTotal(stats.agg.amount)]]</div>
 	</template>
 
 	<script src="toth-donate-total.js"></script>

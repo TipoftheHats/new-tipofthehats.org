@@ -31,6 +31,9 @@ class TothDonateTotal extends Polymer.Element {
 
 	_formatTotal(amount) {
 		const parsedAmount = typeof amount === 'string' ? parseFloat(amount) : amount;
+		if (isNaN(amount)) {
+			return;
+		}
 		return parsedAmount.toLocaleString('en-US', {
 			style: 'currency',
 			currency: 'USD',

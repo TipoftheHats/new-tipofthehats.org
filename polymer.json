@@ -15,7 +15,8 @@
 	  "polymer-2"
 	],
 	"ignoreWarnings": [
-	  "not-loadable"
+	  "not-loadable",
+	  "could-not-load"
 	]
   },
   "builds": [{

@@ -9,5 +9,5 @@ jobs:
           name: install-npm
           command: npm install
       - run:
-          name: test
-          command: npm test
+          name: test & build
+          command: npm build

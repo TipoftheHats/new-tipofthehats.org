@@ -3,11 +3,6 @@ bower_components
 dist
 build
 
-/.idea/compiler.xml
-/.idea/encodings.xml
-/.idea/copyright/profiles_settings.xml
-/.idea/workspace.xml
-/.idea/codeStyles/codeStyleConfig.xml
-.DS_Store
-.idea/shelf/
+# JetBrains IDE files
+/.idea
 

@@ -1,8 +1,12 @@
 <link rel="import" href="../../../bower_components/paper-tabs/paper-tab.html">
 <link rel="import" href="../../../bower_components/paper-tabs/paper-tabs.html">
+<link rel="import" href="../../../bower_components/paper-item/paper-item.html">
+<link rel="import" href="../../../bower_components/paper-listbox/paper-listbox.html">
+<link rel="import" href="../../../bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
 <link rel="import" href="../../elements/icomoon-polymer/icomoon-iconset-svg.html">
 <link rel="import" href="../../elements/toth-staff/toth-staff.html">
 <link rel="import" href="../../style/toth-shared-style.html">
+<link rel="import" href="../../../bower_components/web-animations-js/web-animations-next-lite.min.html">
 
 <dom-module id="toth-page-about">
 	<template>
@@ -53,41 +57,6 @@
 				max-width: 800px;
 			}
 
-			#contact-links {
-				@apply --layout-horizontal;
-				align-items: flex-start;
-			}
-
-			.link-icon {
-				padding: 20px;
-				@apply --layout-vertical;
-				@apply --layout-center-center;
-			}
-
-			#contact {
-				font-size: 22px;
-			}
-
-			#contact h1,
-			#about-staff h1 {
-				max-width: 620px;
-				width: 100%;
-				padding: 0;
-				margin-top: 50px;
-			}
-
-			#contact-emails {
-				text-align: center;
-			}
-
-			#contact i {
-				color: var(--toth-orange);
-			}
-
-			#contact a {
-				text-decoration: none;
-			}
-
 			#about-staff {
 				@apply --layout-vertical;
 				@apply --layout-center;
@@ -127,16 +96,59 @@
 				color: var(--toth-orange);
 			}
 
+			#year-select {
+				margin:20px;
+			}
+
+			paper-dropdown-menu {
+				--paper-input-container-focus:{
+					color: var(--toth-orange);
+				}
+				--paper-input-container-label: {
+					color: var(--toth-orange);
+				}
+				--paper-input-container-input: {
+				}
+				--paper-input-container-underline: {
+					color: var(--toth-orange);
+					background-color: var(--toth-orange);
+					border-bottom: 1px solid var(--toth-orange, var(--toth-orange)) !important;
+				}
+				--paper-input-container-underline-focus: {
+					color: #f57c2e;
+					background-color: #f57c2e;
+					border-bottom: 1px solid #f57c2e !important;
+				}
+				--paper-dropdown-menu-color: {
+					color: var(--toth-orange);
+				}
+				--paper-dropdown-menu-focus-color {
+					color: var(--toth-orange);
+				}
+				--paper-dropdown-menu-ripple: {
+					color: var(--toth-orange);
+				}
+			}
+
+			paper-dropdown-menu:pressed, paper-dropdown-menu:focused {
+				--paper-input-container-label: {
+					color: var(--toth-orange) !important;
+				}
+				--paper-input-container-underline: {
+					color: var(--toth-orange) !important;
+				}
+				--paper-dropdown-menu-focus-color {
+					color: var(--toth-orange);
+				}
+				.underline {
+					color: var(--toth-orange);
+				}
+				--paper-dropdown-menu-ripple: {
+					color: var(--toth-orange);
+				}
+			}
+
 			@media (max-width: 600px) {
-				#contact {
-					font-size: 16px;
-				}
-
-				#contact-links {
-					@apply --layout-vertical;
-					@apply --layout-center;
-				}
-
 				paper-tab {
 					font-size: 15px;
 					margin: 0 4px;
@@ -155,63 +167,42 @@
 			</div>
 		</section>
 
-		<section id="contact">
-			<h1>CONTACT US</h1>
-			<div id="contact-links">
-				<div class="link-icon">
-					<a href="http://twitter.com/tipofthehats">
-						<iron-icon icon="icomoon:twitter"></iron-icon>
-					</a>
-					<a href="http://twitter.com/tipofthehats">
-						<p>@tipofthehats</p>
-					</a>
-				</div>
-				<div class="link-icon">
-					<a href="http://steamcommunity.com/groups/tipofthehats">
-						<iron-icon icon="icomoon:steam"></iron-icon>
-					</a>
-					<a href="http://steamcommunity.com/groups/tipofthehats">
-						<p>steamcommunity.com<br>/groups/tipofthehats</p>
-					</a>
-				</div>
-				<div class="link-icon">
-					<a href="http://twitch.tv/tipofthehats">
-						<iron-icon icon="icomoon:twitch"></iron-icon>
-					</a>
-					<a href="http://twitch.tv/tipofthehats">
-						<p class="contact-icon-label">/tipofthehats</p>
-					</a>
-				</div>
-			</div>
-			<div id="contact-emails">
-				<p>
-					General Email: staff@tipofthehats.org
-					<br>
-					Support: support@tipofthehats.org
-				</p>
-			</div>
+		<section id="year-select">
+			<paper-dropdown-menu label="Years">
+	      <paper-listbox slot="dropdown-content" attr-for-selected="data-year" selected="{{selectedYear}}">
+					<template is="dom-repeat" items="[[years]]">
+						<paper-item data-year$="[[item]]">[[item]]</paper-item>
+					</template>
+	      </paper-listbox>
+	    </paper-dropdown-menu>
 		</section>
 
 		<section id="about-staff">
 			<paper-tabs id="staff-tabs" selected="{{selected}}">
-				<paper-tab>STAFF</paper-tab>
-				<paper-tab>CAST & CREW</paper-tab>
-				<paper-tab>SPECIAL THANKS</paper-tab>
+				<paper-tab>All Staff</paper-tab>
+				<paper-tab>Engineering</paper-tab>
+				<paper-tab>Production</paper-tab>
+				<paper-tab>Operations</paper-tab>
+				<paper-tab>Creative</paper-tab>
+				<paper-tab>Talent</paper-tab>
+				<paper-tab>Special Thanks</paper-tab>
 			</paper-tabs>
 
 			<div id="staff-divider"></div>
 
 			<div id="staff-display">
 				<template is="dom-repeat" items="[[_calcStaff(selected)]]">
+					<template is="dom-if" if="[[_calcYear(item, selectedYear)]]">
 					<toth-staff
 						name="[[item.name]]"
 						handle="[[item.handle]]"
-						role="[[item.role]]"
+						role="[[_getCurrentRole(item, selectedYear)]]"
 						email="[[item.email]]"
 						twitter="[[item.twitter]]"
 						website="[[item.website]]"
 						youtube="[[item.youtube]]">
 					</toth-staff>
+					</template>
 				</template>
 			</div>
 		</section>

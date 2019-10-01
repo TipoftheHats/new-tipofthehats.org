@@ -252,6 +252,7 @@
 						name: 'Ethan Smith',
 						handle: 'SoundSmith',
 						twitter: 'soundsmithtf2',
+						website: 'https://www.youtube.com/channel/UC0Eqb484X8EiNrFLSUQVsaA',
 						yearsInvolved: [
 							{year: '2019', categories: ['prod'], roles: ['Sound Design']}
 						]

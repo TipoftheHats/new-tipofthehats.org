@@ -58,22 +58,6 @@
 						]
 					},
 					{
-						name: 'Kurt Russ',
-						handle: 'truktruk',
-						website: 'http://twitch.tv/truktruk',
-						email: 'kurt@tipofthehats.org',
-						twitter: 'kurtisruss',
-						yearsInvolved: [
-							{year: '2019', categories: ['ops', 'talent', 'prod'], roles: ['Co-Founder', 'Post-Produced Content']},
-							{year: '2018', categories: ['ops', 'talent', 'prod'], roles: ['Co-Founder', 'Post-Produced Content']},
-							{year: '2017', categories: ['ops', 'talent', 'prod'], roles: 'Co-Founder'},
-							{year: '2016', categories: ['ops', 'talent', 'prod'], roles: 'Co-Founder'},
-							{year: '2015', categories: ['ops', 'talent', 'prod'], roles: 'Co-Founder'},
-							{year: '2014', categories: ['ops', 'talent', 'prod'], roles: 'Co-Founder'},
-							{year: '2013', categories: ['ops', 'talent', 'prod'], roles: 'Co-Founder'}
-						]
-					},
-					{
 						name: 'Jason Baxter',
 						handle: 'whisker',
 						website: 'http://twitch.tv/whisker',
@@ -87,6 +71,22 @@
 							{year: '2015', categories: ['ops'], roles: ['Co-Founder']},
 							{year: '2014', categories: ['ops'], roles: ['Co-Founder']},
 							{year: '2013', categories: ['ops'], roles: ['Co-Founder']}
+						]
+					},
+					{
+						name: 'Kurt Russ',
+						handle: 'truktruk',
+						website: 'http://twitch.tv/truktruk',
+						email: 'kurt@tipofthehats.org',
+						twitter: 'kurtisruss',
+						yearsInvolved: [
+							{year: '2019', categories: ['ops', 'talent', 'prod'], roles: ['Co-Founder', 'Post-Produced Content']},
+							{year: '2018', categories: ['ops', 'talent', 'prod'], roles: ['Co-Founder', 'Post-Produced Content']},
+							{year: '2017', categories: ['ops', 'talent', 'prod'], roles: 'Co-Founder'},
+							{year: '2016', categories: ['ops', 'talent', 'prod'], roles: 'Co-Founder'},
+							{year: '2015', categories: ['ops', 'talent', 'prod'], roles: 'Co-Founder'},
+							{year: '2014', categories: ['ops', 'talent', 'prod'], roles: 'Co-Founder'},
+							{year: '2013', categories: ['ops', 'talent', 'prod'], roles: 'Co-Founder'}
 						]
 					},
 					{
@@ -229,7 +229,7 @@
 						handle: 'faulty',
 						twitter: 'amfaulty',
 						yearsInvolved: [
-							{year: '2019', categories: ['eng', 'prod'], roles: ['Live Audio', 'Engineer']}
+							{year: '2019', categories: ['eng', 'prod'], roles: ['Engineer', 'Live Audio']}
 						]
 					},
 					{
@@ -277,7 +277,7 @@
 						name: 'Jesse Cardone',
 						handle: 'Jessecar',
 						yearsInvolved: [
-							{year: '2019', categories: ['prod'], roles: ['Technical Director', 'CG Operator', 'Engineer']}
+							{year: '2019', categories: ['prod'], roles: ['Engineer', 'Technical Director', 'CG Operator']}
 						]
 					},
 					{
@@ -485,6 +485,13 @@
 						yearsInvolved: [
 							{year: '2019', categories: ['thankee'], roles: ['Logo Designer']},
 							{year: '2018', categories: ['thankee'], roles: ['Logo Designer']}
+						]
+					},
+					{
+						name: 'Jackie Chan',
+						handle: 'High Emperor',
+						yearsInvolved: [
+							{year: '2019', categories: ['thankee'], roles: ['Motivational Support']}
 						]
 					},
 					{

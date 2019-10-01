@@ -2,7 +2,7 @@
 
 <dom-module id="toth-donate-total">
 	<template>
-		<style>
+		<!--<style>
 			:host {
 				@apply --layout-vertical;
 				@apply --layout-center-center;
@@ -30,7 +30,7 @@
 					line-height: 0.85;
 				}
 			}
-		</style>
+		</style>-->
 
 		<iron-ajax
 				id="totalAjax"
@@ -40,8 +40,8 @@
 				last-response="{{stats}}"
 				debounce-duration="300"></iron-ajax>
 
-		<div id="total-label">#TotH2018 total raised:</div>
-		<div id="total-amount">[[_formatTotal(stats.agg.amount)]]</div>
+		<!--<div id="total-label">#TotH2019 total raised:</div>
+		<div id="total-amount">[[_formatTotal(stats.agg.amount)]]</div>-->
 	</template>
 
 	<script src="toth-donate-total.js"></script>

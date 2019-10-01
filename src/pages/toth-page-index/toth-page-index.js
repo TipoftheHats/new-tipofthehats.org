@@ -16,63 +16,37 @@
 					type: Array,
 					readOnly: true,
 					value: [{
-						name: 'Seagull'
-					}, {
 						name: 'ster'
+					}, {
+						name: 'Jake'
+					}, {
+						name: 'Custa'
 					}, {
 						name: 'Sideshow'
 					}, {
 						name: 'Bren'
 					}, {
-						name: 'clockwork'
-					}, {
-						name: 'Muma'
-					}, {
 						name: 'harsha'
 					}, {
 						name: 'tagg'
 					}, {
-						name: 'Ma3la'
-					}, {
-						name: 'truktruk'
+						name: 'SoundSmith'
 					}, {
 						name: 'raysfire'
+					}, {
+						name: 'Uncle Dane'
+					}, {
+						name: 'Ma3laa'
+					}, {
+						name: 'truktruk'
 					}, {
 						name: 'Getawhale'
 					}, {
 						name: 'Bloodsire'
 					}, {
-						name: 'Lange'
-					}, {
-						name: 'mala'
-					}, {
-						name: 'Admirable'
-					}, {
 						name: 'Krunkidile'
 					}, {
-						name: 'seanbud'
-					}, {
-						name: 'Auzzie'
-					}, {
-						name: 'Whisker'
-					}, {
-						name: 'erynn'
-					}, {
-						name: 'Jasbutts'
-					}, {
-						name: 'loris'
-					}, {
-						name: 'Mark'
-					}, {
-						name: 'stevebud'
-					}, {
-						name: 'justinkim'
-					}, {
-						name: 'uberchain'
-					}, {
-						name: 'Geel'
-					}, {
-						name: 'Jessecar'
+						name: 'Lange'
 					}]
 				}
 			};

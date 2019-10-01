@@ -7,6 +7,7 @@
 <link rel="import" href="../../../bower_components/paper-button/paper-button.html">
 <link rel="import" href="../../pages/toth-page-about/toth-page-about.html">
 <link rel="import" href="../../pages/toth-page-conduct/toth-page-conduct.html">
+<link rel="import" href="../../pages/toth-page-contact/toth-page-contact.html">
 <link rel="import" href="../../pages/toth-page-donate/toth-page-donate.html">
 <link rel="import" href="../../pages/toth-page-index/toth-page-index.html">
 <link rel="import" href="../../pages/toth-page-privacy/toth-page-privacy.html">
@@ -94,7 +95,7 @@
 		<app-header-layout fullbleed>
 			<app-header fixed>
 				<app-toolbar>
-					<a id="header-title" title href="/" style="pointer-events: all;">TIP OF THE HATS 2018</a>
+					<a id="header-title" title href="/" style="pointer-events: all;">TIP OF THE HATS 2019</a>
 					<!--
 					<a href="/donate">
 						<paper-button id="header-donate" class="header-desktop" raised>Donate to Tip of the Hats</paper-button>
@@ -124,6 +125,7 @@
 
 			<iron-pages selected="{{pageData.page}}" attr-for-selected="data-page">
 				<toth-page-index data-page=""></toth-page-index>
+				<toth-page-contact data-page="contact"></toth-page-contact>
 				<toth-page-about data-page="about"></toth-page-about>
 				<toth-page-donate data-page="donate"></toth-page-donate>
 				<toth-page-terms data-page="terms"></toth-page-terms>

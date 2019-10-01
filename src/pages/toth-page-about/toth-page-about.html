@@ -167,6 +167,7 @@
 			</div>
 		</section>
 
+<!-- Disabling this until we can sit down and get a list of individuals for prior years
 		<section id="year-select">
 			<paper-dropdown-menu label="Years">
 	      <paper-listbox slot="dropdown-content" attr-for-selected="data-year" selected="{{selectedYear}}">
@@ -176,10 +177,9 @@
 	      </paper-listbox>
 	    </paper-dropdown-menu>
 		</section>
-
+-->
 		<section id="about-staff">
 			<paper-tabs id="staff-tabs" selected="{{selected}}">
-				<paper-tab>All Staff</paper-tab>
 				<paper-tab>Engineering</paper-tab>
 				<paper-tab>Production</paper-tab>
 				<paper-tab>Operations</paper-tab>
@@ -196,7 +196,7 @@
 					<toth-staff
 						name="[[item.name]]"
 						handle="[[item.handle]]"
-						role="[[_getCurrentRole(item, selectedYear)]]"
+						roles="[[_getCurrentRoles(item, selectedYear)]]"
 						email="[[item.email]]"
 						twitter="[[item.twitter]]"
 						website="[[item.website]]"

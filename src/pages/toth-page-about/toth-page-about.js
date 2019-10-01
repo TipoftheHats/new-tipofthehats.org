@@ -32,13 +32,13 @@
 						email: 'lange@tipofthehats.org',
 						twitter: 'vancamp',
 						yearsInvolved: [
-							{year: '2019', categories: ['prod', 'ops', 'eng'], role: 'Engineering Team Lead'},
-							{year: '2018', categories: ['prod', 'ops', 'eng'], role: 'Executive Producer'},
-							{year: '2017', categories: ['prod', 'ops', 'eng'], role: 'Executive Producer'},
-							{year: '2016', categories: ['prod', 'ops', 'eng'], role: 'Executive Producer'},
-							{year: '2015', categories: ['prod', 'ops', 'eng'], role: 'Executive Producer'},
-							{year: '2014', categories: ['prod', 'ops', 'eng'], role: 'Executive Producer'},
-							{year: '2013', categories: ['prod', 'ops', 'eng'], role: 'Executive Producer'}
+							{year: '2019', categories: ['prod', 'ops', 'eng'], roles: ['Engineering Team Lead']},
+							{year: '2018', categories: ['prod', 'ops', 'eng'], roles: ['Engineering Team Lead']},
+							{year: '2017', categories: ['prod', 'ops', 'eng'], roles: ['Engineering Team Lead']},
+							{year: '2016', categories: ['prod', 'ops', 'eng'], roles: ['Engineering Team Lead']},
+							{year: '2015', categories: ['prod', 'ops', 'eng'], roles: ['Engineering Team Lead']},
+							{year: '2014', categories: ['prod', 'ops', 'eng'], roles: ['Engineering Team Lead']},
+							{year: '2013', categories: ['prod', 'ops', 'eng'], roles: ['Engineering Team Lead']}
 
 						]
 					},
@@ -48,13 +48,13 @@
 						email: 'seanbud@tipofthehats.org',
 						twitter: 'seanbud',
 						yearsInvolved: [
-							{year: '2019', categories: ['ops'], role: 'Co-Founder'},
-							{year: '2018', categories: ['ops'], role: 'Co-Founder'},
-							{year: '2017', categories: ['ops'], role: 'Co-Founder'},
-							{year: '2016', categories: ['ops'], role: 'Co-Founder'},
-							{year: '2015', categories: ['ops'], role: 'Co-Founder'},
-							{year: '2014', categories: ['ops'], role: 'Co-Founder'},
-							{year: '2013', categories: ['ops'], role: 'Co-Founder'}
+							{year: '2019', categories: ['ops'], roles: ['Co-Founder', 'Operations Lead']},
+							{year: '2018', categories: ['ops'], roles: ['Co-Founder']},
+							{year: '2017', categories: ['ops'], roles: ['Co-Founder']},
+							{year: '2016', categories: ['ops'], roles: ['Co-Founder']},
+							{year: '2015', categories: ['ops'], roles: ['Co-Founder']},
+							{year: '2014', categories: ['ops'], roles: ['Co-Founder']},
+							{year: '2013', categories: ['ops'], roles: ['Co-Founder']}
 						]
 					},
 					{
@@ -63,13 +63,13 @@
 						email: 'kurt@tipofthehats.org',
 						twitter: 'kurtisruss',
 						yearsInvolved: [
-							{year: '2019', categories: ['ops', 'talent', 'prod'], role: 'Co-Founder'},
-							{year: '2018', categories: ['ops', 'talent', 'prod'], role: 'Co-Founder, Post-Produced Content'},
-							{year: '2017', categories: ['ops', 'talent', 'prod'], role: 'Co-Founder'},
-							{year: '2016', categories: ['ops', 'talent', 'prod'], role: 'Co-Founder'},
-							{year: '2015', categories: ['ops', 'talent', 'prod'], role: 'Co-Founder'},
-							{year: '2014', categories: ['ops', 'talent', 'prod'], role: 'Co-Founder'},
-							{year: '2013', categories: ['ops', 'talent', 'prod'], role: 'Co-Founder'}
+							{year: '2019', categories: ['ops', 'talent', 'prod'], roles: ['Co-Founder', 'Post-Produced Content']},
+							{year: '2018', categories: ['ops', 'talent', 'prod'], roles: ['Co-Founder', 'Post-Produced Content']},
+							{year: '2017', categories: ['ops', 'talent', 'prod'], roles: 'Co-Founder'},
+							{year: '2016', categories: ['ops', 'talent', 'prod'], roles: 'Co-Founder'},
+							{year: '2015', categories: ['ops', 'talent', 'prod'], roles: 'Co-Founder'},
+							{year: '2014', categories: ['ops', 'talent', 'prod'], roles: 'Co-Founder'},
+							{year: '2013', categories: ['ops', 'talent', 'prod'], roles: 'Co-Founder'}
 						]
 					},
 					{
@@ -78,13 +78,13 @@
 						email: 'jason@tipofthehats.org',
 						twitter: 'rbjaxter',
 						yearsInvolved: [
-							{year: '2019', categories: ['ops'], role: 'Co-Founder'},
-							{year: '2018', categories: ['ops'], role: 'Co-Founder'},
-							{year: '2017', categories: ['ops'], role: 'Co-Founder'},
-							{year: '2016', categories: ['ops'], role: 'Co-Founder'},
-							{year: '2015', categories: ['ops'], role: 'Co-Founder'},
-							{year: '2014', categories: ['ops'], role: 'Co-Founder'},
-							{year: '2013', categories: ['ops'], role: 'Co-Founder'}
+							{year: '2019', categories: ['ops'], roles: ['Co-Founder', 'Operations Lead']},
+							{year: '2018', categories: ['ops'], roles: ['Co-Founder']},
+							{year: '2017', categories: ['ops'], roles: ['Co-Founder']},
+							{year: '2016', categories: ['ops'], roles: ['Co-Founder']},
+							{year: '2015', categories: ['ops'], roles: ['Co-Founder']},
+							{year: '2014', categories: ['ops'], roles: ['Co-Founder']},
+							{year: '2013', categories: ['ops'], roles: ['Co-Founder']}
 						]
 					},
 					{
@@ -93,13 +93,13 @@
 						email: 'auzzie@tipofthehats.org',
 						twitter: 'auzzietf2',
 						yearsInvolved: [
-							{year: '2019', categories: ['ops', 'prod'], role: 'Organizer'},
-							{year: '2018', categories: ['ops'], role: 'Organizer'},
-							{year: '2017', categories: ['ops'], role: 'Organizer'},
-							{year: '2016', categories: ['ops'], role: 'Organizer'},
-							{year: '2015', categories: ['ops'], role: 'Organizer'},
-							{year: '2014', categories: ['ops'], role: 'Organizer'},
-							{year: '2013', categories: ['ops'], role: 'Organizer'}
+							{year: '2019', categories: ['ops', 'prod'], roles: ['Organizer']},
+							{year: '2018', categories: ['ops'], roles: ['Organizer']},
+							{year: '2017', categories: ['ops'], roles: ['Organizer']},
+							{year: '2016', categories: ['ops'], roles: ['Organizer']},
+							{year: '2015', categories: ['ops'], roles: ['Organizer']},
+							{year: '2014', categories: ['ops'], roles: ['Organizer']},
+							{year: '2013', categories: ['ops'], roles: ['Organizer']}
 						]
 					},
 					{
@@ -109,8 +109,8 @@
 						website: 'http://jasbutts.com/',
 						twitter: 'miss_jasbutts',
 						yearsInvolved: [
-							{year: '2019', categories: ['ops', 'art'], role: 'Merch Coordinator & Artist'},
-							{year: '2018', categories: ['ops', 'art'], role: 'Merch Coordinator & Artist'}
+							{year: '2019', categories: ['ops', 'art'], roles: ['Merchandise Lead', 'Artist']},
+							{year: '2018', categories: ['ops', 'art'], roles: ['Merch Coordinator & Artist']}
 						]
 					},
 					{
@@ -120,10 +120,10 @@
 						twitter: 'airont',
 						website: 'http://aironaudio.weebly.com/',
 						yearsInvolved: [
-							{year: '2019', categories: ['prod'], role: 'Audio Engineer'},
-							{year: '2017', categories: ['prod'], role: 'Audio Engineer'},
-							{year: '2016', categories: ['prod'], role: 'Audio Engineer'},
-							{year: '2015', categories: ['prod'], role: 'Audio Engineer'}
+							{year: '2019', categories: ['prod'], roles: ['Audio Engineer']},
+							{year: '2017', categories: ['prod'], roles: ['Audio Engineer']},
+							{year: '2016', categories: ['prod'], roles: ['Audio Engineer']},
+							{year: '2015', categories: ['prod'], roles: ['Audio Engineer']}
 						]
 					},
 					{
@@ -133,11 +133,18 @@
 						twitter: 'uberchain',
 						youtube: 'uberchainYT',
 						yearsInvolved: [
-							{year: '2019', categories: ['art'], role: 'SFM Lead'},
-							{year: '2018', categories: ['art'], role: 'SFM Lead'},
-							{year: '2017', categories: ['art'], role: 'SFM Lead'},
-							{year: '2016', categories: ['art'], role: 'SFM Lead'},
-							{year: '2015', categories: ['art'], role: 'SFM Lead'}
+							{year: '2019', categories: ['art'], roles: ['SFM Lead']},
+							{year: '2018', categories: ['art'], roles: ['SFM Lead']},
+							{year: '2017', categories: ['art'], roles: ['SFM Lead']},
+							{year: '2016', categories: ['art'], roles: ['SFM Lead']},
+							{year: '2015', categories: ['art'], roles: ['SFM Lead']}
+						]
+					},
+					{
+						name: 'Steve Giarla',
+						handle: 'stevebud',
+						yearsInvolved: [
+							{year: '2019', categories: ['art'], roles: ['Videographer']}
 						]
 					},
 					{
@@ -146,34 +153,35 @@
 						twitter: 'krunkidile',
 						youtube: 'anangrysockpuppet',
 						yearsInvolved: [
-							{year: '2019', categories: ['art'], role: 'SFM Artist'},
-							{year: '2018', categories: ['art'], role: 'SFM Artist'},
-							{year: '2017', categories: ['art'], role: 'SFM Artist'},
-							{year: '2016', categories: ['art'], role: 'SFM Artist'},
-							{year: '2015', categories: ['art'], role: 'SFM Artist'}
+							{year: '2019', categories: ['art'], roles: ['SFM Artist']},
+							{year: '2018', categories: ['art'], roles: ['SFM Artist']},
+							{year: '2017', categories: ['art'], roles: ['SFM Artist']},
+							{year: '2016', categories: ['art'], roles: ['SFM Artist']},
+							{year: '2015', categories: ['art'], roles: ['SFM Artist']}
 						]
 					},
 					{
 						name: 'SedimentarySocks',
 						handle: 'SediSocks',
 						yearsInvolved: [
-							{year: '2019', categories: ['art'], role: '3D Modeler'},
-							{year: '2018', categories: ['art'], role: '3D Modeler'},
-							{year: '2017', categories: ['art'], role: '3D Modeler'},
-							{year: '2016', categories: ['art'], role: '3D Modeler'},
-							{year: '2015', categories: ['art'], role: '3D Modeler'}
+							{year: '2019', categories: ['art'], roles: ['3D Modeler']},
+							{year: '2018', categories: ['art'], roles: ['3D Modeler']},
+							{year: '2017', categories: ['art'], roles: ['3D Modeler']},
+							{year: '2016', categories: ['art'], roles: ['3D Modeler']},
+							{year: '2015', categories: ['art'], roles: ['3D Modeler']}
 						]
 					},
 					{
 						name: 'Erin',
 						handle: 'erynn',
 						twitter: 'erynntf2',
+						website: 'http://erynn.space',
 						yearsInvolved: [
-							{year: '2019', categories: ['eng'], role: 'Engineer'},
-							{year: '2018', categories: ['eng'], role: 'Engineer'},
-							{year: '2017', categories: ['eng'], role: 'Engineer'},
-							{year: '2016', categories: ['eng'], role: 'Engineer'},
-							{year: '2015', categories: ['eng'], role: 'Engineer'}
+							{year: '2019', categories: ['eng'], roles: ['Engineer']},
+							{year: '2018', categories: ['eng'], roles: ['Engineer']},
+							{year: '2017', categories: ['eng'], roles: ['Engineer']},
+							{year: '2016', categories: ['eng'], roles: ['Engineer']},
+							{year: '2015', categories: ['eng'], roles: ['Engineer']}
 						]
 					},
 					{
@@ -182,11 +190,11 @@
 						website: 'http://supportclass.net/',
 						twitter: 'chrishanel',
 						yearsInvolved: [
-							{year: '2019', categories: ['eng'], role: 'Website/Broadcast Designer'},
-							{year: '2018', categories: ['eng'], role: 'Website/Broadcast Designer'},
-							{year: '2017', categories: ['eng'], role: 'Website/Broadcast Designer'},
-							{year: '2016', categories: ['eng'], role: 'Website/Broadcast Designer'},
-							{year: '2015', categories: ['eng'], role: 'Website/Broadcast Designer'}
+							{year: '2019', categories: ['eng'], roles: ['Website/Broadcast Designer']},
+							{year: '2018', categories: ['eng'], roles: ['Website/Broadcast Designer']},
+							{year: '2017', categories: ['eng'], roles: ['Website/Broadcast Designer']},
+							{year: '2016', categories: ['eng'], roles: ['Website/Broadcast Designer']},
+							{year: '2015', categories: ['eng'], roles: ['Website/Broadcast Designer']}
 						]
 					},
 					{
@@ -194,8 +202,8 @@
 						handle: 'mark_foundry',
 						twitter: 'M_Schwartzkopf',
 						yearsInvolved: [
-							{year: '2019', categories: ['eng', 'prod'], role: 'Audio Engineer'},
-							{year: '2018', categories: ['eng', 'prod'], role: 'Audio Engineer'}
+							{year: '2019', categories: ['eng', 'prod'], roles: ['Live Audio Lead']},
+							{year: '2018', categories: ['eng', 'prod'], roles: ['Audio Engineer']}
 						]
 					},
 					{
@@ -204,80 +212,265 @@
 						email: 'ryancallardmusic@gmail.com',
 						twitter: 'lor_is',
 						yearsInvolved: [
-							{year: '2019', categories: ['art', 'prod'], role: 'Videographer'},
-							{year: '2018', categories: ['art', 'prod'], role: 'Videographer'}
+							{year: '2019', categories: ['art', 'prod'], roles: ['Videographer']},
+							{year: '2018', categories: ['art', 'prod'], roles: ['Videographer']}
 						]
 					},
 					{
 						name: 'Justin Kim',
 						handle: 'justinkim',
 						yearsInvolved: [
-							{year: '2019', categories: ['eng', 'prod'], role: 'Engineer'},
-							{year: '2018', categories: ['eng', 'prod'], role: 'Engineer'}
+							{year: '2019', categories: ['eng', 'prod'], roles: ['Engineer', 'Technical Director', 'CG Operator']},
+							{year: '2018', categories: ['eng', 'prod'], roles: ['Engineer']}
+						]
+					},
+					{
+						name: 'Jonathan Egeland',
+						handle: 'faulty',
+						twitter: 'amfaulty',
+						yearsInvolved: [
+							{year: '2019', categories: ['eng', 'prod'], roles: ['Live Audio']}
+						]
+					},
+					{
+						name: 'George Wilson',
+						handle: 'Oaked',
+						yearsInvolved: [
+							{year: '2019', categories: ['ops'], roles: ['Operations Assistant']}
+						]
+					},
+					{
+						name: 'Dan Radaj',
+						handle: 'fendermcbender',
+						twitter: 'fendermcbender',
+						website: 'http://fender.space',
+						yearsInvolved: [
+							{year: '2019', categories: ['ops'], roles: ['Operations Assistant']}
+						]
+					},
+					{
+						name: 'Ethan Smith',
+						handle: 'SoundSmith',
+						twitter: 'SoundSmithTF2',
+						yearsInvolved: [
+							{year: '2019', categories: ['prod'], roles: ['Sound Design']}
+						]
+					},
+					{
+						name: 'Becky Verbruggen',
+						handle: 'Ixy',
+						twitter: 'TheOtherIxy',
+						yearsInvolved: [
+							{year: '2019', categories: ['prod'], roles: ['Broadcast Director']}
+						]
+					},
+					{
+						name: 'Joshua Coffey',
+						handle: 'Geel',
+						twitter: 'geel9',
+						website: 'http://scrap.tf',
+						yearsInvolved: [
+							{year: '2019', categories: ['prod'], roles: ['Engineer']}
+						]
+					},
+					{
+						name: 'Jesse Cardon',
+						handle: 'Jessecar',
+						yearsInvolved: [
+							{year: '2019', categories: ['prod'], roles: ['Technical Director', 'CG Operator', 'Engineer']}
 						]
 					},
 					{
 						name: 'Brennon Hook',
 						handle: 'Bren',
 						yearsInvolved: [
-							{year: '2018', categories: ['talent'], role: ''}
+							{year: '2019', categories: ['talent'], roles: []},
+							{year: '2018', categories: ['talent'], roles: []}
+						]
+					},
+					{
+						name: 'Justin Danford',
+						handle: 'Bloodsire',
+						twitter: 'thebloodsire',
+						yearsInvolved: [
+							{year: '2019', categories: ['talent'], roles: []}
 						]
 					},
 					{
 						name: 'Matt Dias',
 						handle: 'clockwork',
 						yearsInvolved: [
-							{year: '2018', categories: ['talent'], role: ''}
+							{year: '2019', categories: ['talent'], roles: []},
+							{year: '2018', categories: ['talent'], roles: []}
+						]
+					},
+					{
+						name: 'Scott Kennedy',
+						handle: 'Custa',
+						yearsInvolved: [
+							{year: '2019', categories: ['talent'], roles: []}
 						]
 					},
 					{
 						name: 'Mike Lockman',
 						handle: 'Getawhale',
 						yearsInvolved: [
-							{year: '2018', categories: ['talent'], role: ''}
+							{year: '2019', categories: ['talent'], roles: []},
+							{year: '2018', categories: ['talent'], roles: []}
 						]
 					},
 					{
 						name: 'Harsha Bandi',
 						handle: 'Harsha',
 						yearsInvolved: [
-							{year: '2018', categories: ['talent'], role: ''}
+							{year: '2019', categories: ['talent'], roles: []},
+							{year: '2018', categories: ['talent'], roles: []}
+						]
+					},
+					{
+						name: 'Jacob Lyon',
+						handle: 'Jake',
+						yearsInvolved: [
+							{year: '2019', categories: ['talent'], roles: []}
 						]
 					},
 					{
 						name: 'Wyatt',
-						handle: 'Ma3la',
+						handle: 'Ma3laa',
 						yearsInvolved: [
-							{year: '2018', categories: ['talent'], role: ''}
+							{year: '2018', categories: ['talent'], roles: []}
 						]
 					},
 					{
 						name: 'Lauran',
 						handle: 'mala',
 						yearsInvolved: [
-							{year: '2018', categories: ['talent'], role: 'asdf'}
+							{year: '2019', categories: ['talent'], roles: []},
+							{year: '2018', categories: ['talent'], roles: []}
 						]
 					},
 					{
 						name: 'Brandon Larned',
 						handle: 'Seagull',
 						yearsInvolved: [
-							{year: '2018', categories: ['talent'], role: ''}
+							{year: '2018', categories: ['talent'], roles: []}
 						]
 					},
 					{
 						name: 'Josh Wilkinson',
 						handle: 'Sideshow',
+						twitter: 'SideshowGaming',
 						yearsInvolved: [
-							{year: '2018', categories: ['talent'], role: ''}
+							{year: '2019', categories: ['talent'], roles: []},
+							{year: '2018', categories: ['talent'], roles: []}
+						]
+					},
+					{
+						name: 'Steve Serge',
+						handle: 'ster',
+						yearsInvolved: [
+							{year: '2019', categories: ['talent'], roles: []},
+							{year: '2018', categories: ['talent'], roles: []}
+						]
+					},
+					{
+						name: 'Austen Wade',
+						handle: 'tagg',
+						website: 'https://www.twitch.tv/thatguytagg',
+						yearsInvolved: [
+							{year: '2019', categories: ['talent'], roles: []},
+							{year: '2018', categories: ['talent'], roles: []}
+						]
+					},
+					{
+						name: 'Ian Bruton',
+						handle: 'raysfire',
+						website: 'https://www.twitch.tv/raysfire',
+						yearsInvolved: [
+							{year: '2019', categories: ['talent'], roles: []},
+							{year: '2018', categories: ['talent'], roles: []}
+						]
+					},
+					{
+						name: 'Dane Cuthbertson',
+						handle: 'Uncle Dane',
+						website: 'youtube.com/uncledane',
+						yearsInvolved: [
+							{year: '2019', categories: ['talent'], roles: []}
+						]
+					},
+					{
+						name: 'Tobiased',
+						handle: 'Tobiased',
+						yearsInvolved: [
+							{year: '2019', categories: ['art'], roles: ['Lighting', 'Posters']}
+						]
+					},
+					{
+						name: 'Fames',
+						handle: 'Fames',
+						yearsInvolved: [
+							{year: '2019', categories: ['art'], roles: ['Lighting', 'Posters']}
+						]
+					},
+					{
+						name: 'Jacob Reeder',
+						handle: 'Andobiki',
+						yearsInvolved: [
+							{year: '2019', categories: ['art'], roles: ['2D Animation']}
+						]
+					},
+					{
+						name: 'Roniña Anna Rodriguez',
+						handle: 'Py-Bun',
+						yearsInvolved: [
+							{year: '2019', categories: ['art'], roles: ['2D / SFM Animation']}
+						]
+					},
+					{
+						name: 'void',
+						handle: 'void',
+						yearsInvolved: [
+							{year: '2019', categories: ['art'], roles: ['Mapper']}
+						]
+					},
+					{
+						name: 'Caleb Caingcoy',
+						handle: 'liz',
+						yearsInvolved: [
+							{year: '2019', categories: ['art'], roles: ['Animation']}
+						]
+					},
+					{
+						handle: 'mittens',
+						yearsInvolved: [
+							{year: '2019', categories: ['art'], roles: ['Animation']}
+						]
+					},
+					{
+						handle: 'Zir Zeek',
+						yearsInvolved: [
+							{year: '2019', categories: ['art'], roles: ['Animation']}
+						]
+					},
+					{
+						handle: 'Leg4Me',
+						yearsInvolved: [
+							{year: '2019', categories: ['art'], roles: ['Animation']}
+						]
+					},
+					{
+						handle: 'Marblr',
+						yearsInvolved: [
+							{year: '2019', categories: ['ops'], roles: ['Moderator']}
 						]
 					},
 					{
 						name: 'Borja Gutierrez',
 						handle: 'SirVilleta',
 						yearsInvolved: [
-							{year: '2019', categories: ['thankee'], role: 'Logo Designer'},
-							{year: '2018', categories: ['thankee'], role: 'Logo Designer'}
+							{year: '2019', categories: ['thankee'], roles: ['Logo Designer']},
+							{year: '2018', categories: ['thankee'], roles: ['Logo Designer']}
 						]
 					},
 					{
@@ -287,8 +480,8 @@
 						twitter: 'omnibombulator',
 						youtube: 'omnibombulator',
 						yearsInvolved: [
-							{year: '2019', categories: ['thankee'], role: 'TF2 HUD Designer'},
-							{year: '2018', categories: ['thankee'], role: 'TF2 HUD Designer'}
+							{year: '2019', categories: ['thankee'], roles: ['TF2 HUD Designer']},
+							{year: '2018', categories: ['thankee'], roles: ['TF2 HUD Designer']}
 						]
 					}]
 				}
@@ -297,18 +490,17 @@
 
 		_calcStaff(selected) {
 			switch (selected) {
-				case 0: return this.staff;
-				case 1:
+				case 0:
 					return this.staff.filter(person => person.yearsInvolved.some(category => category.categories.some(x => x === 'eng')));
-				case 2:
+				case 1:
 					return this.staff.filter(person => person.yearsInvolved.some(category => category.categories.some(x => x === 'prod')));
-				case 3:
+				case 2:
 					return this.staff.filter(person => person.yearsInvolved.some(category => category.categories.some(x => x === 'ops')));
-				case 4:
+				case 3:
 					return this.staff.filter(person => person.yearsInvolved.some(category => category.categories.some(x => x === 'art')));
-				case 5:
+				case 4:
 					return this.staff.filter(person => person.yearsInvolved.some(category => category.categories.some(x => x === 'talent')));
-				case 6:
+				case 5:
 					return this.staff.filter(person => person.yearsInvolved.some(category => category.categories.some(x => x === 'thankee')));
 				default: return this.staff;
 			}
@@ -320,10 +512,10 @@
 			}
 		}
 
-		_getCurrentRole(person, selectedYear) {
-			let role = person.yearsInvolved.filter(item => item.year === selectedYear);
-			if (role[0]) {
-				return role[0].role;
+		_getCurrentRoles(person, selectedYear) {
+			let roles = person.yearsInvolved.filter(item => item.year === selectedYear);
+			if (roles[0]) {
+				return roles[0].roles;
 			}
 		}
 	}

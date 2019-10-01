@@ -11,7 +11,7 @@
 		static get properties() {
 			return {
 				name: String,
-				role: String,
+				roles: Array,
 				handle: String,
 				picture: String,
 				email: String,

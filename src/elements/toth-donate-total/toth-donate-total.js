@@ -14,7 +14,7 @@ class TothDonateTotal extends Polymer.Element {
 			 */
 			eventId: {
 				type: Number,
-				value: 5,
+				value: 6,
 				readOnly: true
 			}
 		};

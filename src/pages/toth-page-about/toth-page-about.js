@@ -504,11 +504,11 @@
 		_calcStaff(selected) {
 			switch (selected) {
 				case 0:
-					return this.staff.filter(person => person.yearsInvolved.some(category => category.categories.some(x => x === 'eng')));
-				case 1:
-					return this.staff.filter(person => person.yearsInvolved.some(category => category.categories.some(x => x === 'prod')));
-				case 2:
 					return this.staff.filter(person => person.yearsInvolved.some(category => category.categories.some(x => x === 'ops')));
+				case 1:
+					return this.staff.filter(person => person.yearsInvolved.some(category => category.categories.some(x => x === 'eng')));
+				case 2:
+					return this.staff.filter(person => person.yearsInvolved.some(category => category.categories.some(x => x === 'prod')));
 				case 3:
 					return this.staff.filter(person => person.yearsInvolved.some(category => category.categories.some(x => x === 'art')));
 				case 4:

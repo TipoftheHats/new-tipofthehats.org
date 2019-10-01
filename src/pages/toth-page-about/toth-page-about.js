@@ -32,19 +32,19 @@
 						email: 'lange@tipofthehats.org',
 						twitter: 'vancamp',
 						yearsInvolved: [
-							{year: '2019', categories: ['prod', 'ops', 'eng'], roles: ['Engineering Team Lead']},
+							{year: '2019', categories: ['prod', 'ops', 'eng'], roles: ['Co-Founder', 'Engineering Team Lead']},
 							{year: '2018', categories: ['prod', 'ops', 'eng'], roles: ['Engineering Team Lead']},
 							{year: '2017', categories: ['prod', 'ops', 'eng'], roles: ['Engineering Team Lead']},
 							{year: '2016', categories: ['prod', 'ops', 'eng'], roles: ['Engineering Team Lead']},
 							{year: '2015', categories: ['prod', 'ops', 'eng'], roles: ['Engineering Team Lead']},
 							{year: '2014', categories: ['prod', 'ops', 'eng'], roles: ['Engineering Team Lead']},
 							{year: '2013', categories: ['prod', 'ops', 'eng'], roles: ['Engineering Team Lead']}
-
 						]
 					},
 					{
 						name: 'Sean Stradley',
 						handle: 'Seanbud',
+						website: 'http://twitch.tv/seanbud',
 						email: 'seanbud@tipofthehats.org',
 						twitter: 'seanbud',
 						yearsInvolved: [
@@ -60,6 +60,7 @@
 					{
 						name: 'Kurt Russ',
 						handle: 'truktruk',
+						website: 'http://twitch.tv/truktruk',
 						email: 'kurt@tipofthehats.org',
 						twitter: 'kurtisruss',
 						yearsInvolved: [
@@ -75,6 +76,7 @@
 					{
 						name: 'Jason Baxter',
 						handle: 'whisker',
+						website: 'http://twitch.tv/whisker',
 						email: 'jason@tipofthehats.org',
 						twitter: 'rbjaxter',
 						yearsInvolved: [
@@ -88,7 +90,7 @@
 						]
 					},
 					{
-						name: 'William Hild',
+						name: 'Austin Hild',
 						handle: 'Auzzie',
 						email: 'auzzie@tipofthehats.org',
 						twitter: 'auzzietf2',
@@ -120,7 +122,6 @@
 						twitter: 'airont',
 						website: 'http://aironaudio.weebly.com/',
 						yearsInvolved: [
-							{year: '2019', categories: ['prod'], roles: ['Audio Engineer']},
 							{year: '2017', categories: ['prod'], roles: ['Audio Engineer']},
 							{year: '2016', categories: ['prod'], roles: ['Audio Engineer']},
 							{year: '2015', categories: ['prod'], roles: ['Audio Engineer']}
@@ -129,7 +130,7 @@
 					{
 						name: 'Ness Delacroix',
 						handle: 'uberchain',
-						website: 'http://uberchain.deviantart.com',
+						website: 'http://uberchain.format.com/',
 						twitter: 'uberchain',
 						youtube: 'uberchainYT',
 						yearsInvolved: [
@@ -190,7 +191,6 @@
 						website: 'http://supportclass.net/',
 						twitter: 'chrishanel',
 						yearsInvolved: [
-							{year: '2019', categories: ['eng'], roles: ['Website/Broadcast Designer']},
 							{year: '2018', categories: ['eng'], roles: ['Website/Broadcast Designer']},
 							{year: '2017', categories: ['eng'], roles: ['Website/Broadcast Designer']},
 							{year: '2016', categories: ['eng'], roles: ['Website/Broadcast Designer']},
@@ -200,7 +200,7 @@
 					{
 						name: 'Mark Schwartzkopf',
 						handle: 'mark_foundry',
-						twitter: 'M_Schwartzkopf',
+						twitter: 'm_schwartzkopf',
 						yearsInvolved: [
 							{year: '2019', categories: ['eng', 'prod'], roles: ['Live Audio Lead']},
 							{year: '2018', categories: ['eng', 'prod'], roles: ['Audio Engineer']}
@@ -220,16 +220,16 @@
 						name: 'Justin Kim',
 						handle: 'justinkim',
 						yearsInvolved: [
-							{year: '2019', categories: ['eng', 'prod'], roles: ['Engineer', 'Technical Director', 'CG Operator']},
+							{year: '2019', categories: ['eng', 'prod'], roles: ['Engineer', 'Technical Director']},
 							{year: '2018', categories: ['eng', 'prod'], roles: ['Engineer']}
 						]
 					},
 					{
-						name: 'Jonathan Egeland',
+						name: 'Jon Egeland',
 						handle: 'faulty',
 						twitter: 'amfaulty',
 						yearsInvolved: [
-							{year: '2019', categories: ['eng', 'prod'], roles: ['Live Audio']}
+							{year: '2019', categories: ['eng', 'prod'], roles: ['Live Audio', 'Engineer']}
 						]
 					},
 					{
@@ -251,7 +251,7 @@
 					{
 						name: 'Ethan Smith',
 						handle: 'SoundSmith',
-						twitter: 'SoundSmithTF2',
+						twitter: 'soundsmithtf2',
 						yearsInvolved: [
 							{year: '2019', categories: ['prod'], roles: ['Sound Design']}
 						]
@@ -259,7 +259,7 @@
 					{
 						name: 'Becky Verbruggen',
 						handle: 'Ixy',
-						twitter: 'TheOtherIxy',
+						twitter: 'theotherixy',
 						yearsInvolved: [
 							{year: '2019', categories: ['prod'], roles: ['Broadcast Director']}
 						]
@@ -274,7 +274,7 @@
 						]
 					},
 					{
-						name: 'Jesse Cardon',
+						name: 'Jesse Cardone',
 						handle: 'Jessecar',
 						yearsInvolved: [
 							{year: '2019', categories: ['prod'], roles: ['Technical Director', 'CG Operator', 'Engineer']}
@@ -299,6 +299,7 @@
 					{
 						name: 'Matt Dias',
 						handle: 'clockwork',
+						twitter: 'likeclockwork',
 						yearsInvolved: [
 							{year: '2019', categories: ['talent'], roles: []},
 							{year: '2018', categories: ['talent'], roles: []}
@@ -307,6 +308,7 @@
 					{
 						name: 'Scott Kennedy',
 						handle: 'Custa',
+						twitter: 'Custa',
 						yearsInvolved: [
 							{year: '2019', categories: ['talent'], roles: []}
 						]
@@ -314,6 +316,7 @@
 					{
 						name: 'Mike Lockman',
 						handle: 'Getawhale',
+						twitter: 'Getawhale',
 						yearsInvolved: [
 							{year: '2019', categories: ['talent'], roles: []},
 							{year: '2018', categories: ['talent'], roles: []}
@@ -322,6 +325,7 @@
 					{
 						name: 'Harsha Bandi',
 						handle: 'Harsha',
+						twitter: 'ggharsha',
 						yearsInvolved: [
 							{year: '2019', categories: ['talent'], roles: []},
 							{year: '2018', categories: ['talent'], roles: []}
@@ -335,15 +339,16 @@
 						]
 					},
 					{
-						name: 'Wyatt',
+						name: 'Wyatt Smith',
 						handle: 'Ma3laa',
 						yearsInvolved: [
 							{year: '2018', categories: ['talent'], roles: []}
 						]
 					},
 					{
-						name: 'Lauran',
+						name: 'Lauryn',
 						handle: 'mala',
+						twitter: 'mala_cookies',
 						yearsInvolved: [
 							{year: '2019', categories: ['talent'], roles: []},
 							{year: '2018', categories: ['talent'], roles: []}
@@ -359,7 +364,7 @@
 					{
 						name: 'Josh Wilkinson',
 						handle: 'Sideshow',
-						twitter: 'SideshowGaming',
+						twitter: 'sideshowgaming',
 						yearsInvolved: [
 							{year: '2019', categories: ['talent'], roles: []},
 							{year: '2018', categories: ['talent'], roles: []}
@@ -368,6 +373,7 @@
 					{
 						name: 'Steve Serge',
 						handle: 'ster',
+						twitter: 'sterlovesfood',
 						yearsInvolved: [
 							{year: '2019', categories: ['talent'], roles: []},
 							{year: '2018', categories: ['talent'], roles: []}
@@ -378,12 +384,12 @@
 						handle: 'tagg',
 						website: 'https://www.twitch.tv/thatguytagg',
 						yearsInvolved: [
-							{year: '2019', categories: ['talent'], roles: []},
+							{year: '2019', categories: ['art', 'talent'], roles: ['Post-Produced Content Lead']},
 							{year: '2018', categories: ['talent'], roles: []}
 						]
 					},
 					{
-						name: 'Ian Bruton',
+						name: 'raysfire',
 						handle: 'raysfire',
 						website: 'https://www.twitch.tv/raysfire',
 						yearsInvolved: [
@@ -392,9 +398,9 @@
 						]
 					},
 					{
-						name: 'Dane Cuthbertson',
+						name: 'Dane Cook',
 						handle: 'Uncle Dane',
-						website: 'youtube.com/uncledane',
+						website: 'http://youtube.com/uncledane',
 						yearsInvolved: [
 							{year: '2019', categories: ['talent'], roles: []}
 						]
@@ -407,22 +413,24 @@
 						]
 					},
 					{
-						name: 'Fames',
+						name: 'Jonas',
 						handle: 'Fames',
 						yearsInvolved: [
 							{year: '2019', categories: ['art'], roles: ['Lighting', 'Posters']}
 						]
 					},
 					{
-						name: 'Jacob Reeder',
+						name: 'Jacob',
 						handle: 'Andobiki',
+						twitter: 'andobiki',
 						yearsInvolved: [
 							{year: '2019', categories: ['art'], roles: ['2D Animation']}
 						]
 					},
 					{
-						name: 'Roniña Anna Rodriguez',
+						name: 'Roniña',
 						handle: 'Py-Bun',
+						twitter: 'py_bun',
 						yearsInvolved: [
 							{year: '2019', categories: ['art'], roles: ['2D / SFM Animation']}
 						]
@@ -435,7 +443,7 @@
 						]
 					},
 					{
-						name: 'Caleb Caingcoy',
+						name: 'Liz',
 						handle: 'liz',
 						yearsInvolved: [
 							{year: '2019', categories: ['art'], roles: ['Animation']}
@@ -462,7 +470,13 @@
 					{
 						handle: 'Marblr',
 						yearsInvolved: [
-							{year: '2019', categories: ['ops'], roles: ['Moderator']}
+							{year: '2019', categories: ['ops'], roles: ['Admin']}
+						]
+					},
+					{
+						handle: 'Nicktree',
+						yearsInvolved: [
+							{year: '2019', categories: ['ops'], roles: ['Admin']}
 						]
 					},
 					{
@@ -480,7 +494,6 @@
 						twitter: 'omnibombulator',
 						youtube: 'omnibombulator',
 						yearsInvolved: [
-							{year: '2019', categories: ['thankee'], roles: ['TF2 HUD Designer']},
 							{year: '2018', categories: ['thankee'], roles: ['TF2 HUD Designer']}
 						]
 					}]

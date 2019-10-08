@@ -22,6 +22,8 @@
 					}, {
 						name: 'Custa'
 					}, {
+						name: 'Clockwork'
+					}, {
 						name: 'Sideshow'
 					}, {
 						name: 'Bren'

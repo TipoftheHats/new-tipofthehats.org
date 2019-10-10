@@ -491,13 +491,6 @@
 						]
 					},
 					{
-						name: 'Jackie Chan',
-						handle: 'High Emperor',
-						yearsInvolved: [
-							{year: '2019', categories: ['thankee'], roles: ['Motivational Support']}
-						]
-					},
-					{
 						name: 'Jacko Brain',
 						handle: 'omnibombulator',
 						website: 'http://huds.tf',

@@ -16,8 +16,6 @@
 					type: Array,
 					readOnly: true,
 					value: [{
-						name: 'ster'
-					}, {
 						name: 'Jake'
 					}, {
 						name: 'Custa'

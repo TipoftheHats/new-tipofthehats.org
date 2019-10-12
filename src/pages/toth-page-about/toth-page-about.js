@@ -378,7 +378,6 @@
 						handle: 'ster',
 						twitter: 'sterlovesfood',
 						yearsInvolved: [
-							{year: '2019', categories: ['talent'], roles: []},
 							{year: '2018', categories: ['talent'], roles: []}
 						]
 					},

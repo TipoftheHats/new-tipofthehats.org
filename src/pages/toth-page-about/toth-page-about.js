@@ -162,7 +162,7 @@
 						]
 					},
 					{
-						name: 'SedimentarySocks',
+						name: 'Tim BL',
 						handle: 'SediSocks',
 						yearsInvolved: [
 							{year: '2019', categories: ['art'], roles: ['3D Modeler']},
@@ -408,21 +408,24 @@
 						]
 					},
 					{
-						name: 'Tobiased',
+						name: 'Timothy O.',
 						handle: 'Tobiased',
+						website: 'www.twitch.tv/tobiased_',
+						twitter: '_Tobiased',
 						yearsInvolved: [
 							{year: '2019', categories: ['art'], roles: ['Lighting', 'Posters']}
 						]
 					},
 					{
-						name: 'Jonas',
+						name: 'Jonas Dödtmann',
 						handle: 'Fames',
+						twitter: '__Fames',
 						yearsInvolved: [
 							{year: '2019', categories: ['art'], roles: ['Lighting', 'Posters']}
 						]
 					},
 					{
-						name: 'Jacob',
+						name: 'Jacob R.',
 						handle: 'Andobiki',
 						twitter: 'andobiki',
 						yearsInvolved: [
@@ -430,7 +433,7 @@
 						]
 					},
 					{
-						name: 'Roniña',
+						name: 'Roniña R.',
 						handle: 'Py-Bun',
 						twitter: 'py_bun',
 						yearsInvolved: [
@@ -438,44 +441,53 @@
 						]
 					},
 					{
-						name: 'void',
+						name: 'Aeon Bollig',
 						handle: 'void',
+						twitter: 'aeonbollig',
+						website: 'aeonbollig.com',
 						yearsInvolved: [
 							{year: '2019', categories: ['art'], roles: ['Mapper']}
 						]
 					},
 					{
-						name: 'Liz',
+						name: 'Liz Caingcoy',
 						handle: 'liz',
+						twitter: 'Liz_Caingcoy',
+						website: 'https://www.youtube.com/user/callegosy',
 						yearsInvolved: [
 							{year: '2019', categories: ['art'], roles: ['Animation']}
 						]
 					},
 					{
+						name: 'Joel Ibbetson',
 						handle: 'mittens',
 						yearsInvolved: [
 							{year: '2019', categories: ['art'], roles: ['Animation']}
 						]
 					},
 					{
+						name: 'Zeek',
 						handle: 'Zir Zeek',
 						yearsInvolved: [
 							{year: '2019', categories: ['art'], roles: ['Animation']}
 						]
 					},
 					{
+						name: 'Joona H.',
 						handle: 'Leg4Me',
 						yearsInvolved: [
 							{year: '2019', categories: ['art'], roles: ['Animation']}
 						]
 					},
 					{
+						name: 'Ryan Silver',
 						handle: 'Marblr',
 						yearsInvolved: [
 							{year: '2019', categories: ['ops'], roles: ['Admin']}
 						]
 					},
 					{
+						name: 'Nick Harvey',
 						handle: 'Nicktree',
 						yearsInvolved: [
 							{year: '2019', categories: ['ops'], roles: ['Admin']}

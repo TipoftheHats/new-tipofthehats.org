@@ -26,22 +26,6 @@
 					type: Array,
 					readOnly: true,
 					value: [{
-						name: 'Alex Van Camp',
-						handle: 'Lange',
-						website: 'http://alexvan.camp',
-						email: 'lange@tipofthehats.org',
-						twitter: 'vancamp',
-						yearsInvolved: [
-							{year: '2019', categories: ['prod', 'ops', 'eng'], roles: ['Co-Founder', 'Engineering Team Lead']},
-							{year: '2018', categories: ['prod', 'ops', 'eng'], roles: ['Engineering Team Lead']},
-							{year: '2017', categories: ['prod', 'ops', 'eng'], roles: ['Engineering Team Lead']},
-							{year: '2016', categories: ['prod', 'ops', 'eng'], roles: ['Engineering Team Lead']},
-							{year: '2015', categories: ['prod', 'ops', 'eng'], roles: ['Engineering Team Lead']},
-							{year: '2014', categories: ['prod', 'ops', 'eng'], roles: ['Engineering Team Lead']},
-							{year: '2013', categories: ['prod', 'ops', 'eng'], roles: ['Engineering Team Lead']}
-						]
-					},
-					{
 						name: 'Sean Stradley',
 						handle: 'Seanbud',
 						website: 'http://twitch.tv/seanbud',

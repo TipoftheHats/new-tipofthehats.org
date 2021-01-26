@@ -45,8 +45,6 @@
 						name: 'Bloodsire'
 					}, {
 						name: 'Krunkidile'
-					}, {
-						name: 'Lange'
 					}]
 				}
 			};

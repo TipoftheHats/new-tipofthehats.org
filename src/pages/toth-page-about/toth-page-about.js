@@ -259,15 +259,6 @@
 						]
 					},
 					{
-						name: 'Jesse Cardone',
-						handle: 'Jessecar',
-						twitter: 'Jessecar96',
-						website: 'http://scrap.tf',
-						yearsInvolved: [
-							{year: '2019', categories: ['prod'], roles: ['Engineer', 'Technical Director', 'CG Operator']}
-						]
-					},
-					{
 						name: 'Brennon Hook',
 						handle: 'Bren',
 						yearsInvolved: [

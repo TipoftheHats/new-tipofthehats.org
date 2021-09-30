@@ -16,13 +16,9 @@
 					type: Array,
 					readOnly: true,
 					value: [{
-						name: 'Jake'
-					}, {
-						name: 'Custa'
-					}, {
 						name: 'Clockwork'
 					}, {
-						name: 'Sideshow'
+						name: 'Josh'
 					}, {
 						name: 'Bren'
 					}, {
@@ -30,21 +26,15 @@
 					}, {
 						name: 'tagg'
 					}, {
-						name: 'SoundSmith'
+						name: 'Wyatt'
 					}, {
-						name: 'raysfire'
+						name: 'Kurt'
 					}, {
-						name: 'Uncle Dane'
+						name: 'Ster'
 					}, {
-						name: 'Ma3laa'
+						name: 'Fender'
 					}, {
-						name: 'truktruk'
-					}, {
-						name: 'Getawhale'
-					}, {
-						name: 'Bloodsire'
-					}, {
-						name: 'Krunkidile'
+						name: 'Jas'
 					}]
 				}
 			};

@@ -252,8 +252,6 @@
 					{
 						name: 'Joshua Coffey',
 						handle: 'Geel',
-						twitter: 'geel9',
-						website: 'http://scrap.tf',
 						yearsInvolved: [
 							{year: '2019', categories: ['prod'], roles: ['Engineer']}
 						]

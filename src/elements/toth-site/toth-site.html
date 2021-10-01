@@ -57,7 +57,7 @@
 			}
 
 			#header-donate {
-				width: 255px;
+				width: 150px;
 			}
 
 			#header-shirts {
@@ -65,7 +65,7 @@
 			}
 
 			#header-pins {
-				width: 145px;
+				width: 150px;
 			}
 
 			@media (max-width: 600px) {
@@ -96,31 +96,25 @@
 			<app-header fixed>
 				<app-toolbar>
 					<a id="header-title" title href="/" style="pointer-events: all;">TIP OF THE HATS</a>
-					<!--
+					
 					<a href="/donate">
-						<paper-button id="header-donate" class="header-desktop" raised>Donate to Tip of the Hats</paper-button>
-					</a>
-					<a href="https://teespring.com/stores/tipofthehats" target="_blank">
-						<paper-button id="header-shirts" class="header-desktop" raised>Shirts & Hoodies</paper-button>
+						<paper-button id="header-donate" class="header-desktop" raised>Donate</paper-button>
 					</a>
 					<a href="http://shop.tipofthehats.org" target="_blank">
-						<paper-button id="header-pins" class="header-desktop" raised>Hats & Merch</paper-button>
+						<paper-button id="header-pins" class="header-desktop" raised>Merch</paper-button>
 					</a>
 
 					<a href="/donate">
 						<paper-button id="header-donate-m" class="header-mobile" raised>Donate</paper-button>
 					</a>
-					<a href="https://teespring.com/stores/tipofthehats" target="_blank">
-						<paper-button id="header-shirts-m" class="header-mobile" raised>Shirts</paper-button>
-					</a>
 					<a href="http://shop.tipofthehats.org" target="_blank">
-						<paper-button id="header-pins-m" class="header-mobile" raised>Store</paper-button>
+						<paper-button id="header-pins-m" class="header-mobile" raised>Merch</paper-button>
 					</a>
-					-->
+					
 				</app-toolbar>
 			</app-header>
 
-		<!--	<toth-donate-total></toth-donate-total> -->
+			<toth-donate-total></toth-donate-total>
 
 			<iron-pages selected="{{pageData.page}}" attr-for-selected="data-page">
 				<toth-page-index data-page=""></toth-page-index>

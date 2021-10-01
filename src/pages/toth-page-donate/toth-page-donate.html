@@ -46,7 +46,7 @@
 			.donate-desc {
 				@apply --layout-center-center;
 				flex: 2;
-				font-size: 18px;
+				font-size: 17px;
 				font-weight: 800;
 			}
 
@@ -78,15 +78,52 @@
 				background-color: #3d3d3d;
 			}
 
+			.faq-container {
+				display: flex;
+				flex-wrap: wrap;
+				margin-top: -30px;
+				margin-left: 10%;
+				margin-right: 10%;
+			}
+
+			.faq-entry {
+				margin-top: 30px;
+				width: 50%;
+				box-sizing: border-box;
+				padding-left: 5%;
+				padding-right: 5%;
+			}
+
+			.faq-entry .question {
+				font-size: 2em;
+				color: var(--toth-orange);
+				text-align: center;
+			}
+
+			.faq-entry .answer {
+				margin-top: 10px;
+				text-indent: 35px;
+				line-height: 1.4em;
+			}
+
+
 			@media (max-width: 950px) {
 				#main-donate-methods {
 					@apply --layout-vertical;
 					@apply --layout-center-center;
 				}
+
+				.faq-entry {
+					width: 100%;
+				}
 			}
 
 			a {
 				text-decoration: none;
+			}
+
+			.faq-entry a {
+				color: var(--toth-orange);
 			}
 		</style>
 
@@ -99,21 +136,53 @@
 			<div id="main-donate-methods">
 				<div class="donate-method">
 					<div class="donate-header">Monetary Contribution</div>
-					<p class="donate-desc">All cash donations go directly to Camp One Step.</p>
+					<p class="donate-desc">All donations go directly to Camp One Step.</p>
 					<a href="https://tracker.tipofthehats.org/ui/donate/toth2021">
-						<paper-button class="donate-button" raised>Donate Cash</paper-button>
+						<paper-button class="donate-button" raised>Donate Now</paper-button>
 					</a>
 				</div>
+			</div>
+		</section>
 
-			<!--	<div class="donate-method">
-					<div class="donate-header">Item Contribution</div>
-					<p class="donate-desc">
-						Donate TF2 items through ScrapTF. These item donations will be converted to cash which is sent directly to Camp One Step.
-					</p>
-					<a href="https://scrap.tf/toth" target="_blank">
-						<paper-button class="donate-button" raised>Donate Items</paper-button>
-					</a>
-				</div> -->
+		<section id="donate-faq">
+			<h1>What <em>is</em> Frequently Asked Questions?</h1>
+
+			<div class="faq-container">
+				<div class="faq-entry" id="faq-donation-methods">
+					<div class="question">
+						How can I donate?
+					</div>
+					<div class="answer">
+						This year, donations may be made via PayPal. If you do not have a PayPal account, you may donate with a credit / debit card on the PayPal website, without creating an account.
+					</div>
+				</div>
+
+				<div class="faq-entry" id="faq-medals">
+					<div class="question">
+						Are there in-game medals for donating?
+					</div>
+					<div class="answer">
+						This year, we are not able to provide in-game medals as a donation incentive.
+					</div>
+				</div>
+				
+				<div class="faq-entry" id="faq-where-money-go">
+					<div class="question">
+						Where does my donation go?
+					</div>
+					<div class="answer">
+						100% of all donations are sent directly to <a href='https://camponestep.org/' target="_blank">Camp One Step</a>, a registered 501(c)(3) nonprofit. All Tip of the Hats participants and staff are volunteers, and receive no portion of any donations.
+					</div>
+				</div>
+
+				<div class="faq-entry" id="faq-tax-deductible">
+					<div class="question">
+						Are donations tax deductible?
+					</div>
+					<div class="answer">
+						Yes! All donations are tax deductible. A receipt will be sent to email you provide for each donation made.
+					</div>
+				</div>
 			</div>
 		</section>
 	</template>

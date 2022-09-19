@@ -1,4 +1,4 @@
-# new-tipofthehats.org
+# tipofthehats.org
 Our website.
 
 ## Installation
